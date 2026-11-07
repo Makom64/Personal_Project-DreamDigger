@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Docs/Project_Planning/기초 기획서.md",
+                "file": "Docs/Templetes/PullRequestTemplate.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "기초 기획서"
+              "title": "PullRequestTemplate"
             }
           }
         ]
@@ -33,12 +33,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Docs/GroundRule.md",
+                "file": "CLAUDE.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "GroundRule"
+              "title": "CLAUDE"
             }
           },
           {
@@ -47,15 +47,16 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Docs/WorkLogs/261105_작업일지.md",
+                "file": "Docs/Project_Planning/기초 기획서.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "261105_작업일지"
+              "title": "기초 기획서"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -220,9 +221,13 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "580780710781cf4d",
+  "active": "87f1511aa0a1c98a",
   "lastOpenFiles": [
     "Docs/WorkLogs/261105_작업일지.md",
+    "Docs/Templetes/PullRequestTemplate.md",
+    "Docs/GroundRule.md",
+    "Docs/Project_Planning/기초 기획서.md",
+    "CLAUDE.md",
     ".claude/skills/pullrequest/SKILL.md",
     ".claude/skills/git-issue/SKILL.md",
     ".claude/skills/pullrequest",
@@ -230,11 +235,8 @@
     ".claude/skills",
     ".claude",
     "Docs/Project_Planning_Diag.canvas",
-    "Docs/Project_Planning/기초 기획서.md",
-    "Docs/GroundRule.md",
     "Docs/Project_SetUp/프로젝트 기획.md",
     "Docs/Project_Planning",
-    "CLAUDE.md",
     ".claude/skills/prompt-archive/SKILL.md",
     ".claude/skills/prompt-archive",
     "Docs/Rules/BranchRule.md",
@@ -247,7 +249,6 @@
     "Docs/Rules/IssueRule.md",
     "Docs/Templetes/IssueTemplate.md",
     "Docs/Templetes/무제",
-    "Docs/Templetes/PullRequestTemplate.md",
     "WorkLogs/261105_작업일지.md",
     "WorkLogs/261105_작업일지.md.tmp.8508.d2004b00f0c4",
     "Docs/Templetes/TroubleShootingTemplate.md",
