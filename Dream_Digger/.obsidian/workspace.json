@@ -47,12 +47,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Docs/Project_Planning/기초 기획서.md",
+                "file": "Docs/Project_Planning/Implement_Detail/플레이어 세부 구현 방안.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "기초 기획서"
+              "title": "플레이어 세부 구현 방안"
             }
           }
         ],
@@ -223,10 +223,18 @@
   },
   "active": "87f1511aa0a1c98a",
   "lastOpenFiles": [
+    "Docs/Project_Planning/Plans/기초 기획서.md",
+    "Docs/Project_Planning/Implement_Detail/플레이어 세부 구현 방안.md",
+    "Docs/Project_Planning/Implement_Detail",
+    "Docs/Project_Planning/새 폴더",
+    "Docs/Project_Planning/Plans",
+    "Docs/Project_Planning/Plans/자원 기획서.md",
+    "Docs/Project_Planning/Plans/타일맵 기획서.md",
+    "Docs/Project_Planning/Plans/플레이어 기획서.md",
+    "Docs/Project_Planning/Plans/플레이어 세부 구현 방안.md",
     "Docs/WorkLogs/261105_작업일지.md",
     "Docs/Templetes/PullRequestTemplate.md",
     "Docs/GroundRule.md",
-    "Docs/Project_Planning/기초 기획서.md",
     "CLAUDE.md",
     ".claude/skills/pullrequest/SKILL.md",
     ".claude/skills/git-issue/SKILL.md",
@@ -243,14 +251,11 @@
     "Docs/Rules/PullRequestRule.md",
     ".claude/skills/git-pr/SKILL.md",
     ".claude/skills/git-pr",
-    "Docs/WorkLogs",
     "Docs/Rules/CommitRule.md",
     "Docs/Templetes/WorkLogTemplate.md",
     "Docs/Rules/IssueRule.md",
     "Docs/Templetes/IssueTemplate.md",
-    "Docs/Templetes/무제",
     "WorkLogs/261105_작업일지.md",
-    "WorkLogs/261105_작업일지.md.tmp.8508.d2004b00f0c4",
     "Docs/Templetes/TroubleShootingTemplate.md",
     "Docs/Project_Setup.canvas",
     "Docs/개발_프로세스_도식화.canvas",
