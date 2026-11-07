@@ -1,0 +1,24 @@
+{
+	"nodes":[
+		{"id":"bf342090bdc5e99d","type":"group","x":1996,"y":-1011,"width":1280,"height":2051,"label":"# 프로젝트 준비 단계"},
+		{"id":"81949729cca82e3f","type":"group","x":2176,"y":-163,"width":900,"height":617,"label":"작업 환경 준비"},
+		{"id":"f10fd390e2eb5ac6","type":"text","text":"## 프로젝트 계획\n1. 프로젝트 목표\n\t- 단순 학습 목적 프로젝트인지, 시장에 출시할 프로젝트인지 확인.\n\t- 구동 플랫폼 선정(WindowOS? Mac? 모바일? 구글 플레이 스토어? 스팀?)\n2. 장르 선정\n\t- `2D or 3D`, `액션RPG or 턴제 카드게임`, `1인칭 or 3인칭 쿼터뷰` 등의 구체적인 게임의 플레이 화면 구상\n3. 레퍼런스 조사\n\t- 2단계에서 구상한 장르의 게임이 어떤 것들이 있는지 레퍼런스 조사\n\t- 레퍼런스를 조사할 때 재미를 주는 핵심 시스템이 무엇이 있는지도 포함되어야한다.\n4. 프로젝트 기간\n\t- 조사한 레퍼런스들을 참고했을 때 프로젝트의 기간을 예측한다.\n\t- 기간이 정해져있는 경우 2~3단계에서 정한 레퍼런스를 기준으로 볼륨을 어느 정도로 계획할지 의논한다.\n","x":2413,"y":-991,"width":441,"height":591},
+		{"id":"6d8223afb510a79e","type":"text","text":"## 개인 프로젝트\n1.  어떤 문서를 만들어야할까?\n\t- 프로젝트를 검토하거나 회고할 때 내가 봐야하는 문서의 우선 순위\n\t- 기능명세와 기획이 잘 기록되는지\n\t- 막혔던 문제와 해결한 방법 (트러블슈팅)\n\t- 작업일지(오늘하루왜막혔고 어떻게 풀었고 등등의 회고를 포함해서)\n2. 협업 툴 사용 고려\n\t- 프로젝트의 볼륨이 기능을 개발하며 점점 검토하고 정리해야될 내용이 많아지면 협업툴을 사용해야되지 않을까?","x":2637,"y":-143,"width":419,"height":577},
+		{"id":"707ed9c21b368eab","type":"text","text":"## 팀 프로젝트\n1. 프로젝트 구성원\n\t- 인원 및 인원 별 경력 사항(협업 툴 사용 경험, 개발 경험, 주로 맡았던 업무)\n2. 협업 툴 선정\n\t- 문서: Confluence 말고 뭐가 있을까?\n\t- 저장소: GitHub\n\t- 파일 공유: Google Drive 외에 뭐가 있을까?\n\t- WBS와 캘린더: Jira 또는 스프레드 시트 말고 뭐가 있고 어떻게 써야할까?\n3. 그라운드 룰  작성\n\t- 프로젝트에서 어떤 부분들에 규칙이 적용되어야 할까?\n\t- 어떤 규칙이 좋은 규칙일까?\n\t- 코어타임, 소통 방식, 협업 툴 사용방식 등등","x":2196,"y":-143,"width":441,"height":577},
+		{"id":"0e64f86c011344ac","type":"text","text":"## 작업 환경 적응\n- 협업 툴 설정 후 시범\n- 저장소 준비\n- 필요 문서들 개선\n- 그라운드 룰 개선과 숙지","x":2196,"y":660,"width":358,"height":200},
+		{"id":"cde7ada6c198f017","type":"text","text":"## 필요 문서\n- 공통\n\t-  GroundRule\n\t- CodeConvention\n\t- CodeStyleRule\n\t- BranchRule\n\t- PullRequestTemplete\n\t- PullRequestRule\n\t- WorkLogTemplete\n\t- IssueTemplete\n\t- TroubleShooting\n- 팀 프로젝트\n\t- MinutesTemplete","x":2716,"y":560,"width":340,"height":400,"color":"4"},
+		{"id":"6ca2aed48c401db2","type":"text","text":"## 프로젝트 기획서","x":2518,"y":-301,"width":221,"height":50,"color":"4"},
+		{"id":"642f48ebc0045b05","type":"file","file":"Docs/Project_Planning_Diag.canvas","x":2160,"y":1360,"width":1033,"height":1120}
+	],
+	"edges":[
+		{"id":"78236df1d865cd82","fromNode":"81949729cca82e3f","fromSide":"bottom","toNode":"0e64f86c011344ac","toSide":"top","color":"4","label":"의논 및 검토"},
+		{"id":"6f572af8bcd65a41","fromNode":"81949729cca82e3f","fromSide":"bottom","toNode":"cde7ada6c198f017","toSide":"top","color":"4","label":"검토"},
+		{"id":"841e39eb6bfe5157","fromNode":"6ca2aed48c401db2","fromSide":"bottom","toNode":"81949729cca82e3f","toSide":"top","color":"4"},
+		{"id":"5d520adde1be5857","fromNode":"cde7ada6c198f017","fromSide":"right","toNode":"81949729cca82e3f","toSide":"right","color":"1","label":"반려"},
+		{"id":"802dd78e490805b3","fromNode":"f10fd390e2eb5ac6","fromSide":"bottom","toNode":"6ca2aed48c401db2","toSide":"top","color":"4","label":"문서화 및 검토"},
+		{"id":"828a3c7882aa1f5b","fromNode":"6ca2aed48c401db2","fromSide":"right","toNode":"f10fd390e2eb5ac6","toSide":"right","color":"1","label":"반려"},
+		{"id":"b7523126bb8797f8","fromNode":"0e64f86c011344ac","fromSide":"left","toNode":"81949729cca82e3f","toSide":"left","color":"1","label":"반려"},
+		{"id":"12b4b5d55dd0e4b7","fromNode":"bf342090bdc5e99d","fromSide":"bottom","toNode":"642f48ebc0045b05","toSide":"top","color":"4","label":"검토"},
+		{"id":"eaf02340f837e202","fromNode":"0e64f86c011344ac","fromSide":"right","toNode":"cde7ada6c198f017","toSide":"left","fromEnd":"arrow","color":"2","label":"동기화"}
+	]
+}

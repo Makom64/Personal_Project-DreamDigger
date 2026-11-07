@@ -1,0 +1,36 @@
+{
+  "enabledFolders": [
+    ".claude"
+  ],
+  "allowedExtensions": [
+    "md",
+    "canvas",
+    "base",
+    "pdf",
+    "png",
+    "jpg",
+    "jpeg",
+    "gif",
+    "bmp",
+    "svg",
+    "webp",
+    "avif",
+    "mp3",
+    "wav",
+    "m4a",
+    "ogg",
+    "flac",
+    "3gp",
+    "mp4",
+    "mov",
+    "webm",
+    "mkv",
+    "ogv"
+  ],
+  "excludedFolders": [
+    "node_modules",
+    ".git",
+    ".venv",
+    "__pycache__"
+  ]
+}
