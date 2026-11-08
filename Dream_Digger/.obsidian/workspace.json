@@ -55,7 +55,8 @@
               "title": "261108_작업일지"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -220,8 +221,9 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "3ad348ddef6affb6",
+  "active": "87f1511aa0a1c98a",
   "lastOpenFiles": [
+    ".github/ISSUE_TEMPLATE/IssueTemplate.md",
     "Temp/UnityTempFile-b28365573592b9148bda6e4631b25e5e",
     "Library/LastSceneManagerSetup.txt",
     "Temp/ADB-Refreshe87bd28382d31704aa7d8801cb9d3f26",
@@ -232,9 +234,7 @@
     "Library/TempArtifacts/Extra/5ce57b368ddf38248b45a4fcccaf8263.b.index",
     "Assets/Scenes/TestScene1.unity.meta",
     "Assets/Scenes/TestScene1.unity",
-    "Temp/UnityTempFile-1b4616913b6b939439865c748a325ef5",
     "Docs/Templetes/IssueTemplate.md",
-    ".github/ISSUE_TEMPLATE/IssueTemplate.md",
     ".github/PULL_REQUEST_TEMPLATE.md",
     "Docs/Project_DevelopCycle/단위_목표1.md",
     "Library/PackageCache/com.unity.shadergraph@f80b792d4861/Samples~/ProductionReady/Environment/Details/Ferns/Textures/Fern_MaskMap.png",
