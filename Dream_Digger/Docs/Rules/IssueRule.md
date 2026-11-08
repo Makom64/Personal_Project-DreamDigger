@@ -1,4 +1,4 @@
-> 양식: [[Docs/Templetes/IssueTemplate|IssueTemplate]]
+> 양식: [[Docs/Templates/IssueTemplate|IssueTemplate]]
 
 개인 프로젝트 단위이나, 작업을 시작하기 전 GitHub Issue를 통해
 업무에 대한 내용을 공유하는 연습을 가지고자 한다.

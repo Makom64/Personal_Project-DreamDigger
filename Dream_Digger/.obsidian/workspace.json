@@ -27,7 +27,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Docs/Templetes/PullRequestTemplate.md",
+                "file": "Docs/Templates/PullRequestTemplate.md",
                 "mode": "source",
                 "source": false
               },
@@ -41,7 +41,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": ".github/ISSUE_TEMPLATE/IssueTemplate.md",
+                "file": "Docs/Templates/IssueTemplate.md",
                 "mode": "source",
                 "source": false
               },
@@ -49,7 +49,8 @@
               "title": "IssueTemplate"
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -214,8 +215,12 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "580780710781cf4d",
+  "active": "3ad348ddef6affb6",
   "lastOpenFiles": [
+    "Docs/Rules/IssueRule.md",
+    ".github/ISSUE_TEMPLATE/IssueTemplate.md",
+    "Docs/Templates/PullRequestTemplate.md",
+    "Docs/WorkLogs/261108_작업일지.md",
     "Library/Search/propertyAliases.db_86601c3cdc1b428d9078cc77946d0bae_temp",
     "Library/Search/propertyDatabase.db_a2db611516d545fdaefc56901cbd7f20_temp",
     "Library/TempArtifacts/Primary/75818351abe66d049b0b20556579033b",
@@ -226,13 +231,9 @@
     "Temp/Burst/burst-aot7ovvtosh.02y",
     "Temp/Burst/burst-aotgz5xes1t.gci",
     "Temp/Burst/burst-aotksxrlua5.spj",
-    "Temp/Burst/burst-aotmgnjlb5y.yzl",
     "Docs/Project_Planning/Implement_Detail/플레이어 세부 구현 방안.md",
-    ".github/ISSUE_TEMPLATE/IssueTemplate.md",
-    "Docs/Templetes/PullRequestTemplate.md",
-    "Docs/WorkLogs/261108_작업일지.md",
     "Docs/Project_SetUp/프로젝트 기획.md",
-    "Docs/Templetes/IssueTemplate.md",
+    "Docs/Templates/IssueTemplate.md",
     ".github/PULL_REQUEST_TEMPLATE.md",
     "Docs/Project_DevelopCycle/단위_목표1.md",
     "Library/PackageCache/com.unity.shadergraph@f80b792d4861/Samples~/ProductionReady/Environment/Details/Ferns/Textures/Fern_MaskMap.png",
