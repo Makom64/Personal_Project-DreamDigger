@@ -1,6 +1,7 @@
 {
   "enabledFolders": [
-    ".claude"
+    ".claude",
+    ".github"
   ],
   "allowedExtensions": [
     "md",

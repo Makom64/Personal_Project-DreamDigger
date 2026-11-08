@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Docs/Project_DevelopCycle/단위_목표1.md",
+                "file": ".github/ISSUE_TEMPLATE/IssueTemplate.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "단위_목표1"
+              "title": "IssueTemplate"
             }
           }
         ]
@@ -222,6 +222,12 @@
   },
   "active": "3ad348ddef6affb6",
   "lastOpenFiles": [
+    "Docs/Templetes/IssueTemplate.md",
+    ".github/ISSUE_TEMPLATE/IssueTemplate.md",
+    ".github/ISSUE_TEMPLATE",
+    ".github/PULL_REQUEST_TEMPLATE.md",
+    ".github",
+    "Docs/Project_DevelopCycle/단위_목표1.md",
     "Library/Artifacts/24/24e47fbebedae437525e9f850e9bd2bd",
     "Library/Artifacts/3b/3bfab00d00526c130a1a4e63fb1a38f8",
     "Library/Artifacts/c2/c2cf6293cb62a5f4d76b63fbe65770ef",
@@ -230,9 +236,6 @@
     "Library/Artifacts/8c/8cfa28ab9905089d796bb43617324ff9",
     "Library/TempArtifacts/Extra/b3b97106e7f960642b11032be8bf1ba0.b.index",
     "Library/Artifacts/7b/7b97481a7085ff959b2935aedea6dd7f",
-    "Library/TempArtifacts/Extra/55940c913725ffc4ba1d4b26eeebf17f.b.index",
-    "Library/Artifacts/04/043fe1f4b2a4ef2c44125c0e7d6c6add",
-    "Library/Artifacts/8c/8cddf99010028b292fbfd42064ff6f55",
     "Library/PackageCache/com.unity.shadergraph@f80b792d4861/Samples~/ProductionReady/Environment/Details/Ferns/Textures/Fern_MaskMap.png",
     "Library/PackageCache/com.unity.shadergraph@f80b792d4861/Samples~/ProductionReady/Environment/Details/Ferns/Textures/Fern_BaseColor.png",
     "Library/PackageCache/com.unity.shadergraph@f80b792d4861/Samples~/ProductionReady/Environment/Details/Ferns/Textures/Fern_Normal.png",
@@ -265,9 +268,6 @@
     "Library/PackageCache/com.unity.shadergraph@f80b792d4861/Documentation~/snippets/nodes-subgraph-node.md",
     "Library/PackageCache/com.unity.shadergraph@f80b792d4861/Documentation~/snippets/sg-node-fragment-only.md",
     "Library/PackageCache/com.unity.shadergraph@f80b792d4861/Documentation~/Add-Inputs-Outputs-Sub-Graph.md",
-    "Library/PackageCache/com.unity.shadergraph@f80b792d4861/Documentation~/Absolute-Node.md",
-    "Library/PackageCache/com.unity.shadergraph@f80b792d4861/Documentation~/Add-Node.md",
-    "Library/PackageCache/com.unity.shadergraph@f80b792d4861/Documentation~/Add-Sub-Graph-To-Shader-Graph.md",
     "Docs/Project_Planning_Diag.canvas",
     "Docs/Project_Setup.canvas",
     "Docs/개발_프로세스_도식화.canvas"
