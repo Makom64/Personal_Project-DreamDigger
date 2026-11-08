@@ -18,32 +18,38 @@ public class PlayerController : MonoBehaviour
     {
         _moveInput.action.Enable(); // 입력 활성화
         _moveInput.action.performed += OnMove;
+        _moveInput.action.canceled += OnStopMove;
     }
 
     private void FixedUpdate()
     {
-        _rigidbody2D.linearVelocityX =  _moveDirection.x * _moveSpeed;
+        MovePlayer();
     }
-
-    private void Update()
-    {
-        Debug.Log(_rigidbody2D.linearVelocity);
-    }
-
-    private void OnMove(InputAction.CallbackContext ctx)
-    {
-        // 여기서 입력값 x 속도
-        // 입력값 = x 기준 좌우 방향
-        _moveDirection = ctx.ReadValue<Vector2>();
-    }
-
+    
     private void OnDisable()
     {
-        _moveInput.action.Disable(); // 입력 비활성화
+        _moveInput.action.performed -= OnMove;
+        _moveInput.action.canceled -= OnStopMove;
+        _moveInput.action.Disable();
     }
 
     private void CacheComponents()
     {
         _rigidbody2D = GetComponent<Rigidbody2D>();
+    }
+    
+    private void OnMove(InputAction.CallbackContext ctx)
+    {
+        _moveDirection.x = ctx.ReadValue<Vector2>().x;
+    }
+
+    private void MovePlayer()
+    {
+        _rigidbody2D.linearVelocityX =  _moveDirection.x * _moveSpeed;
+    }
+
+    private void OnStopMove(InputAction.CallbackContext ctx)
+    {
+        _moveDirection = Vector2.zero;
     }
 }
