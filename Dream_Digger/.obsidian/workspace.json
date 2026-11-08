@@ -4,26 +4,6 @@
     "type": "split",
     "children": [
       {
-        "id": "a5a693ac78ab6e22",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "3ad348ddef6affb6",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": ".github/ISSUE_TEMPLATE/IssueTemplate.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "IssueTemplate"
-            }
-          }
-        ]
-      },
-      {
         "id": "a32980d835136d79",
         "type": "tabs",
         "children": [
@@ -54,8 +34,23 @@
               "icon": "lucide-file",
               "title": "261108_작업일지"
             }
+          },
+          {
+            "id": "3ad348ddef6affb6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": ".github/ISSUE_TEMPLATE/IssueTemplate.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "IssueTemplate"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -220,22 +215,25 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "3ad348ddef6affb6",
+  "active": "87f1511aa0a1c98a",
   "lastOpenFiles": [
-    "Docs/Templetes/IssueTemplate.md",
+    "Temp/UnityTempFile-41b3f9c2a3c677c4e9564db590366656",
+    "Library/ProtocolInstance.json",
+    "Temp/UnityTempFile-c0e3101983603724c933cb298c41d229",
+    "Temp/Burst/burst-aotehe488sf.s3z",
+    "Temp/Burst/burst-aotmbpocdta.29l",
+    "Temp/Burst/burst-aot0hzx2c17.coi",
+    "Temp/Burst/burst-aotx2czwm3r.6xx",
+    "Temp/Burst/burst-aot7v42hn5l.p45",
+    "Temp/Burst/burst-aotiu8tag93.1e9",
+    "Temp/Burst/burst-aotzltx0hog.ibv",
+    "Temp/Burst/burst-aotxjwqgdoa.gdg",
+    "Docs/Project_SetUp/프로젝트 기획.md",
+    "Docs/WorkLogs/261108_작업일지.md",
     ".github/ISSUE_TEMPLATE/IssueTemplate.md",
-    ".github/ISSUE_TEMPLATE",
+    "Docs/Templetes/IssueTemplate.md",
     ".github/PULL_REQUEST_TEMPLATE.md",
-    ".github",
     "Docs/Project_DevelopCycle/단위_목표1.md",
-    "Library/Artifacts/24/24e47fbebedae437525e9f850e9bd2bd",
-    "Library/Artifacts/3b/3bfab00d00526c130a1a4e63fb1a38f8",
-    "Library/Artifacts/c2/c2cf6293cb62a5f4d76b63fbe65770ef",
-    "Library/Artifacts/09/0965cbd4f77550c5ea78270b769eec48",
-    "Library/TempArtifacts/Extra/9bb43a99399473f41bc19c9051cc14a0.b.index",
-    "Library/Artifacts/8c/8cfa28ab9905089d796bb43617324ff9",
-    "Library/TempArtifacts/Extra/b3b97106e7f960642b11032be8bf1ba0.b.index",
-    "Library/Artifacts/7b/7b97481a7085ff959b2935aedea6dd7f",
     "Library/PackageCache/com.unity.shadergraph@f80b792d4861/Samples~/ProductionReady/Environment/Details/Ferns/Textures/Fern_MaskMap.png",
     "Library/PackageCache/com.unity.shadergraph@f80b792d4861/Samples~/ProductionReady/Environment/Details/Ferns/Textures/Fern_BaseColor.png",
     "Library/PackageCache/com.unity.shadergraph@f80b792d4861/Samples~/ProductionReady/Environment/Details/Ferns/Textures/Fern_Normal.png",
@@ -265,9 +263,6 @@
     "Library/PackageCache/com.unity.shadergraph@f80b792d4861/Documentation~/snippets/nodes-single-control.md",
     "Library/PackageCache/com.unity.shadergraph@f80b792d4861/Documentation~/snippets/nodes-single-input.md",
     "Library/PackageCache/com.unity.shadergraph@f80b792d4861/Documentation~/snippets/nodes-single-output.md",
-    "Library/PackageCache/com.unity.shadergraph@f80b792d4861/Documentation~/snippets/nodes-subgraph-node.md",
-    "Library/PackageCache/com.unity.shadergraph@f80b792d4861/Documentation~/snippets/sg-node-fragment-only.md",
-    "Library/PackageCache/com.unity.shadergraph@f80b792d4861/Documentation~/Add-Inputs-Outputs-Sub-Graph.md",
     "Docs/Project_Planning_Diag.canvas",
     "Docs/Project_Setup.canvas",
     "Docs/개발_프로세스_도식화.canvas"
