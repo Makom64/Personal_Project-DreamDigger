@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Docs/Project_Planning/Implement_Detail/플레이어 세부 구현 방안.md",
+                "file": "Docs/WorkLogs/261108_작업일지.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "플레이어 세부 구현 방안"
+              "title": "261108_작업일지"
             }
           },
           {
@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Docs/WorkLogs/261108_작업일지.md",
+                "file": "Docs/Templetes/PullRequestTemplate.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "261108_작업일지"
+              "title": "PullRequestTemplate"
             }
           },
           {
@@ -49,8 +49,7 @@
               "title": "IssueTemplate"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -215,22 +214,24 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "87f1511aa0a1c98a",
+  "active": "580780710781cf4d",
   "lastOpenFiles": [
-    "Temp/UnityTempFile-41b3f9c2a3c677c4e9564db590366656",
-    "Library/ProtocolInstance.json",
-    "Temp/UnityTempFile-c0e3101983603724c933cb298c41d229",
-    "Temp/Burst/burst-aotehe488sf.s3z",
-    "Temp/Burst/burst-aotmbpocdta.29l",
-    "Temp/Burst/burst-aot0hzx2c17.coi",
-    "Temp/Burst/burst-aotx2czwm3r.6xx",
-    "Temp/Burst/burst-aot7v42hn5l.p45",
-    "Temp/Burst/burst-aotiu8tag93.1e9",
-    "Temp/Burst/burst-aotzltx0hog.ibv",
-    "Temp/Burst/burst-aotxjwqgdoa.gdg",
-    "Docs/Project_SetUp/프로젝트 기획.md",
-    "Docs/WorkLogs/261108_작업일지.md",
+    "ProjectSettings/SceneTemplateSettings.json",
+    "Assets/Scripts/PlayerInputAction.inputactions.meta",
+    "Assets/Scripts/PlayerInputAction.inputactions",
+    "Assets/Scripts/PlayerInputAction.cs.meta",
+    "Assets/Scripts/PlayerInputAction.cs",
+    "Assets/Scripts/PlayerController.cs",
+    "Assets/Scripts/PlayerController.cs.meta",
+    "Assets/Scripts",
+    "Assets/Scripts.meta",
+    "Assets/Scenes/TestScene1.unity.meta",
+    "Assets/Scenes/TestScene1.unity",
+    "Docs/Project_Planning/Implement_Detail/플레이어 세부 구현 방안.md",
     ".github/ISSUE_TEMPLATE/IssueTemplate.md",
+    "Docs/Templetes/PullRequestTemplate.md",
+    "Docs/WorkLogs/261108_작업일지.md",
+    "Docs/Project_SetUp/프로젝트 기획.md",
     "Docs/Templetes/IssueTemplate.md",
     ".github/PULL_REQUEST_TEMPLATE.md",
     "Docs/Project_DevelopCycle/단위_목표1.md",
@@ -261,8 +262,6 @@
     "Library/PackageCache/com.unity.shadergraph@f80b792d4861/Documentation~/snippets/nodes-related.md",
     "Library/PackageCache/com.unity.shadergraph@f80b792d4861/Documentation~/snippets/nodes-inputs.md",
     "Library/PackageCache/com.unity.shadergraph@f80b792d4861/Documentation~/snippets/nodes-single-control.md",
-    "Library/PackageCache/com.unity.shadergraph@f80b792d4861/Documentation~/snippets/nodes-single-input.md",
-    "Library/PackageCache/com.unity.shadergraph@f80b792d4861/Documentation~/snippets/nodes-single-output.md",
     "Docs/Project_Planning_Diag.canvas",
     "Docs/Project_Setup.canvas",
     "Docs/개발_프로세스_도식화.canvas"
