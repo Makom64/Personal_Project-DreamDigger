@@ -15,7 +15,7 @@
               "state": {
                 "file": ".github/ISSUE_TEMPLATE/FeatureTemplate.md",
                 "mode": "source",
-                "source": false
+                "source": true
               },
               "icon": "lucide-file",
               "title": "FeatureTemplate"

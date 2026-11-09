@@ -1,9 +1,9 @@
 ---
-name: Feature
-about: Feature Issue
-title: "[Feat]"
-labels: Feature
-assignees:
+name: Feature Issue
+about: Suggets idea for this project
+title: ''
+labels: ''
+assignees: ''
 ---
 
 
