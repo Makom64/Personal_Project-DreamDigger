@@ -49,8 +49,7 @@
               "title": "261108_작업일지"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -215,14 +214,17 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "3ad348ddef6affb6",
+  "active": "580780710781cf4d",
   "lastOpenFiles": [
+    "Temp/ADB-Refresha37484e4a64c96b42b7868bb4511ee54",
+    "Docs/Templates/PullRequestTemplate.md",
+    "Docs/WorkLogs/261108_작업일지.md",
+    ".github/ISSUE_TEMPLATE/IssueTemplate.md",
+    ".github/PULL_REQUEST_TEMPLATE.md",
+    ".github/ISSUE_TEMPLATE",
+    ".github",
     "Docs/Project_DevelopCycle/단위_목표1.md",
     "Docs/Templates/IssueTemplate.md",
-    ".github/ISSUE_TEMPLATE/IssueTemplate.md",
-    ".github/ISSUE_TEMPLATE",
-    ".github/PULL_REQUEST_TEMPLATE.md",
-    ".github",
     "Library/BurstCache/JIT/BurstCacheManifest.cm",
     "Logs/shadercompiler-UnityShaderCompiler.exe-12.log",
     "Logs/shadercompiler-UnityShaderCompiler.exe-19.log",
@@ -232,8 +234,6 @@
     "Logs/shadercompiler-UnityShaderCompiler.exe-14.log",
     "Logs/shadercompiler-UnityShaderCompiler.exe-11.log",
     "Docs/Rules/IssueRule.md",
-    "Docs/Templates/PullRequestTemplate.md",
-    "Docs/WorkLogs/261108_작업일지.md",
     "Docs/Project_Planning/Implement_Detail/플레이어 세부 구현 방안.md",
     "Docs/Project_SetUp/프로젝트 기획.md",
     "Library/PackageCache/com.unity.shadergraph@f80b792d4861/Samples~/ProductionReady/Environment/Details/Ferns/Textures/Fern_MaskMap.png",
