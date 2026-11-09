@@ -1,3 +1,12 @@
+---
+name: Feature
+about: Feature Issue
+title: "[Feat]"
+labels: Feature
+assignees:
+---
+
+
 > 규칙: [[Docs/Rules/IssueRule|IssueRule]]
 
 ---

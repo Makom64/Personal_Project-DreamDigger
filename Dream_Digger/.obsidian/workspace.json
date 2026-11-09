@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Docs/WorkLogs/261108_작업일지.md",
+                "file": ".github/ISSUE_TEMPLATE/FeatureTemplate.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "261108_작업일지"
+              "title": "FeatureTemplate"
             }
           },
           {
@@ -111,7 +111,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "f91fe41f01e45f1f",
@@ -216,10 +217,10 @@
   },
   "active": "580780710781cf4d",
   "lastOpenFiles": [
+    "Docs/WorkLogs/261108_작업일지.md",
     "Temp/ADB-Refresha37484e4a64c96b42b7868bb4511ee54",
     "Docs/Templates/PullRequestTemplate.md",
-    "Docs/WorkLogs/261108_작업일지.md",
-    ".github/ISSUE_TEMPLATE/IssueTemplate.md",
+    ".github/ISSUE_TEMPLATE/FeatureTemplate.md",
     ".github/PULL_REQUEST_TEMPLATE.md",
     ".github/ISSUE_TEMPLATE",
     ".github",
@@ -232,7 +233,6 @@
     "Logs/shadercompiler-UnityShaderCompiler.exe-10.log",
     "Logs/shadercompiler-UnityShaderCompiler.exe-9.log",
     "Logs/shadercompiler-UnityShaderCompiler.exe-14.log",
-    "Logs/shadercompiler-UnityShaderCompiler.exe-11.log",
     "Docs/Rules/IssueRule.md",
     "Docs/Project_Planning/Implement_Detail/플레이어 세부 구현 방안.md",
     "Docs/Project_SetUp/프로젝트 기획.md",
