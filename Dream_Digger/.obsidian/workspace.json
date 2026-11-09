@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": ".github/ISSUE_TEMPLATE/FeatureTemplate.md",
+                "file": "Docs/WorkLogs/261108_작업일지.md",
                 "mode": "source",
-                "source": true
+                "source": false
               },
               "icon": "lucide-file",
-              "title": "FeatureTemplate"
+              "title": "261108_작업일지"
             }
           },
           {
@@ -217,10 +217,10 @@
   },
   "active": "580780710781cf4d",
   "lastOpenFiles": [
+    ".github/ISSUE_TEMPLATE/FeatureTemplate.md",
     "Docs/WorkLogs/261108_작업일지.md",
     "Temp/ADB-Refresha37484e4a64c96b42b7868bb4511ee54",
     "Docs/Templates/PullRequestTemplate.md",
-    ".github/ISSUE_TEMPLATE/FeatureTemplate.md",
     ".github/PULL_REQUEST_TEMPLATE.md",
     ".github/ISSUE_TEMPLATE",
     ".github",
