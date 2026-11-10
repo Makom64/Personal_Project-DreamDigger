@@ -13,3 +13,4 @@ MonoBehaviour:
   m_Name: ScriptableTile1
   m_EditorClassIdentifier: Assembly-CSharp::TempScriptableTile
   _tempSprite: {fileID: 21300000, guid: 23d257755fbf7ea4ea3f5fe1d6c36da1, type: 3}
+  _colliderType: 1
