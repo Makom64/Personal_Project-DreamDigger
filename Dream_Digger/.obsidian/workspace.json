@@ -63,8 +63,7 @@
               "title": "261108_작업일지"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -229,22 +228,25 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "8c9e07292b009ae2",
+  "active": "580780710781cf4d",
   "lastOpenFiles": [
-    "Library/Search/propertyAliases.db_639f2b232b194779837a1ccc57bd803e_temp",
-    "Temp/ProcessJobs",
-    "Temp/UnityTempFile-5f50bfc54690119468a1bb6573906f3d",
-    "Temp/UnityTempFile-a7c25a087cd6c5542aa07c0f60a7ec03",
-    "Temp/Burst/burst-aotlvca0j2l.ldi",
-    "Temp/Burst/burst-aotd2pfiqy8.jlv",
-    "Temp/Burst/burst-aotbenjtlua.te3",
-    "Temp/Burst/burst-aotsg5nd0ie.jrr",
-    "Temp/Burst/burst-aot4eti6gqb.5vv",
-    "Temp/Burst/burst-aot38tme6uo.6cy",
-    "Temp/Burst/burst-aot1da3j23w.h7q",
+    "Docs/Project_Planning/Plans/타일맵 기획서.md",
+    "Temp/ADB-Refreshe6eaa350d52a1bd4bb734b5cd32fb596",
+    "Library/Artifacts/42/4233efc5dc8fd6c9dd74e55dc00b34b8",
+    "Temp/ADB-Refresh60b45744996427e4cbf1e2ff4f7465ae",
+    "Temp/UnityTempFile-71bbd1e7b1cc52e4b8d9c1fca80fc3e6",
+    "Temp/ADB-Refresh158a0443e960e204f81b5d79dad50898",
+    "Temp/ADB-Refreshd1369bfce108809458d7080ee2376f71",
+    "Temp/ADB-Refresh8df3cdd16a50c61429747045203bf169",
+    "Temp/ADB-Refresh40373419ef9aede44947b87153c66bc7",
+    "Temp/ADB-Refresh0c6cb5e2eca670540a4eab940289b623",
+    "Library/Search/propertyAliases.db_f30443fb89ba45f09898907378f4de3b_temp",
+    "Assets/Tile/TempTile2.png",
+    "Assets/Tile/TempTile.png",
+    "Assets/TempTile2.png",
+    "Assets/TempTile.png",
     "Docs/Project_Planning/Plans/기초 기획서.md",
     "Docs/Project_Planning/Implement_Detail/플레이어 세부 구현 방안.md",
-    "Docs/Project_Planning/Plans/타일맵 기획서.md",
     "Docs/Temp/메모1.md",
     "Docs/Temp/첨부파일/Pasted image 20261110132125.png",
     "Docs/WorkLogs/261110_작업일지.md",
@@ -263,10 +265,6 @@
     "Library/PackageCache/com.unity.shadergraph@f80b792d4861/Samples~/ProductionReady/Environment/Details/Ferns/Textures/Fern_Normal.png",
     "Library/PackageCache/com.unity.shadergraph@f80b792d4861/Samples~/ProductionReady/Environment/Details/Ferns/Textures/Fern_Thickness.png",
     "Library/PackageCache/com.unity.shadergraph@f80b792d4861/Samples~/Common/Textures/terrain/dry_soil/dry_soil_c.png",
-    "Library/PackageCache/com.unity.shadergraph@f80b792d4861/Samples~/Common/Textures/terrain/dry_soil/dry_soil_m.png",
-    "Library/PackageCache/com.unity.shadergraph@f80b792d4861/Samples~/Common/Textures/terrain/dry_soil/dry_soil_n.png",
-    "Library/PackageCache/com.unity.shadergraph@f80b792d4861/Samples~/Common/Textures/terrain/ground_grass_fells_mossy/ground_grass_fells_mossy_c.png",
-    "Library/PackageCache/com.unity.shadergraph@f80b792d4861/Samples~/Common/Textures/terrain/ground_grass_fells_mossy/ground_grass_fells_mossy_m.png",
     "Library/PackageCache/com.unity.shadergraph@f80b792d4861/Documentation~/snippets/sample-nodes/nodes-sample-errors.md",
     "Library/PackageCache/com.unity.shadergraph@f80b792d4861/Documentation~/snippets/sample-nodes/nodes-sample-fragment-lod.md",
     "Library/PackageCache/com.unity.shadergraph@f80b792d4861/Documentation~/snippets/sample-nodes/nodes-sample-mip-bias-sample-mode-table.md",
