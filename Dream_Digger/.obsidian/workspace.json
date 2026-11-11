@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Docs/WorkLogs/261110_작업일지.md",
+                "file": "Docs/WorkLogs/261111_작업일지.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "261110_작업일지"
+              "title": "261111_작업일지"
             }
           },
           {
@@ -230,21 +230,21 @@
   },
   "active": "580780710781cf4d",
   "lastOpenFiles": [
-    "Assets/Tile/TempTile2.png.meta",
-    "Assets/Tile/TempTile2.png",
-    "Assets/Tile/TempTile.png.meta",
-    "Assets/Tile/TempTile.png",
-    "Assets/Tile/TempScriptableTile.cs.meta",
-    "Assets/Tile/TempScriptableTile.cs",
-    "Assets/Tile/TempPallete.prefab.meta",
-    "Assets/Tile/TempPallete.prefab",
-    "Assets/Tile/Temp2Tile.asset.meta",
-    "Assets/Tile/Temp2Tile.asset",
-    "Assets/Tile/ScriptableTile1.asset.meta",
-    "Assets/Tile/ScriptableTile1.asset",
-    "Assets/Tile",
-    "Docs/WorkLogs/261111_작업일지.md",
+    "Library/ProtocolInstance.json",
+    "Temp/UnityTempFile-c988efcfe6e65204086424beb4b27c07",
+    "Temp/UnityTempFile-3e0f98da909af454382e3de96a58ef32",
+    "Temp/UnityTempFile-e3981dc3dbe3ba54189a9e9da9bd3523",
+    "Temp/UnityTempFile-8aaa48fb9283e7f45840576c4fb48ded",
+    "Temp/UnityTempFile-f4c15fb7e32430c46a32daf06d387311",
+    "Library/Search/propertyDatabase.db_b3f12d5a901b4855a54f207a95b1afd4_temp",
+    "Library/UndoStack.bin",
+    "Library/UndoData.bin",
+    "Temp/UnityTempFile-19bf077006a89674ba76192984b0d8a6",
+    "Temp/__Backupscenes/0.backup",
     "Docs/WorkLogs/261110_작업일지.md",
+    "Assets/Tile/TempTile2.png",
+    "Assets/Tile/TempTile.png",
+    "Docs/WorkLogs/261111_작업일지.md",
     "Docs/Templates/PullRequestTemplate.md",
     "Docs/Project_Planning/Plans/타일맵 기획서.md",
     "Docs/WorkLogs/261108_작업일지.md",
