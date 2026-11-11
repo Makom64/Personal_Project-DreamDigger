@@ -1,13 +1,14 @@
 using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.Tilemaps;
 
 public class PlayerController : MonoBehaviour
 {
     [SerializeField] private float _moveSpeed; // 이동 속도
     [SerializeField] private InputActionReference _moveInput; // 이동 입력
     [SerializeField] private InputActionReference _interactionInput; // 상호작용 입력
-
+    [SerializeField] private Tilemap _tilemap; // 타일맵
     private Rigidbody2D _rigidbody2D;
     private Vector2 _moveDirection; // 움직이는 방향
     private Vector2 _playerDirection; // 플레이어 방향
@@ -77,7 +78,8 @@ public class PlayerController : MonoBehaviour
         Debug.Log($"상호작용 대상 지점 : {_interactionPosition.x}, {_interactionPosition.y}");
     }
 
-    private void DetectTile(InputAction.CallbackContext ctx)
+    private void BreakTile(InputAction.CallbackContext ctx)
     {
+        
     }
 }
