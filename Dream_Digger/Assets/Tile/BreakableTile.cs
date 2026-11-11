@@ -3,7 +3,7 @@ using UnityEngine;
 using UnityEngine.Tilemaps;
 
 [CreateAssetMenu]   
-public class TempScriptableTile : TileBase
+public class BreakableTile : TileBase
 {
     [SerializeField] private Sprite _tempSprite;
     [SerializeField] private Tile.ColliderType _colliderType;
