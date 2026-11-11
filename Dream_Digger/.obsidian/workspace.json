@@ -230,8 +230,6 @@
   },
   "active": "580780710781cf4d",
   "lastOpenFiles": [
-    "Docs/WorkLogs/261111_작업일지.md",
-    "Docs/WorkLogs/261110_작업일지.md",
     "Assets/Tile/TempTile2.png.meta",
     "Assets/Tile/TempTile2.png",
     "Assets/Tile/TempTile.png.meta",
@@ -244,6 +242,9 @@
     "Assets/Tile/Temp2Tile.asset",
     "Assets/Tile/ScriptableTile1.asset.meta",
     "Assets/Tile/ScriptableTile1.asset",
+    "Assets/Tile",
+    "Docs/WorkLogs/261111_작업일지.md",
+    "Docs/WorkLogs/261110_작업일지.md",
     "Docs/Templates/PullRequestTemplate.md",
     "Docs/Project_Planning/Plans/타일맵 기획서.md",
     "Docs/WorkLogs/261108_작업일지.md",
