@@ -6,8 +6,9 @@ using UnityEngine.Tilemaps;
 public class TempScriptableTile : TileBase
 {
     [SerializeField] private Sprite _tempSprite;
-    
     [SerializeField] private Tile.ColliderType _colliderType;
+
+    public int Durability;
 
     public bool GetTileData(Vector3Int position, ITilemap tilemap, ref TileData tileData)
     {
