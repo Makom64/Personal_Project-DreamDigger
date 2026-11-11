@@ -1,0 +1,12 @@
+fileFormatVersion: 2
+guid: 9039f3be3290c0940be001d0d90d6e65
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - _tempSprite: {fileID: 21300000, guid: 23d257755fbf7ea4ea3f5fe1d6c36da1, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
