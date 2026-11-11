@@ -10,7 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9039f3be3290c0940be001d0d90d6e65, type: 3}
-  m_Name: Temp2Tile
-  m_EditorClassIdentifier: Assembly-CSharp::TempScriptableTile
-  _tempSprite: {fileID: 21300000, guid: a0df2e1639170d347be0704e517fa871, type: 3}
-  _colliderType: 0
+  m_Name: Block_A
+  m_EditorClassIdentifier: Assembly-CSharp::BreakableTile
+  _tempSprite: {fileID: 21300000, guid: 23d257755fbf7ea4ea3f5fe1d6c36da1, type: 3}
+  _colliderType: 2
+  Durability: 0
