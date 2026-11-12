@@ -1,4 +1,5 @@
 using System;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.Tilemaps;
@@ -26,6 +27,8 @@ public class PlayerController : MonoBehaviour
         _moveInput.action.canceled += OnStopMove;
         _interactionInput.action.Enable(); // 상호작용 입력 활성화
         _interactionInput.action.performed += PlayerPositionInput;
+        _interactionInput.action.performed += ReadInteractionPosition;
+        _interactionInput.action.performed += TempInteraction;
     }
 
     private void FixedUpdate()
@@ -65,22 +68,18 @@ public class PlayerController : MonoBehaviour
     // 입력값으로 플레이어 현재 위치 구하기
     private void PlayerPositionInput(InputAction.CallbackContext ctx)
     {
-        Debug.Log($"플레이어의 셀 좌표 : {ReadPlayerCellPosition()}");
+        Debug.Log($"플레이어의 셀 좌표 : {MapController.instance.ReadCellPosition(transform.position)}");
     }
     
-    private void ReadInteractionPos(InputAction.CallbackContext ctx)
+    private void TempInteraction(InputAction.CallbackContext ctx)
     {
+        _tilemap.SetTile(_interactionPosition, null);
     }
 
     // 플레이어 월드 좌표를 셀 좌표로
-    public Vector3Int ReadPlayerCellPosition()
+    public void ReadInteractionPosition(InputAction.CallbackContext ctx)
     {
-        _currentPosition = _tilemap.WorldToCell(transform.position);
-        return _currentPosition;
+        _interactionPosition.x = MapController.instance.ReadCellPosition(transform.position).x + Convert.ToInt32(ctx.ReadValue<Vector2>().x);
+        _interactionPosition.y  = MapController.instance.ReadCellPosition(transform.position).y + Convert.ToInt32(ctx.ReadValue<Vector2>().y);
     }
-
-    /*public Vector3Int ReadInteractionPosition()
-    {
-        _interactionPosition.x = 
-    }*/
 }
