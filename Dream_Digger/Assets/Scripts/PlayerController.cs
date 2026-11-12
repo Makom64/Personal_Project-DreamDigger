@@ -11,7 +11,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private Tilemap _tilemap; // 타일맵
     private Rigidbody2D _rigidbody2D;
     private Vector2 _moveDirection; // 움직이는 방향
-    private Vector3Int _currentPosition = new Vector3Int(); // 플레이어 현재 좌표
+    private Vector3Int _currentPosition; // 플레이어 현재 좌표
     private Vector3Int _interactionPosition; // 상호작용 목표 좌표
 
     private void Awake()
@@ -49,6 +49,7 @@ public class PlayerController : MonoBehaviour
     private void OnMove(InputAction.CallbackContext ctx)
     {
         _moveDirection.x = ctx.ReadValue<Vector2>().x;
+        Debug.Log(ctx.ReadValue<Vector2>());
     }
 
     private void MovePlayer()
@@ -71,9 +72,15 @@ public class PlayerController : MonoBehaviour
     {
     }
 
-    private Vector3Int ReadPlayerCellPosition()
+    // 플레이어 월드 좌표를 셀 좌표로
+    public Vector3Int ReadPlayerCellPosition()
     {
         _currentPosition = _tilemap.WorldToCell(transform.position);
         return _currentPosition;
     }
+
+    /*public Vector3Int ReadInteractionPosition()
+    {
+        _interactionPosition.x = 
+    }*/
 }
