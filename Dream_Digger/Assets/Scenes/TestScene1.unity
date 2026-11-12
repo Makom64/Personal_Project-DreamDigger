@@ -177,6 +177,7 @@ GameObject:
   - component: {fileID: 1464226617}
   - component: {fileID: 1464226616}
   - component: {fileID: 1464226615}
+  - component: {fileID: 1464226618}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -258,6 +259,50 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1464226618
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1464226614}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.RenderPipelines.Universal.Runtime::UnityEngine.Rendering.Universal.UniversalAdditionalCameraData
+  m_RenderShadows: 1
+  m_RequiresDepthTextureOption: 2
+  m_RequiresOpaqueTextureOption: 2
+  m_CameraType: 0
+  m_Cameras: []
+  m_RendererIndex: -1
+  m_VolumeLayerMask:
+    serializedVersion: 2
+    m_Bits: 1
+  m_VolumeTrigger: {fileID: 0}
+  m_VolumeFrameworkUpdateModeOption: 2
+  m_RenderPostProcessing: 0
+  m_Antialiasing: 0
+  m_AntialiasingQuality: 2
+  m_StopNaN: 0
+  m_Dithering: 0
+  m_ClearDepth: 1
+  m_AllowXRRendering: 1
+  m_AllowHDROutput: 1
+  m_UseScreenCoordOverride: 0
+  m_ScreenSizeOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_ScreenCoordScaleBias: {x: 0, y: 0, z: 0, w: 0}
+  m_RequiresDepthTexture: 0
+  m_RequiresColorTexture: 0
+  m_TaaSettings:
+    m_Quality: 3
+    m_FrameInfluence: 0.1
+    m_JitterScale: 1
+    m_MipBias: 0
+    m_VarianceClampScale: 0.9
+    m_ContrastAdaptiveSharpening: 0
+  m_Version: 2
 --- !u!1 &1767562910
 GameObject:
   m_ObjectHideFlags: 0
@@ -272,6 +317,7 @@ GameObject:
   - component: {fileID: 1767562914}
   - component: {fileID: 1767562916}
   - component: {fileID: 1767562915}
+  - component: {fileID: 1767562917}
   m_Layer: 0
   m_Name: Tilemap
   m_TagString: Untagged
@@ -684,6 +730,18 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 7
+--- !u!114 &1767562917
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1767562910}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1f32989f40ec1b47bc7194b1ac9b386, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MapController
 --- !u!1 &1782301075
 GameObject:
   m_ObjectHideFlags: 0
@@ -697,7 +755,6 @@ GameObject:
   - component: {fileID: 1782301078}
   - component: {fileID: 1782301079}
   - component: {fileID: 1782301080}
-  - component: {fileID: 1782301081}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -868,19 +925,6 @@ MonoBehaviour:
   _moveInput: {fileID: -5307730397291096347, guid: 75818351abe66d049b0b20556579033b, type: 3}
   _interactionInput: {fileID: -460839751609700425, guid: 75818351abe66d049b0b20556579033b, type: 3}
   _tilemap: {fileID: 1767562913}
---- !u!114 &1782301081
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1782301075}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f831e9fb59d43874794cc2c3841e79a6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PositionDebugger
-  _tilemap: {fileID: 0}
 --- !u!1 &1799211252
 GameObject:
   m_ObjectHideFlags: 0
