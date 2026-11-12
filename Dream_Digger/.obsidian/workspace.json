@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Docs/WorkLogs/261111_작업일지.md",
+                "file": "Docs/Temp/메모1.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "261111_작업일지"
+              "title": "메모1"
             }
           },
           {
@@ -231,20 +231,22 @@
   "active": "580780710781cf4d",
   "lastOpenFiles": [
     "Library/ProtocolInstance.json",
-    "Temp/Burst/burst-aot9j853gq8.ff2",
-    "Temp/Burst/burst-aotv500r1wu.z3i",
-    "Temp/Burst/burst-aotex9prhq1.vqa",
-    "Temp/Burst/burst-aotd9323djf.ars",
-    "Temp/Burst/burst-aotkk2hh0jd.5iw",
-    "Temp/Burst/burst-aotkceokz3x.1qj",
-    "Temp/Burst/burst-aotluaudqdr.rlm",
-    "Temp/Burst/burst-aot97rqx870.2jc",
-    "Temp/Burst/burst-aott2uae2z9.hkw",
-    "Temp/Burst/burst-aotoa5vmy6c.prc",
+    "Temp/UnityTempFile-12bf602b1a3bd4f46ba7968c82eda0ad",
+    "Temp/UnityTempFile-f0448057ac07398468be0373ccf021e1",
+    "Temp/UnityTempFile-6545ef48b4a5fe0498b38fc567444945",
+    "Temp/UnityTempFile-d6500bf1ada68b34ba8476a81d768bb3",
+    "Temp/UnityTempFile-8917e08e4a05e0e448dd07c831bc5f6a",
+    "Temp/UnityTempFile-c6873a025a3b0414e920900692e8d91c",
+    "Library/Search/propertyDatabase.db_62e49352ad274aefbcba11ba3306ad61_temp",
+    "Temp/UnityTempFile-204208bf019b28f4ab9f9ffc4eb58491",
+    "Temp/UnityTempFile-703a8cfabf821ff409910e540d9682f9",
+    "Temp/UnityTempFile-26242a0ed41b325438c8f50250ecc735",
+    "Docs/WorkLogs/261112_작업일지.md",
+    "Docs/Templates/WorkLogTemplate.md",
+    "Docs/WorkLogs/261111_작업일지.md",
     "Docs/WorkLogs/261110_작업일지.md",
     "Assets/Tile/TempTile2.png",
     "Assets/Tile/TempTile.png",
-    "Docs/WorkLogs/261111_작업일지.md",
     "Docs/Templates/PullRequestTemplate.md",
     "Docs/Project_Planning/Plans/타일맵 기획서.md",
     "Docs/WorkLogs/261108_작업일지.md",
@@ -254,7 +256,6 @@
     "Docs/Project_Planning/Implement_Detail/플레이어 세부 구현 방안.md",
     "Docs/Temp/메모1.md",
     "Docs/Temp/첨부파일/Pasted image 20261110132125.png",
-    "Docs/Templates/WorkLogTemplate.md",
     "Docs/WorkLogs/261105_작업일지.md",
     ".github/ISSUE_TEMPLATE/FeatureTemplate.md",
     ".github/PULL_REQUEST_TEMPLATE.md",
@@ -275,7 +276,6 @@
     "Library/PackageCache/com.unity.shadergraph@f80b792d4861/Documentation~/snippets/nodes-additional-settings.md",
     "Library/PackageCache/com.unity.shadergraph@f80b792d4861/Documentation~/snippets/hdrp-latest-link.md",
     "Library/PackageCache/com.unity.shadergraph@f80b792d4861/Documentation~/snippets/nodes-all-contexts.md",
-    "Library/PackageCache/com.unity.shadergraph@f80b792d4861/Documentation~/snippets/nodes-compatibility-all.md",
     "Docs/Project_Planning_Diag.canvas",
     "Docs/Project_Setup.canvas",
     "Docs/개발_프로세스_도식화.canvas"
