@@ -11,23 +11,21 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private Tilemap _tilemap; // 타일맵
     private Rigidbody2D _rigidbody2D;
     private Vector2 _moveDirection; // 움직이는 방향
-    private Vector2 _playerDirection; // 플레이어 방향
-    private Vector2Int _interactionPosition; // 상호작용 대상 지점
+    private Vector3Int _currentPosition = new Vector3Int(); // 플레이어 현재 좌표
+    private Vector3Int _interactionPosition; // 상호작용 목표 좌표
 
     private void Awake()
     {
         CacheComponents();
-        _interactionPosition = new Vector2Int();
     }
 
     private void OnEnable()
     {
         _moveInput.action.Enable(); // 이동 입력 활성화
-        _interactionInput.action.Enable(); // 상호작용 입력 활성화
         _moveInput.action.performed += OnMove;
-        _moveInput.action.performed += PlayerDirectionInput;
         _moveInput.action.canceled += OnStopMove;
-        _interactionInput.action.performed += ReadInteractionPos;
+        _interactionInput.action.Enable(); // 상호작용 입력 활성화
+        _interactionInput.action.performed += PlayerPositionInput;
     }
 
     private void FixedUpdate()
@@ -63,23 +61,19 @@ public class PlayerController : MonoBehaviour
         _moveDirection = Vector2.zero;
     }
 
-    // 입력값으로 플레이어 방향 구하기
-    private void PlayerDirectionInput(InputAction.CallbackContext ctx)
+    // 입력값으로 플레이어 현재 위치 구하기
+    private void PlayerPositionInput(InputAction.CallbackContext ctx)
     {
-        _playerDirection.x = ctx.ReadValue<Vector2>().x;
-        _playerDirection.y = ctx.ReadValue<Vector2>().y;
+        Debug.Log($"플레이어의 셀 좌표 : {ReadPlayerCellPosition()}");
     }
     
     private void ReadInteractionPos(InputAction.CallbackContext ctx)
     {
-        _interactionPosition.x = Convert.ToInt32(transform.position.x + _playerDirection.x);
-        _interactionPosition.y = Convert.ToInt32(transform.position.y + _playerDirection.y);
-        Debug.Log($"플레이어 현재 위치 : {transform.position}");
-        Debug.Log($"상호작용 대상 지점 : {_interactionPosition.x}, {_interactionPosition.y}");
     }
 
-    private void BreakTile(InputAction.CallbackContext ctx)
+    private Vector3Int ReadPlayerCellPosition()
     {
-        
+        _currentPosition = _tilemap.WorldToCell(transform.position);
+        return _currentPosition;
     }
 }
