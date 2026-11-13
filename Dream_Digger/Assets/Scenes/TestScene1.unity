@@ -922,9 +922,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerController
   _moveSpeed: 3
+  _tilemap: {fileID: 1767562913}
   _moveInput: {fileID: -5307730397291096347, guid: 75818351abe66d049b0b20556579033b, type: 3}
   _interactionInput: {fileID: -460839751609700425, guid: 75818351abe66d049b0b20556579033b, type: 3}
-  _tilemap: {fileID: 1767562913}
+  _leftRightInput: {fileID: -3681527363135241102, guid: 75818351abe66d049b0b20556579033b, type: 3}
+  _upDownInput: {fileID: -8131798622479155438, guid: 75818351abe66d049b0b20556579033b, type: 3}
 --- !u!1 &1799211252
 GameObject:
   m_ObjectHideFlags: 0

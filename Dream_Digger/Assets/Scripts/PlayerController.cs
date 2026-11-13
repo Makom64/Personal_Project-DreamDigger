@@ -7,9 +7,13 @@ using UnityEngine.Tilemaps;
 public class PlayerController : MonoBehaviour
 {
     [SerializeField] private float _moveSpeed; // 이동 속도
+    [SerializeField] private Tilemap _tilemap; // 타일맵
+    
     [SerializeField] private InputActionReference _moveInput; // 이동 입력
     [SerializeField] private InputActionReference _interactionInput; // 상호작용 입력
-    [SerializeField] private Tilemap _tilemap; // 타일맵
+    [SerializeField] private InputActionReference _leftRightInput;
+    [SerializeField] private InputActionReference _upDownInput;
+    
     private Rigidbody2D _rigidbody2D;
     private Vector2 _moveDirection; // 움직이는 방향
     private Vector3Int _currentPosition; // 플레이어 현재 좌표
