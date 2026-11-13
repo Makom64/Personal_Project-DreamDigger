@@ -10,10 +10,9 @@ public class BreakableTile : TileBase
 
     public int Durability;
 
-    public bool GetTileData(Vector3Int position, ITilemap tilemap, ref TileData tileData)
+    public override void GetTileData(Vector3Int position, ITilemap tilemap, ref TileData tileData)
     {
         tileData.sprite = _tempSprite;
         tileData.colliderType = _colliderType;
-        return true;
     }
 }
