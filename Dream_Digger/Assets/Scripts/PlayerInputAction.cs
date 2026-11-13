@@ -111,19 +111,19 @@ public partial class @PlayerInputAction: IInputActionCollection2, IDisposable
                     ""initialStateCheck"": false
                 },
                 {
-                    ""name"": ""Direction_UpDown"",
+                    ""name"": ""Vertical_Direction"",
                     ""type"": ""Value"",
                     ""id"": ""4fca7d99-37fd-444b-af67-cbdcf1afddfc"",
-                    ""expectedControlType"": ""Vector2"",
+                    ""expectedControlType"": ""Vector3"",
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": true
                 },
                 {
-                    ""name"": ""Direction_LeftRight"",
+                    ""name"": ""Horizontal_Direction"",
                     ""type"": ""Value"",
                     ""id"": ""58045a98-8344-4ede-9fa5-e81f12eed3bb"",
-                    ""expectedControlType"": ""Vector2"",
+                    ""expectedControlType"": ""Vector3"",
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": true
@@ -186,68 +186,68 @@ public partial class @PlayerInputAction: IInputActionCollection2, IDisposable
                     ""isPartOfComposite"": false
                 },
                 {
-                    ""name"": ""2D Vector"",
-                    ""id"": ""345e3ee5-94a4-4ee2-8b0a-ec7550c63017"",
-                    ""path"": ""2DVector"",
+                    ""name"": ""3D Vector"",
+                    ""id"": ""68383726-5364-48ec-8590-5cfd2d5b1c98"",
+                    ""path"": ""3DVector"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""Direction_UpDown"",
+                    ""action"": ""Vertical_Direction"",
                     ""isComposite"": true,
                     ""isPartOfComposite"": false
                 },
                 {
                     ""name"": ""up"",
-                    ""id"": ""a9c5ff57-2d5b-4ee3-8a33-d78931329201"",
+                    ""id"": ""e6f87582-a4e4-4730-88f9-20e093547faa"",
                     ""path"": ""<Keyboard>/upArrow"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": "";PC"",
-                    ""action"": ""Direction_UpDown"",
+                    ""groups"": """",
+                    ""action"": ""Vertical_Direction"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
                 },
                 {
                     ""name"": ""down"",
-                    ""id"": ""7c614bec-9fc3-48dc-9e2e-80ef424f98b8"",
+                    ""id"": ""12777c33-665b-493b-9dc1-856168e06ade"",
                     ""path"": ""<Keyboard>/downArrow"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": "";PC"",
-                    ""action"": ""Direction_UpDown"",
+                    ""groups"": """",
+                    ""action"": ""Vertical_Direction"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
                 },
                 {
-                    ""name"": ""2D Vector"",
-                    ""id"": ""72350cb6-caaa-49c6-b5b9-04162fe555a1"",
-                    ""path"": ""2DVector"",
+                    ""name"": ""3D Vector"",
+                    ""id"": ""9ca935e7-a474-42f8-9c29-9425c08ba02e"",
+                    ""path"": ""3DVector"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""Direction_LeftRight"",
+                    ""action"": ""Horizontal_Direction"",
                     ""isComposite"": true,
                     ""isPartOfComposite"": false
                 },
                 {
                     ""name"": ""left"",
-                    ""id"": ""443ccb92-5646-437a-b35f-98655d1fd55d"",
+                    ""id"": ""0e1c0e00-0725-4d33-a895-34710690c5e5"",
                     ""path"": ""<Keyboard>/leftArrow"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": "";PC"",
-                    ""action"": ""Direction_LeftRight"",
+                    ""groups"": """",
+                    ""action"": ""Horizontal_Direction"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
                 },
                 {
                     ""name"": ""right"",
-                    ""id"": ""ce805275-fb54-4b2d-808e-a32e5d727473"",
+                    ""id"": ""f46172ba-4957-4ef8-98e5-55debb6dab82"",
                     ""path"": ""<Keyboard>/rightArrow"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": "";PC"",
-                    ""action"": ""Direction_LeftRight"",
+                    ""groups"": """",
+                    ""action"": ""Horizontal_Direction"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
                 }
@@ -266,8 +266,8 @@ public partial class @PlayerInputAction: IInputActionCollection2, IDisposable
         m_Player = asset.FindActionMap("Player", throwIfNotFound: true);
         m_Player_Move = m_Player.FindAction("Move", throwIfNotFound: true);
         m_Player_Interaction = m_Player.FindAction("Interaction", throwIfNotFound: true);
-        m_Player_Direction_UpDown = m_Player.FindAction("Direction_UpDown", throwIfNotFound: true);
-        m_Player_Direction_LeftRight = m_Player.FindAction("Direction_LeftRight", throwIfNotFound: true);
+        m_Player_Vertical_Direction = m_Player.FindAction("Vertical_Direction", throwIfNotFound: true);
+        m_Player_Horizontal_Direction = m_Player.FindAction("Horizontal_Direction", throwIfNotFound: true);
     }
 
     ~@PlayerInputAction()
@@ -350,8 +350,8 @@ public partial class @PlayerInputAction: IInputActionCollection2, IDisposable
     private List<IPlayerActions> m_PlayerActionsCallbackInterfaces = new List<IPlayerActions>();
     private readonly InputAction m_Player_Move;
     private readonly InputAction m_Player_Interaction;
-    private readonly InputAction m_Player_Direction_UpDown;
-    private readonly InputAction m_Player_Direction_LeftRight;
+    private readonly InputAction m_Player_Vertical_Direction;
+    private readonly InputAction m_Player_Horizontal_Direction;
     /// <summary>
     /// Provides access to input actions defined in input action map "Player".
     /// </summary>
@@ -372,13 +372,13 @@ public partial class @PlayerInputAction: IInputActionCollection2, IDisposable
         /// </summary>
         public InputAction @Interaction => m_Wrapper.m_Player_Interaction;
         /// <summary>
-        /// Provides access to the underlying input action "Player/Direction_UpDown".
+        /// Provides access to the underlying input action "Player/Vertical_Direction".
         /// </summary>
-        public InputAction @Direction_UpDown => m_Wrapper.m_Player_Direction_UpDown;
+        public InputAction @Vertical_Direction => m_Wrapper.m_Player_Vertical_Direction;
         /// <summary>
-        /// Provides access to the underlying input action "Player/Direction_LeftRight".
+        /// Provides access to the underlying input action "Player/Horizontal_Direction".
         /// </summary>
-        public InputAction @Direction_LeftRight => m_Wrapper.m_Player_Direction_LeftRight;
+        public InputAction @Horizontal_Direction => m_Wrapper.m_Player_Horizontal_Direction;
         /// <summary>
         /// Provides access to the underlying input action map instance.
         /// </summary>
@@ -411,12 +411,12 @@ public partial class @PlayerInputAction: IInputActionCollection2, IDisposable
             @Interaction.started += instance.OnInteraction;
             @Interaction.performed += instance.OnInteraction;
             @Interaction.canceled += instance.OnInteraction;
-            @Direction_UpDown.started += instance.OnDirection_UpDown;
-            @Direction_UpDown.performed += instance.OnDirection_UpDown;
-            @Direction_UpDown.canceled += instance.OnDirection_UpDown;
-            @Direction_LeftRight.started += instance.OnDirection_LeftRight;
-            @Direction_LeftRight.performed += instance.OnDirection_LeftRight;
-            @Direction_LeftRight.canceled += instance.OnDirection_LeftRight;
+            @Vertical_Direction.started += instance.OnVertical_Direction;
+            @Vertical_Direction.performed += instance.OnVertical_Direction;
+            @Vertical_Direction.canceled += instance.OnVertical_Direction;
+            @Horizontal_Direction.started += instance.OnHorizontal_Direction;
+            @Horizontal_Direction.performed += instance.OnHorizontal_Direction;
+            @Horizontal_Direction.canceled += instance.OnHorizontal_Direction;
         }
 
         /// <summary>
@@ -434,12 +434,12 @@ public partial class @PlayerInputAction: IInputActionCollection2, IDisposable
             @Interaction.started -= instance.OnInteraction;
             @Interaction.performed -= instance.OnInteraction;
             @Interaction.canceled -= instance.OnInteraction;
-            @Direction_UpDown.started -= instance.OnDirection_UpDown;
-            @Direction_UpDown.performed -= instance.OnDirection_UpDown;
-            @Direction_UpDown.canceled -= instance.OnDirection_UpDown;
-            @Direction_LeftRight.started -= instance.OnDirection_LeftRight;
-            @Direction_LeftRight.performed -= instance.OnDirection_LeftRight;
-            @Direction_LeftRight.canceled -= instance.OnDirection_LeftRight;
+            @Vertical_Direction.started -= instance.OnVertical_Direction;
+            @Vertical_Direction.performed -= instance.OnVertical_Direction;
+            @Vertical_Direction.canceled -= instance.OnVertical_Direction;
+            @Horizontal_Direction.started -= instance.OnHorizontal_Direction;
+            @Horizontal_Direction.performed -= instance.OnHorizontal_Direction;
+            @Horizontal_Direction.canceled -= instance.OnHorizontal_Direction;
         }
 
         /// <summary>
@@ -508,18 +508,18 @@ public partial class @PlayerInputAction: IInputActionCollection2, IDisposable
         /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
         void OnInteraction(InputAction.CallbackContext context);
         /// <summary>
-        /// Method invoked when associated input action "Direction_UpDown" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// Method invoked when associated input action "Vertical_Direction" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
         /// </summary>
         /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
         /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
         /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
-        void OnDirection_UpDown(InputAction.CallbackContext context);
+        void OnVertical_Direction(InputAction.CallbackContext context);
         /// <summary>
-        /// Method invoked when associated input action "Direction_LeftRight" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// Method invoked when associated input action "Horizontal_Direction" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
         /// </summary>
         /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
         /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
         /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
-        void OnDirection_LeftRight(InputAction.CallbackContext context);
+        void OnHorizontal_Direction(InputAction.CallbackContext context);
     }
 }

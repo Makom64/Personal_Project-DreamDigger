@@ -11,8 +11,8 @@ public class PlayerController : MonoBehaviour
     
     [SerializeField] private InputActionReference _moveInput; // 이동 입력
     [SerializeField] private InputActionReference _interactionInput; // 상호작용 입력
-    [SerializeField] private InputActionReference _leftRightInput;
-    [SerializeField] private InputActionReference _upDownInput;
+    [SerializeField] private InputActionReference _verticalInput;
+    [SerializeField] private InputActionReference _horizontalInput;
     
     private Rigidbody2D _rigidbody2D;
     private Vector2 _moveDirection; // 움직이는 방향
@@ -26,10 +26,12 @@ public class PlayerController : MonoBehaviour
 
     private void OnEnable()
     {
-        _moveInput.action.Enable(); // 이동 입력 활성화
+        BindInputEnable();
         _moveInput.action.performed += OnMove;
         _moveInput.action.canceled += OnStopMove;
-        _interactionInput.action.Enable(); // 상호작용 입력 활성화
+        _horizontalInput.action.performed += OnHorizontalDirection;
+        _verticalInput.action.performed += OnVerticalDirection;
+        _interactionInput.action.performed += OnTempInteract;
     }
 
     private void FixedUpdate()
@@ -41,13 +43,28 @@ public class PlayerController : MonoBehaviour
     {
         _moveInput.action.performed -= OnMove;
         _moveInput.action.canceled -= OnStopMove;
-        _moveInput.action.Disable(); // 이동 입력 비활성화
-        _interactionInput.action.Disable(); // 상호작용 입력 비활성화
+        UnbindInputEnable();
     }
 
     private void CacheComponents()
     {
         _rigidbody2D = GetComponent<Rigidbody2D>();
+    }
+
+    private void BindInputEnable()
+    {
+        _moveInput.action.Enable();
+        _interactionInput.action.Enable();
+        _verticalInput.action.Enable();
+        _horizontalInput.action.Enable();
+    }
+
+    private void UnbindInputEnable()
+    {
+        _moveInput.action.Disable();
+        _interactionInput.action.Disable();
+        _verticalInput.action.Disable();
+        _horizontalInput.action.Disable();
     }
     
     private void OnMove(InputAction.CallbackContext ctx)
@@ -64,5 +81,33 @@ public class PlayerController : MonoBehaviour
     private void OnStopMove(InputAction.CallbackContext ctx)
     {
         _moveDirection = Vector2.zero;
+    }
+
+    private void GetCurrentPosition()
+    {
+        _currentPosition = MapController.instance.ReadCellPosition(transform.position);
+        _interactionPosition = _currentPosition;
+        Debug.Log($"현재 플레이어 셀좌표 {_currentPosition}");
+    }
+
+    private void OnHorizontalDirection(InputAction.CallbackContext ctx)
+    {
+        GetCurrentPosition();
+        Vector3Int temp = MapController.instance.ReadCellPosition(ctx.ReadValue<Vector3>());
+        _interactionPosition.x += temp.x;
+        Debug.Log($"목표 셀좌표: {_interactionPosition}");
+    }
+
+    private void OnVerticalDirection(InputAction.CallbackContext ctx)
+    {
+        GetCurrentPosition();
+        Vector3Int temp = MapController.instance.ReadCellPosition(ctx.ReadValue<Vector3>());
+        _interactionPosition.y += temp.y;
+        Debug.Log($"목표 셀좌표: {_interactionPosition}");
+    }
+
+    private void OnTempInteract(InputAction.CallbackContext ctx)
+    {
+        _tilemap.SetTile(_interactionPosition, null);
     }
 }
