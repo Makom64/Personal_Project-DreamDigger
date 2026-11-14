@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Docs/WorkLogs/261113_작업일지.md",
+                "file": "Docs/WorkLogs/261114_작업일지.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "261113_작업일지"
+              "title": "261114_작업일지"
             }
           },
           {
@@ -216,25 +216,27 @@
   },
   "active": "8c9e07292b009ae2",
   "lastOpenFiles": [
-    "Docs/Project_Planning/Plans/타일맵 기획서.md",
-    "Docs/WorkLogs/261113_작업일지.md",
-    "Docs/WorkLogs/261112_작업일지.md",
-    "Assets/Scripts/PositionDebugger.cs.meta",
-    "Assets/Scripts/PositionDebugger.cs",
-    "Assets/Scripts/MapController.cs.meta",
-    "Assets/Scripts/MapController.cs",
-    "Library/Artifacts/2b/2b7990bafd2d1a26cc30253dfc3971e7",
-    "Library/TempArtifacts/Primary/75818351abe66d049b0b20556579033b",
-    "Temp/ADB-Refresha850235e17139714a98d27d906efe321",
+    "Temp/ADB-Refresh15bfda0a90f3bfd4cb23fec375bee1b2",
+    "Temp/UnityTempFile-823998e0399ca6844a132542c925bba0",
+    "Temp/ADB-Refresh54ff0818cbcd8254d9dbf65ec20ed522",
+    "Temp/UnityTempFile-9433a510031e3ea4e94fb4e6c5075193",
+    "Temp/UnityTempFile-575d97bc338e2354cb4a4621e8282935",
     "Library/ProtocolInstance.json",
-    "Temp/UnityTempFile-a7e2acf7ce985694a95412aff7e54435",
-    "Temp/UnityTempFile-126d12b6bce4c524d919035fe6d9a935",
+    "Temp/UnityTempFile-48d2b8654cb47084f929fc2046b8cad8",
+    "Temp/UnityTempFile-8e2965c6516c5b3468b89773208b66f0",
+    "Temp/UnityTempFile-7b6a5dad54628934f81275b64c5a3213",
+    "Library/UIElements/EditorWindows/UnityEditor.Tilemaps.GridPaintPaletteWindow.pref",
+    "Temp/UnityTempFile-9f510eff36ec6b2409aa745570b5f7a5",
+    "Docs/WorkLogs/261113_작업일지.md",
+    "Docs/WorkLogs/261114_작업일지.md",
+    "Docs/Templates/WorkLogTemplate.md",
+    "Docs/Project_Planning/Plans/타일맵 기획서.md",
+    "Docs/WorkLogs/261112_작업일지.md",
     "Docs/WorkLogs/261111_작업일지.md",
     "Docs/Temp/메모1.md",
     "Assets/Imports/potato.png",
     "Assets/TextMesh Pro/Sprites/EmojiOne.png",
     "Temp/Export Package/9d4f771296c455f49b59740858532eaa/dffef66376be4fa480fb02b19edbe903/preview.png",
-    "Docs/Templates/WorkLogTemplate.md",
     "Docs/WorkLogs/261110_작업일지.md",
     "Assets/Tile/TempTile2.png",
     "Assets/Tile/TempTile.png",
@@ -260,7 +262,6 @@
     "Library/PackageCache/com.unity.shadergraph@f80b792d4861/Documentation~/snippets/sample-nodes/nodes-sample-mip-mode-table.md",
     "Library/PackageCache/com.unity.shadergraph@f80b792d4861/Documentation~/snippets/sample-nodes/nodes-sample-rgba-output-table.md",
     "Library/PackageCache/com.unity.shadergraph@f80b792d4861/Documentation~/snippets/nodes-additional-settings.md",
-    "Library/PackageCache/com.unity.shadergraph@f80b792d4861/Documentation~/snippets/hdrp-latest-link.md",
     "Docs/Project_Planning_Diag.canvas",
     "Docs/Project_Setup.canvas",
     "Docs/개발_프로세스_도식화.canvas"
