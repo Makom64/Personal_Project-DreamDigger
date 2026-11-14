@@ -11,13 +11,13 @@ public class PlayerController : MonoBehaviour
     
     [SerializeField] private InputActionReference _moveInput; // 이동 입력
     [SerializeField] private InputActionReference _interactionInput; // 상호작용 입력
-    [SerializeField] private InputActionReference _verticalInput;
-    [SerializeField] private InputActionReference _horizontalInput;
+    [SerializeField] private InputActionReference _verticalInput; // 상하입력
+    [SerializeField] private InputActionReference _horizontalInput; // 좌우입력
     
     private Rigidbody2D _rigidbody2D;
     private Vector2 _moveDirection; // 움직이는 방향
     private Vector3Int _currentPosition; // 플레이어 현재 좌표
-    private Vector3Int _interactionPosition; // 상호작용 목표 좌표
+    private Vector3Int _interactDirection; // 상호작용 방향
 
     private void Awake()
     {
@@ -83,31 +83,29 @@ public class PlayerController : MonoBehaviour
         _moveDirection = Vector2.zero;
     }
 
-    private void GetCurrentPosition()
+    private void GetPlayerCellPosition() // 플레이어 좌표를 셀좌표로 변환
     {
-        _currentPosition = MapController.instance.ReadCellPosition(transform.position);
-        _interactionPosition = _currentPosition;
-        Debug.Log($"현재 플레이어 셀좌표 {_currentPosition}");
+        _currentPosition = _tilemap.WorldToCell(transform.position);
     }
 
     private void OnHorizontalDirection(InputAction.CallbackContext ctx)
     {
-        GetCurrentPosition();
-        Vector3Int temp = MapController.instance.ReadCellPosition(ctx.ReadValue<Vector3>());
-        _interactionPosition.x += temp.x;
-        Debug.Log($"목표 셀좌표: {_interactionPosition}");
+        _interactDirection = ChangeToCellPosition(ctx.ReadValue<Vector3>());
     }
 
     private void OnVerticalDirection(InputAction.CallbackContext ctx)
     {
-        GetCurrentPosition();
-        Vector3Int temp = MapController.instance.ReadCellPosition(ctx.ReadValue<Vector3>());
-        _interactionPosition.y += temp.y;
-        Debug.Log($"목표 셀좌표: {_interactionPosition}");
+        _interactDirection = ChangeToCellPosition(ctx.ReadValue<Vector3>());
+    }
+
+    private Vector3Int ChangeToCellPosition(Vector3 worldPosition)
+    {
+        return _tilemap.WorldToCell(worldPosition);
     }
 
     private void OnTempInteract(InputAction.CallbackContext ctx)
     {
-        _tilemap.SetTile(_interactionPosition, null);
+        GetPlayerCellPosition();
+        _tilemap.SetTile(_currentPosition + _interactDirection, null);
     }
 }
