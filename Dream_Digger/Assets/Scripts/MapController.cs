@@ -3,7 +3,7 @@ using UnityEngine.Tilemaps;
 
 public class MapController : MonoBehaviour
 {
-    private Tilemap _tilemap;
+    public Tilemap _tilemap;
     
     public static MapController instance; // 클래스 전체에 하나
 
