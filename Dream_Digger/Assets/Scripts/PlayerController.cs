@@ -18,10 +18,12 @@ public class PlayerController : MonoBehaviour
     private Vector2 _moveDirection; // 움직이는 방향
     private Vector3Int _currentPosition; // 플레이어 현재 좌표
     private Vector3Int _interactDirection; // 상호작용 방향
+    private Vector3Int _initialDirection;
 
     private void Awake()
     {
         CacheComponents();
+        InitDirection();
     }
 
     private void OnEnable()
@@ -30,7 +32,9 @@ public class PlayerController : MonoBehaviour
         _moveInput.action.performed += OnMove;
         _moveInput.action.canceled += OnStopMove;
         _horizontalInput.action.performed += OnHorizontalDirection;
+        _horizontalInput.action.canceled += OnStopHorizontalDirection;
         _verticalInput.action.performed += OnVerticalDirection;
+        _verticalInput.action.canceled += OnStopVerticalDirection;
         _interactionInput.action.performed += OnTempInteract;
     }
 
@@ -88,14 +92,38 @@ public class PlayerController : MonoBehaviour
         _currentPosition = _tilemap.WorldToCell(transform.position);
     }
 
+    private void InitDirection()
+    {
+        _initialDirection = new Vector3Int(1, 0, 0);
+        _interactDirection = _initialDirection;
+    }
+
     private void OnHorizontalDirection(InputAction.CallbackContext ctx)
     {
         _interactDirection = ChangeToCellPosition(ctx.ReadValue<Vector3>());
     }
 
+    private void OnStopHorizontalDirection(InputAction.CallbackContext ctx)
+    {
+        // 상하 키가 입력 중이였다면 그 방향으로
+        if (_verticalInput.action.IsPressed())
+        {
+            _interactDirection = ChangeToCellPosition(_verticalInput.action.ReadValue<Vector3>());
+        }
+    }
+
     private void OnVerticalDirection(InputAction.CallbackContext ctx)
     {
         _interactDirection = ChangeToCellPosition(ctx.ReadValue<Vector3>());
+    }
+
+    private void OnStopVerticalDirection(InputAction.CallbackContext ctx)
+    {
+        // 좌우 키가 입력 중이었다면 그 방향으로
+        if (_horizontalInput.action.IsPressed())
+        {
+            _interactDirection = ChangeToCellPosition(_horizontalInput.action.ReadValue<Vector3>());
+        }
     }
 
     private Vector3Int ChangeToCellPosition(Vector3 worldPosition)
