@@ -158,12 +158,6 @@ public class PlayerController : MonoBehaviour
         return _tilemap.WorldToCell(worldPosition);
     }
 
-    private void OnTempInteract(InputAction.CallbackContext ctx)
-    {
-        GetPlayerCellPosition();
-        _tilemap.SetTile(_currentPosition + _interactDirection, null);
-    }
-
     private void OnBiteBlock(InputAction.CallbackContext ctx)
     {
         GetPlayerCellPosition();

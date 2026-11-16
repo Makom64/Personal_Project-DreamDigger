@@ -4,8 +4,8 @@ using UnityEngine.Tilemaps;
 
 public class MapController : MonoBehaviour
 {
-    private Dictionary<Vector3Int, int> _bitePerCell; // 셀 당 내구도
-    private Vector3Int[] _cellPositions; // 셀 위치 배열
+    private Dictionary<Vector3Int, int> _bitePerCell; // 키, 값 : 좌표, 내구도
+    private Vector3Int[] _cellPositions; // 셀 좌표 배열
 
     public static MapController instance; // 클래스 전체에 하나
     public Tilemap CurrentTileMap;
@@ -25,11 +25,6 @@ public class MapController : MonoBehaviour
         InitCellBites();
     }
 
-    private void Start()
-    {
-        
-    }
-
     private void InitFields()
     {
         _bitePerCell = new();
@@ -37,7 +32,7 @@ public class MapController : MonoBehaviour
         _cellPositions = new Vector3Int[CurrentTileMap.cellBounds.size.x * CurrentTileMap.cellBounds.size.y];
     }
 
-    private void InitCellBites()
+    private void InitCellBites() // 모든 파괴 가능 타일에 내구도를 부여
     {
         int temp = 0;
         for (int y = CurrentTileMap.cellBounds.yMax - 1; y >= CurrentTileMap.cellBounds.yMin; --y)
@@ -55,14 +50,21 @@ public class MapController : MonoBehaviour
         }
     }
 
-    public void TakeBite(Vector3Int position, int bite)
+    public void TakeBite(Vector3Int position, int bite) // 타일 파괴 식
     {
-        _bitePerCell[position] -= bite;
-        Debug.Log($"남은 내구도 {_bitePerCell[position]}");
-        if (_bitePerCell[position] <= 0)
+        if (_bitePerCell.ContainsKey(position))
         {
-            CurrentTileMap.SetTile(position, null);
-            _bitePerCell.Remove(position);
+            _bitePerCell[position] -= bite;
+            Debug.Log($"남은 내구도 {_bitePerCell[position]}");
+            if (_bitePerCell[position] <= 0)
+            {
+                CurrentTileMap.SetTile(position, null);
+                _bitePerCell.Remove(position);
+            }
+        }
+        else
+        {
+            Debug.Log($"캘 블록이 없습니다!");
         }
     }
 }

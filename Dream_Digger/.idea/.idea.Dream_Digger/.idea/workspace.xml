@@ -15,7 +15,9 @@
       <change beforePath="$PROJECT_DIR$/.obsidian/workspace.json" beforeDir="false" afterPath="$PROJECT_DIR$/.obsidian/workspace.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/MapController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MapController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PositionDebugger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PositionDebugger.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tile/Block_A.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Tile/Block_A.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tile/Block_B.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Tile/Block_B.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tile/BreakableTile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Tile/BreakableTile.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Tile/TempPallete.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Tile/TempPallete.prefab" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
