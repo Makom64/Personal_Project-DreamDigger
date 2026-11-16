@@ -14,9 +14,6 @@
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Dream_Digger/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Dream_Digger/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.obsidian/workspace.json" beforeDir="false" afterPath="$PROJECT_DIR$/.obsidian/workspace.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/MapController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MapController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MemoryResource.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MemoryResource.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SingletonBase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SingletonBase.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

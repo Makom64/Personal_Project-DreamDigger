@@ -20,20 +20,6 @@
               "icon": "lucide-file",
               "title": "261116_작업일지"
             }
-          },
-          {
-            "id": "3ad348ddef6affb6",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Docs/WorkLogs/261108_작업일지.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "261108_작업일지"
-            }
           }
         ]
       }
@@ -202,21 +188,24 @@
   },
   "active": "87f1511aa0a1c98a",
   "lastOpenFiles": [
-    "Temp/UnityTempFile-b5d2aa4dd291c8d4d950b817b354158b",
-    "Temp/UnityTempFile-0af7fddb5fdc9d2468f0dc87ac847e21",
+    "Docs/WorkLogs/261108_작업일지.md",
+    "Docs/WorkLogs/261114_작업일지.md",
+    "Docs/WorkLogs/261115_작업일지.md",
+    "Docs/WorkLogs/261116_작업일지.md",
+    "Docs/Temp/메모2.md",
+    "Docs/Temp/메모1.md",
     "Library/ProtocolInstance.json",
-    "Temp/UnityTempFile-3892af7b776f8a742bfda90a1d3cf7ea",
-    "Temp/UnityTempFile-f9d2e36e3f13b414593d23ec1b336e39",
-    "Temp/UnityTempFile-18eef99aa698224438bd638d28d3d076",
-    "Library/Search/propertyDatabase.db_dcdfac4aa3544eed82294bcaa9aae569_temp",
-    "Temp/Burst/burst-aot1lkz0fxh.qhy",
-    "Temp/Burst/burst-aotmjp6a53t.zat",
-    "Temp/Burst/burst-aot7xt7l5a0.9al",
-    "Temp/Burst/burst-aotltu3w2su.b7h",
+    "Temp/Burst/burst-aot44qwgvpq.vk6",
+    "Temp/Burst/burst-aot5uwtk59i.sma",
+    "Temp/Burst/burst-aot7no788r4.9ws",
+    "Temp/Burst/burst-aotsgf2yzfx.swd",
+    "Temp/Burst/burst-aot2ept4urs.r12",
+    "Temp/Burst/burst-aotpk30t3w1.c2l",
+    "Temp/Burst/burst-aotaohj2dyz.bpc",
+    "Temp/Burst/burst-aots72keoxd.k6m",
+    "Temp/Burst/burst-aot6hzil4pf.9lg",
     "Assets/Sprites/temp_resource.png",
     "Docs/Templates/PullRequestTemplate.md",
-    "Docs/WorkLogs/261116_작업일지.md",
-    "Docs/WorkLogs/261115_작업일지.md",
     "Assets/Sprites/TempImage.png",
     "Assets/Sprites/TempB-None.png",
     "Assets/Sprites/Temp-None.png",
@@ -226,15 +215,12 @@
     "Assets/Sprites/TempImage 1.png",
     "Temp/copyassets/TempImage.png",
     "Docs/Templates/WorkLogTemplate.md",
-    "Docs/WorkLogs/261114_작업일지.md",
     "Docs/WorkLogs/261113_작업일지.md",
     "Docs/Project_Planning/Plans/타일맵 기획서.md",
     "Docs/WorkLogs/261112_작업일지.md",
     "Docs/WorkLogs/261111_작업일지.md",
-    "Docs/Temp/메모1.md",
     "Assets/Imports/potato.png",
     "Docs/WorkLogs/261110_작업일지.md",
-    "Docs/WorkLogs/261108_작업일지.md",
     "Docs/Project_Planning/Plans/기초 기획서.md",
     "Docs/Project_Planning/Implement_Detail/플레이어 세부 구현 방안.md",
     "Docs/WorkLogs/261105_작업일지.md",

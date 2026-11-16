@@ -4,7 +4,8 @@ using UnityEngine.Tilemaps;
 
 public class MapController : SingletonBase<MapController>
 {
-    private Dictionary<Vector3Int, int> _bitePerCell; // 키, 값 : 좌표, 내구도
+    private Dictionary<Vector3Int, int> _bitePerCell; // 좌표, 내구도
+    private Dictionary<Vector3Int, MemoryResource> _memoryPerCell;
     private Vector3Int[] _cellPositions; // 셀 좌표 배열
 
     public Tilemap CurrentTileMap;
