@@ -8,6 +8,8 @@ public class BreakableTile : TileBase
     [SerializeField] private Sprite _tempSprite;
     [SerializeField] private Tile.ColliderType _colliderType;
 
+    public int MaxBites; // 최대 내구도
+
     public override void GetTileData(Vector3Int position, ITilemap tilemap, ref TileData tileData)
     {
         tileData.sprite = _tempSprite;

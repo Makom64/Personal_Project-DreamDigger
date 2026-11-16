@@ -72,7 +72,7 @@ public class PlayerController : MonoBehaviour
     private void BindInputActionPerformed()
     {
         _moveInput.action.performed += OnMove;
-        _interactionInput.action.performed += OnTempInteract;
+        _interactionInput.action.performed += OnBiteBlock;
         _verticalInput.action.performed += OnVerticalDirection;
         _horizontalInput.action.performed += OnHorizontalDirection;
     }
@@ -80,7 +80,7 @@ public class PlayerController : MonoBehaviour
     private void UnbindInputActionPerformed()
     {
         _moveInput.action.performed -= OnMove;
-        _interactionInput.action.performed -= OnTempInteract;
+        _interactionInput.action.performed -= OnBiteBlock;
         _verticalInput.action.performed -= OnVerticalDirection;
         _horizontalInput.action.performed -= OnHorizontalDirection;
     }
@@ -165,18 +165,7 @@ public class PlayerController : MonoBehaviour
         _tilemap.SetTile(_currentPosition + _interactDirection, null);
     }
 
-    private void BiteBlock(InputAction.CallbackContext ctx)
+    private void OnBiteBlock(InputAction.CallbackContext ctx)
     {
-        // 현재 위치에서 상호작용 방향으로 부술 수 있는 타일이 있는지 검사, 아니라면 종료
-        if (_tilemap.HasTile(_currentPosition + _interactDirection) == false ||
-            _tilemap.GetTile<BreakableTile>(_currentPosition + _interactDirection) == false)
-        {
-            return;
-        }
-        else
-        {
-            
-        }
-        
     }
 }
