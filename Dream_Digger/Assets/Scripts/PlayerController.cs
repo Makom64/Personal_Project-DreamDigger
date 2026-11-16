@@ -14,16 +14,27 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private InputActionReference _verticalInput; // 상하입력
     [SerializeField] private InputActionReference _horizontalInput; // 좌우입력
 
-    public int _bitePoint; // 플레이어 블록 파괴력
     private Rigidbody2D _rigidbody2D;
     private Vector2 _moveDirection; // 움직이는 방향
     private Vector3Int _currentPosition; // 플레이어 현재 좌표
     private Vector3Int _interactDirection; // 상호작용 방향
     private Vector3Int _initialDirection;
+    
+    public static PlayerController instance;
+    public int _bitePoint; // 플레이어 블록 파괴력
+    public int _memoryCount; // 획득 자원 수
 
     // ------------------------- 생명주기
     private void Awake()
     {
+        if (instance != null)
+        {
+            return;
+        }
+        else
+        {
+            instance = this;
+        }
         CacheComponents();
         InitDirection();
     }
