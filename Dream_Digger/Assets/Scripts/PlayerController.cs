@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.Tilemaps;
 
-public class PlayerController : MonoBehaviour
+public class PlayerController : SingletonBase<PlayerController>
 {
     [SerializeField] private float _moveSpeed; // 이동 속도
     [SerializeField] private Tilemap _tilemap; // 타일맵
@@ -20,21 +20,13 @@ public class PlayerController : MonoBehaviour
     private Vector3Int _interactDirection; // 상호작용 방향
     private Vector3Int _initialDirection;
     
-    public static PlayerController instance;
     public int _bitePoint; // 플레이어 블록 파괴력
     public int _memoryCount; // 획득 자원 수
 
     // ------------------------- 생명주기
-    private void Awake()
+    protected override void Awake()
     {
-        if (instance != null)
-        {
-            return;
-        }
-        else
-        {
-            instance = this;
-        }
+        base.Awake();
         CacheComponents();
         InitDirection();
     }
@@ -172,6 +164,6 @@ public class PlayerController : MonoBehaviour
     private void OnBiteBlock(InputAction.CallbackContext ctx)
     {
         GetPlayerCellPosition();
-        MapController.instance.TakeBite(_currentPosition + _interactDirection, _bitePoint);
+        MapController.Instance.TakeBite(_currentPosition + _interactDirection, _bitePoint);
     }
 }

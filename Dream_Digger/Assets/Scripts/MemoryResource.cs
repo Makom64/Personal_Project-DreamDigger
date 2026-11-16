@@ -17,8 +17,8 @@ public class MemoryResource : MonoBehaviour
         if (collision.gameObject.tag == "Player")
         { 
             Debug.Log($"플레이어와 부딪힘");
-            PlayerController.instance._memoryCount++;
-            gameObject.SetActive(false);
+            PlayerController.Instance._memoryCount++;
+            Destroy(gameObject);
         }
     }
 }

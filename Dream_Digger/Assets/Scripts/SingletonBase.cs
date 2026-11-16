@@ -6,6 +6,11 @@ public abstract class SingletonBase<T> : MonoBehaviour where T : SingletonBase<T
     
     private static T _instance;
 
+    protected virtual void Awake()
+    {
+        SetSingleton();
+    }
+
     public static T Instance
     {
         get
@@ -18,7 +23,7 @@ public abstract class SingletonBase<T> : MonoBehaviour where T : SingletonBase<T
         }
     }
 
-    protected void SetSingleton()
+    private void SetSingleton()
     {
         if (_instance != null && _instance != this)
         {
