@@ -13,7 +13,7 @@ public class MapController : MonoBehaviour
     private void Awake()
     {
         CurrentTileMap = GetComponent<Tilemap>();
-        _bitePerCell = new();
+        InitFields();
         if (instance == null)
         {
             instance = this;
@@ -22,10 +22,47 @@ public class MapController : MonoBehaviour
 
     private void OnEnable()
     {
+        InitCellBites();
     }
 
     private void Start()
     {
         
+    }
+
+    private void InitFields()
+    {
+        _bitePerCell = new();
+        CurrentTileMap.CompressBounds();
+        _cellPositions = new Vector3Int[CurrentTileMap.cellBounds.size.x * CurrentTileMap.cellBounds.size.y];
+    }
+
+    private void InitCellBites()
+    {
+        int temp = 0;
+        for (int y = CurrentTileMap.cellBounds.yMax - 1; y >= CurrentTileMap.cellBounds.yMin; --y)
+        {
+            for (int x = CurrentTileMap.cellBounds.xMin; x < CurrentTileMap.cellBounds.xMax; x++)
+            {
+                if (!CurrentTileMap.HasTile(new Vector3Int(x, y, 0)))
+                {
+                    continue;
+                }
+                _cellPositions[temp] = new Vector3Int(x, y, 0);
+                _bitePerCell.Add(_cellPositions[temp], CurrentTileMap.GetTile<BreakableTile>(_cellPositions[temp]).MaxBites);
+                temp++;
+            }
+        }
+    }
+
+    public void TakeBite(Vector3Int position, int bite)
+    {
+        _bitePerCell[position] -= bite;
+        Debug.Log($"남은 내구도 {_bitePerCell[position]}");
+        if (_bitePerCell[position] <= 0)
+        {
+            CurrentTileMap.SetTile(position, null);
+            _bitePerCell.Remove(position);
+        }
     }
 }

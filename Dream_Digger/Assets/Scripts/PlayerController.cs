@@ -14,7 +14,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private InputActionReference _verticalInput; // 상하입력
     [SerializeField] private InputActionReference _horizontalInput; // 좌우입력
 
-    private int _bitePoint; // 플레이어 블록 파괴력
+    public int _bitePoint; // 플레이어 블록 파괴력
     private Rigidbody2D _rigidbody2D;
     private Vector2 _moveDirection; // 움직이는 방향
     private Vector3Int _currentPosition; // 플레이어 현재 좌표
@@ -166,5 +166,7 @@ public class PlayerController : MonoBehaviour
 
     private void OnBiteBlock(InputAction.CallbackContext ctx)
     {
+        GetPlayerCellPosition();
+        MapController.instance.TakeBite(_currentPosition + _interactDirection, _bitePoint);
     }
 }
