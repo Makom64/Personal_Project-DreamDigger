@@ -13,13 +13,15 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private InputActionReference _interactionInput; // 상호작용 입력
     [SerializeField] private InputActionReference _verticalInput; // 상하입력
     [SerializeField] private InputActionReference _horizontalInput; // 좌우입력
-    
+
+    public int _bitePoint; // 플레이어 블록 파괴력
     private Rigidbody2D _rigidbody2D;
     private Vector2 _moveDirection; // 움직이는 방향
     private Vector3Int _currentPosition; // 플레이어 현재 좌표
     private Vector3Int _interactDirection; // 상호작용 방향
     private Vector3Int _initialDirection;
 
+    // ------------------------- 생명주기
     private void Awake()
     {
         CacheComponents();
@@ -29,13 +31,8 @@ public class PlayerController : MonoBehaviour
     private void OnEnable()
     {
         BindInputEnable();
-        _moveInput.action.performed += OnMove;
-        _moveInput.action.canceled += OnStopMove;
-        _horizontalInput.action.performed += OnHorizontalDirection;
-        _horizontalInput.action.canceled += OnStopHorizontalDirection;
-        _verticalInput.action.performed += OnVerticalDirection;
-        _verticalInput.action.canceled += OnStopVerticalDirection;
-        _interactionInput.action.performed += OnTempInteract;
+        BindInputActionPerformed();
+        BindInputActionCanceled();
     }
 
     private void FixedUpdate()
@@ -45,11 +42,12 @@ public class PlayerController : MonoBehaviour
     
     private void OnDisable()
     {
-        _moveInput.action.performed -= OnMove;
-        _moveInput.action.canceled -= OnStopMove;
         UnbindInputEnable();
+        UnbindInputActionPerformed();
+        UnbindInputActionCanceled();
     }
 
+    // ---------------------------------- private 메서드
     private void CacheComponents()
     {
         _rigidbody2D = GetComponent<Rigidbody2D>();
@@ -71,10 +69,39 @@ public class PlayerController : MonoBehaviour
         _horizontalInput.action.Disable();
     }
     
+    private void BindInputActionPerformed()
+    {
+        _moveInput.action.performed += OnMove;
+        _interactionInput.action.performed += OnBiteBlock;
+        _verticalInput.action.performed += OnVerticalDirection;
+        _horizontalInput.action.performed += OnHorizontalDirection;
+    }
+
+    private void UnbindInputActionPerformed()
+    {
+        _moveInput.action.performed -= OnMove;
+        _interactionInput.action.performed -= OnBiteBlock;
+        _verticalInput.action.performed -= OnVerticalDirection;
+        _horizontalInput.action.performed -= OnHorizontalDirection;
+    }
+
+    private void BindInputActionCanceled()
+    {
+        _moveInput.action.canceled += OnStopMove;
+        _verticalInput.action.canceled += OnStopVerticalDirection;
+        _horizontalInput.action.canceled += OnStopHorizontalDirection;
+    }
+
+    private void UnbindInputActionCanceled()
+    {
+        _moveInput.action.canceled -= OnStopMove;
+        _verticalInput.action.canceled -= OnStopVerticalDirection;
+        _horizontalInput.action.canceled -= OnStopHorizontalDirection;
+    }
+    
     private void OnMove(InputAction.CallbackContext ctx)
     {
         _moveDirection.x = ctx.ReadValue<Vector2>().x;
-        Debug.Log(ctx.ReadValue<Vector2>());
     }
 
     private void MovePlayer()
@@ -131,9 +158,9 @@ public class PlayerController : MonoBehaviour
         return _tilemap.WorldToCell(worldPosition);
     }
 
-    private void OnTempInteract(InputAction.CallbackContext ctx)
+    private void OnBiteBlock(InputAction.CallbackContext ctx)
     {
         GetPlayerCellPosition();
-        _tilemap.SetTile(_currentPosition + _interactDirection, null);
+        MapController.instance.TakeBite(_currentPosition + _interactDirection, _bitePoint);
     }
 }

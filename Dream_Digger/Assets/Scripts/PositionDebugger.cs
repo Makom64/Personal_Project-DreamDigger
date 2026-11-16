@@ -14,6 +14,6 @@ public class PositionDebugger : MonoBehaviour
     
     private void Start()
     {
-        Debug.Log($"셀 좌표 디버거 위치 : {_debuggerPosition}");
+        Debug.Log($"{transform.name} 위치 : {_debuggerPosition.x}, {_debuggerPosition.y}");
     }
 }

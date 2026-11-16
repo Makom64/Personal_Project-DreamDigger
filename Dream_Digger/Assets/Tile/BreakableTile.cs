@@ -5,14 +5,14 @@ using UnityEngine.Tilemaps;
 [CreateAssetMenu]   
 public class BreakableTile : TileBase
 {
-    [SerializeField] private Sprite _tempSprite;
+    public Sprite DefaultSprite;
     [SerializeField] private Tile.ColliderType _colliderType;
 
-    public int Durability;
+    public int MaxBites; // 최대 내구도
 
     public override void GetTileData(Vector3Int position, ITilemap tilemap, ref TileData tileData)
     {
-        tileData.sprite = _tempSprite;
+        tileData.sprite = DefaultSprite;
         tileData.colliderType = _colliderType;
     }
 }
