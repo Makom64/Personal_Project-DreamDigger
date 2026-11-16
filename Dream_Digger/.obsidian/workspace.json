@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Docs/WorkLogs/261114_작업일지.md",
+                "file": "Docs/WorkLogs/261116_작업일지.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "261114_작업일지"
+              "title": "261116_작업일지"
             }
           },
           {
@@ -216,20 +216,22 @@
   },
   "active": "8c9e07292b009ae2",
   "lastOpenFiles": [
-    "Temp/UnityTempFile-8e39e81c4a4e07944b05aa25d596cf52",
     "Library/ProtocolInstance.json",
-    "Temp/UnityTempFile-81816ff3c69c5f242a4e8e0da8319f64",
-    "Temp/Burst/burst-aot0qco26g5.6cz",
-    "Temp/Burst/burst-aothgktcpn9.yub",
-    "Temp/Burst/burst-aotu7ea31z7.nfi",
-    "Temp/Burst/burst-aotx1xoeoy3.jf1",
-    "Temp/Burst/burst-aota4b81155.bht",
-    "Temp/Burst/burst-aot0c97iptk.z2s",
-    "Temp/Burst/burst-aotsckfslhy.c81",
-    "Temp/Burst/burst-aotsvc8ovxx.69k",
-    "Docs/WorkLogs/261113_작업일지.md",
-    "Docs/WorkLogs/261114_작업일지.md",
+    "Temp/Burst/burst-aotzac43dr8.mxz",
+    "Temp/Burst/burst-aotlnlv8fqe.fnx",
+    "Temp/Burst/burst-aotyofebppj.8zo",
+    "Temp/Burst/burst-aotm40y4q4m.4vk",
+    "Temp/Burst/burst-aot6cc34mus.zvn",
+    "Temp/Burst/burst-aotf9i62w4d.xt5",
+    "Temp/Burst/burst-aot9liguj5n.ylz",
+    "Temp/Burst/burst-aotjep166t5.qri",
+    "Temp/Burst/burst-aot0hk0br82.k0e",
+    "Temp/Burst/burst-aotvomacn2v.8dm",
+    "Docs/WorkLogs/261115_작업일지.md",
+    "Docs/WorkLogs/261116_작업일지.md",
     "Docs/Templates/WorkLogTemplate.md",
+    "Docs/WorkLogs/261114_작업일지.md",
+    "Docs/WorkLogs/261113_작업일지.md",
     "Docs/Project_Planning/Plans/타일맵 기획서.md",
     "Docs/WorkLogs/261112_작업일지.md",
     "Docs/WorkLogs/261111_작업일지.md",
@@ -260,8 +262,6 @@
     "Library/PackageCache/com.unity.shadergraph@f80b792d4861/Documentation~/snippets/sample-nodes/nodes-sample-fragment-lod.md",
     "Library/PackageCache/com.unity.shadergraph@f80b792d4861/Documentation~/snippets/sample-nodes/nodes-sample-mip-bias-sample-mode-table.md",
     "Library/PackageCache/com.unity.shadergraph@f80b792d4861/Documentation~/snippets/sample-nodes/nodes-sample-mip-mode-table.md",
-    "Library/PackageCache/com.unity.shadergraph@f80b792d4861/Documentation~/snippets/sample-nodes/nodes-sample-rgba-output-table.md",
-    "Library/PackageCache/com.unity.shadergraph@f80b792d4861/Documentation~/snippets/nodes-additional-settings.md",
     "Docs/Project_Planning_Diag.canvas",
     "Docs/Project_Setup.canvas",
     "Docs/개발_프로세스_도식화.canvas"

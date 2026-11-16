@@ -175,8 +175,7 @@ public class PlayerController : MonoBehaviour
         }
         else
         {
-            // 부술 수 있는 타일이면 타일 '내구도'에서 '파괴력'만큼 차감
-            _tilemap.GetTile<BreakableTile>(_currentPosition + _interactDirection).BiteTile(_currentPosition + _interactDirection, _bitePoint);
+            
         }
         
     }
