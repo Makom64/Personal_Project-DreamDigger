@@ -12,10 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9039f3be3290c0940be001d0d90d6e65, type: 3}
   m_Name: Block_B
   m_EditorClassIdentifier: Assembly-CSharp::BreakableTile
-  _normalSprite: {fileID: 0}
-  _goodSprite: {fileID: 0}
-  _mediumSprite: {fileID: 0}
-  _lowSprite: {fileID: 0}
-  _warningSprite: {fileID: 0}
+  DefaultSprite: {fileID: 21300000, guid: a0df2e1639170d347be0704e517fa871, type: 3}
   _colliderType: 2
   MaxBites: 7
