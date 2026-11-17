@@ -13,26 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Docs/WorkLogs/261116_작업일지.md",
+                "file": "Docs/Temp/메모2.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "261116_작업일지"
-            }
-          },
-          {
-            "id": "3ad348ddef6affb6",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Docs/WorkLogs/261108_작업일지.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "261108_작업일지"
+              "title": "메모2"
             }
           }
         ]
@@ -97,7 +83,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "f91fe41f01e45f1f",
@@ -202,20 +189,25 @@
   },
   "active": "87f1511aa0a1c98a",
   "lastOpenFiles": [
-    "Temp/ADB-Refresh954783e3691cdad47822f9da3346cf78",
-    "Library/Artifacts/21/21d46abd90f1c97ecd0178e7bde50f1d",
-    "Library/TempArtifacts/Extra/aaaca9156b7660246b7404d057d45a59.info",
-    "Temp/ADB-Refresh28987b3260c47dd4d9d34104aed65537",
-    "Temp/UnityTempFile-e1e2eba6d3283ff48af602e3cd5476ed",
-    "Temp/ADB-Refresh55f460addc22b2c48ab4d2aa632bc02b",
-    "Docs/Templates/PullRequestTemplate.md",
-    "Library/TempArtifacts/Extra/7ca5db01616df6449bdc15582170a4ea.info",
-    "Library/TempArtifacts/Primary/9a433cf76f89579478e5543213d80983",
-    "Temp/ADB-Refresh66de6931326c5ed4faf42aaa89c25127",
+    "Library/Search/propertyDatabase.db_c5188318d9e44c3aa433cfb6e2028284_temp",
+    "Library/UndoStack.bin",
+    "Library/UndoData.bin",
+    "Library/ProtocolInstance.json",
+    "Temp/UnityTempFile-bc67fd3a7cdff924ba0000c0e802261d",
+    "Temp/UnityTempFile-784321ba5f012c2438c737effde529b4",
+    "Temp/UnityTempFile-1f02cf0a7812b6442808a7719ba075c4",
+    "Temp/UnityTempFile-636b36d5fe098ac4dbbd95cbf9f29448",
+    "Temp/__Backupscenes/0.backup",
+    "Temp/UnityTempFile-7f330114dbeb80046a56d472e0a068b8",
+    "Temp/__Backupscenes",
+    "Docs/Temp/메모1.md",
     "Docs/WorkLogs/261116_작업일지.md",
+    "Docs/WorkLogs/261108_작업일지.md",
+    "Docs/WorkLogs/261114_작업일지.md",
     "Docs/WorkLogs/261115_작업일지.md",
-    "Assets/Tile/Block_B.asset.meta",
-    "Assets/Tile/Block_B.asset",
+    "Docs/Temp/메모2.md",
+    "Assets/Sprites/temp_resource.png",
+    "Docs/Templates/PullRequestTemplate.md",
     "Assets/Sprites/TempImage.png",
     "Assets/Sprites/TempB-None.png",
     "Assets/Sprites/Temp-None.png",
@@ -225,16 +217,12 @@
     "Assets/Sprites/TempImage 1.png",
     "Temp/copyassets/TempImage.png",
     "Docs/Templates/WorkLogTemplate.md",
-    "Docs/WorkLogs/261114_작업일지.md",
     "Docs/WorkLogs/261113_작업일지.md",
     "Docs/Project_Planning/Plans/타일맵 기획서.md",
     "Docs/WorkLogs/261112_작업일지.md",
     "Docs/WorkLogs/261111_작업일지.md",
-    "Docs/Temp/메모1.md",
     "Assets/Imports/potato.png",
-    "Assets/TextMesh Pro/Sprites/EmojiOne.png",
     "Docs/WorkLogs/261110_작업일지.md",
-    "Docs/WorkLogs/261108_작업일지.md",
     "Docs/Project_Planning/Plans/기초 기획서.md",
     "Docs/Project_Planning/Implement_Detail/플레이어 세부 구현 방안.md",
     "Docs/WorkLogs/261105_작업일지.md",
@@ -247,7 +235,6 @@
     "Library/PackageCache/com.unity.shadergraph@f80b792d4861/Documentation~/snippets/sample-nodes/nodes-sample-errors.md",
     "Library/PackageCache/com.unity.shadergraph@f80b792d4861/Documentation~/snippets/sample-nodes/nodes-sample-fragment-lod.md",
     "Library/PackageCache/com.unity.shadergraph@f80b792d4861/Documentation~/snippets/sample-nodes/nodes-sample-mip-bias-sample-mode-table.md",
-    "Library/PackageCache/com.unity.shadergraph@f80b792d4861/Documentation~/snippets/sample-nodes/nodes-sample-mip-mode-table.md",
     "Docs/Project_Planning_Diag.canvas",
     "Docs/Project_Setup.canvas",
     "Docs/개발_프로세스_도식화.canvas"

@@ -2,22 +2,19 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Tilemaps;
 
-public class MapController : MonoBehaviour
+public class MapController : SingletonBase<MapController>
 {
-    private Dictionary<Vector3Int, int> _bitePerCell; // 키, 값 : 좌표, 내구도
+    private Dictionary<Vector3Int, int> _bitePerCell; // 좌표, 내구도
+    private Dictionary<Vector3Int, MemoryResource> _memoryPerCell;
     private Vector3Int[] _cellPositions; // 셀 좌표 배열
 
-    public static MapController instance; // 클래스 전체에 하나
     public Tilemap CurrentTileMap;
 
-    private void Awake()
+    protected override void Awake()
     {
+        base.Awake();
         CurrentTileMap = GetComponent<Tilemap>();
         InitFields();
-        if (instance == null)
-        {
-            instance = this;
-        }
     }
 
     private void OnEnable()
