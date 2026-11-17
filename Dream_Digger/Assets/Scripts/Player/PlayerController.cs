@@ -16,17 +16,18 @@ public class PlayerController : SingletonBase<PlayerController>
     [SerializeField] private InputActionReference _interactionInput; // 상호작용 입력
     [SerializeField] private InputActionReference _verticalInput; // 상하입력
     [SerializeField] private InputActionReference _horizontalInput; // 좌우입력
-
-    [SerializeField] private Animator _animator;
     
     private float _interactCoolTimer;
+    private SpriteRenderer _renderer;
     private Rigidbody2D _rigidbody2D;
     private Vector2 _moveDirection; // 움직이는 방향
     private Vector3Int _currentPosition; // 플레이어 현재 좌표
     private Vector3Int _interactDirection; // 상호작용 방향
     private Vector3Int _initialDirection;
+    private Animator _animator;
     
     public int _bitePoint; // 플레이어 블록 파괴력
+    public PlayerState CurrentState;
     public int _memoryCount; // 획득 자원 수
 
     // ------------------------- 생명주기
@@ -76,8 +77,9 @@ public class PlayerController : SingletonBase<PlayerController>
     // ---------------------------------- private 메서드
     private void CacheComponents()
     {
-        _rigidbody2D = GetComponent<Rigidbody2D>();
         _animator = GetComponent<Animator>();
+        _renderer = GetComponent<SpriteRenderer>();
+        _rigidbody2D = GetComponent<Rigidbody2D>();
     }
 
     private void BindInputEnable()
@@ -136,12 +138,20 @@ public class PlayerController : SingletonBase<PlayerController>
     {
         _moveDirection.x = ctx.ReadValue<Vector2>().x;
         _animator.SetBool("isRunning", true);
+        if (_moveDirection.x > 0.0f)
+        {
+            _renderer.flipX = false;
+        }
+        else if (_moveDirection.x < -0.0f)
+        {
+            _renderer.flipX = true;
+        }
     }
     
     private void OnStopMove(InputAction.CallbackContext ctx)
     {
-        _moveDirection = Vector2.zero;
         _animator.SetBool("isRunning", false);
+        _moveDirection = Vector2.zero;
     }
 
     private void MovePlayer()
@@ -156,14 +166,11 @@ public class PlayerController : SingletonBase<PlayerController>
     private void OnFlight(InputAction.CallbackContext ctx)
     {
         _rigidbody2D.gravityScale = - ctx.ReadValue<Vector2>().y;
-        _animator.SetBool("isFlying", true);
-        _animator.SetBool("isRunning", false);
     }
 
     private void OnStopFlight(InputAction.CallbackContext ctx)
     {
         _rigidbody2D.gravityScale = 1.0f;
-        _animator.SetBool("isFlying", false);
     }
     
     private void GetPlayerCellPosition() // 플레이어 좌표를 셀좌표로 변환
