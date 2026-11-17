@@ -11,17 +11,14 @@
             "id": "3651ef5230d00f47",
             "type": "leaf",
             "state": {
-              "type": "canvas",
+              "type": "markdown",
               "state": {
-                "file": "Docs/Temp/플레이어 상태 도식화.canvas",
-                "viewState": {
-                  "x": 0,
-                  "y": 0,
-                  "zoom": 0
-                }
+                "file": "Docs/WorkLogs/261117_작업일지.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-layout-dashboard",
-              "title": "플레이어 상태 도식화"
+              "icon": "lucide-file",
+              "title": "261117_작업일지"
             }
           }
         ]
@@ -86,7 +83,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "f91fe41f01e45f1f",
@@ -191,19 +189,22 @@
   },
   "active": "3651ef5230d00f47",
   "lastOpenFiles": [
-    "Temp/UnityTempFile-4977366975401384895eb3a9287f589a",
-    "Temp/UnityTempFile-db0dd1d19f68111469b577637db894e2",
-    "Temp/ADB-Refresh16a2e190404ab2f4ba7f789bcbee8d39",
     "Library/ProtocolInstance.json",
-    "Temp/UnityTempFile-896c8fab114d7cc4497c1a2b448ca1ae",
-    "Temp/UnityTempFile-10f8f5e49d53c6647926e1be3a587d4e",
-    "Temp/UnityTempFile-8fde484f9b652814fb30b35ec20edde6",
-    "Temp/UnityTempFile-39449a736b4139c428f800eda7912713",
-    "Temp/ADB-Refreshe431092757d5441408f0dd9051646f0f",
-    "Temp/UnityTempFile-559f97f08be255247af2dc84502430b2",
-    "Temp/UnityTempFile-2ddb0e43fd1b3a841a3f4d86ab84aff8",
-    "Docs/WorkLogs/261117_작업일지.md",
+    "Temp/UnityTempFile-300da64765fb85748846f3f653dd7a55",
+    "Temp/UnityTempFile-0c06ba667e9c4584ea65d864cb76ab50",
+    "Temp/UnityTempFile-30eca07e559bd704896b09ceb4403ee1",
+    "Temp/UnityTempFile-eeafa53ceb3aac840b3b5057fcd6b504",
+    "Temp/ADB-Refresh1adda63a7a0f88d4b83d66919fbe1d13",
+    "Temp/UnityTempFile-32969621fc0366646a15547579792711",
+    "Temp/UnityTempFile-5d573a74f1d952f4d829a58247f6918a",
+    "Temp/UnityTempFile-eeb7b5afa4bc77b479b5c905d343490a",
+    "Library/Artifacts/47/479e9d82496ace436751177744db75b3",
+    "Library/TempArtifacts/Extra/6c053160a0922be4996c4e9a8c0c47d6.info",
+    "Assets/Sprites/TempRun.png",
+    "Assets/Sprites/TempIdle.png",
+    "Assets/Animations/TempPlayer.png",
     "Docs/Temp/플레이어 상태 도식화.canvas",
+    "Docs/WorkLogs/261117_작업일지.md",
     "Assets/Sprites/New Piskel (3).png",
     "Assets/Sprites/New Piskel (2).png",
     "Assets/Sprites/New Piskel (1).png",
@@ -212,10 +213,7 @@
     "Assets/Sprites/TempTile2.png",
     "Assets/Sprites/TempTile.png",
     "Assets/Tile/TempTile2.png",
-    "Assets/Tile/TempTile.png",
     "Docs/Temp/메모2.md",
-    "Assets/Sprites/temp_resource.png",
-    "Assets/Sprites/TempImage.png",
     "Docs/WorkLogs/261116_작업일지.md",
     "Docs/WorkLogs/261108_작업일지.md",
     "Docs/WorkLogs/261114_작업일지.md",

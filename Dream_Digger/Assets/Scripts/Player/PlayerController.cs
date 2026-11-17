@@ -166,11 +166,13 @@ public class PlayerController : SingletonBase<PlayerController>
     private void OnFlight(InputAction.CallbackContext ctx)
     {
         _rigidbody2D.gravityScale = - ctx.ReadValue<Vector2>().y;
+        _animator.SetBool("isFlying", true);
     }
 
     private void OnStopFlight(InputAction.CallbackContext ctx)
     {
         _rigidbody2D.gravityScale = 1.0f;
+        _animator.SetBool("isFlying", false);
     }
     
     private void GetPlayerCellPosition() // 플레이어 좌표를 셀좌표로 변환
