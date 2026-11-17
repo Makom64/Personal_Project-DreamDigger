@@ -10,6 +10,7 @@ public class PlayerController : SingletonBase<PlayerController>
     [SerializeField] private Tilemap _tilemap; // 타일맵
     
     [SerializeField] private InputActionReference _moveInput; // 이동 입력
+    [SerializeField] private InputActionReference _flightInput; // 비행 입력
     [SerializeField] private InputActionReference _interactionInput; // 상호작용 입력
     [SerializeField] private InputActionReference _verticalInput; // 상하입력
     [SerializeField] private InputActionReference _horizontalInput; // 좌우입력
@@ -59,6 +60,7 @@ public class PlayerController : SingletonBase<PlayerController>
     private void BindInputEnable()
     {
         _moveInput.action.Enable();
+        _flightInput.action.Enable();
         _interactionInput.action.Enable();
         _verticalInput.action.Enable();
         _horizontalInput.action.Enable();
@@ -67,6 +69,7 @@ public class PlayerController : SingletonBase<PlayerController>
     private void UnbindInputEnable()
     {
         _moveInput.action.Disable();
+        _flightInput.action.Disable();
         _interactionInput.action.Disable();
         _verticalInput.action.Disable();
         _horizontalInput.action.Disable();
@@ -75,6 +78,7 @@ public class PlayerController : SingletonBase<PlayerController>
     private void BindInputActionPerformed()
     {
         _moveInput.action.performed += OnMove;
+        _flightInput.action.performed += OnFlight;
         _interactionInput.action.performed += OnBiteBlock;
         _verticalInput.action.performed += OnVerticalDirection;
         _horizontalInput.action.performed += OnHorizontalDirection;
@@ -83,6 +87,7 @@ public class PlayerController : SingletonBase<PlayerController>
     private void UnbindInputActionPerformed()
     {
         _moveInput.action.performed -= OnMove;
+        _flightInput.action.performed -= OnFlight;
         _interactionInput.action.performed -= OnBiteBlock;
         _verticalInput.action.performed -= OnVerticalDirection;
         _horizontalInput.action.performed -= OnHorizontalDirection;
@@ -91,6 +96,7 @@ public class PlayerController : SingletonBase<PlayerController>
     private void BindInputActionCanceled()
     {
         _moveInput.action.canceled += OnStopMove;
+        _flightInput.action.canceled += OnStopFlight;
         _verticalInput.action.canceled += OnStopVerticalDirection;
         _horizontalInput.action.canceled += OnStopHorizontalDirection;
     }
@@ -98,6 +104,7 @@ public class PlayerController : SingletonBase<PlayerController>
     private void UnbindInputActionCanceled()
     {
         _moveInput.action.canceled -= OnStopMove;
+        _flightInput.action.canceled -= OnStopFlight;
         _verticalInput.action.canceled -= OnStopVerticalDirection;
         _horizontalInput.action.canceled -= OnStopHorizontalDirection;
     }
@@ -106,17 +113,32 @@ public class PlayerController : SingletonBase<PlayerController>
     {
         _moveDirection.x = ctx.ReadValue<Vector2>().x;
     }
-
-    private void MovePlayer()
-    {
-        _rigidbody2D.linearVelocityX =  _moveDirection.x * _moveSpeed;
-    }
-
+    
     private void OnStopMove(InputAction.CallbackContext ctx)
     {
         _moveDirection = Vector2.zero;
     }
 
+    private void MovePlayer()
+    {
+        _rigidbody2D.linearVelocityX =  _moveDirection.x * _moveSpeed;
+        if (_rigidbody2D.linearVelocityY > _moveSpeed)
+        {
+            _rigidbody2D.linearVelocityY = _moveSpeed;
+        }
+    }
+
+    private void OnFlight(InputAction.CallbackContext ctx)
+    {
+        _rigidbody2D.gravityScale = - ctx.ReadValue<Vector2>().y;
+    }
+
+    private void OnStopFlight(InputAction.CallbackContext ctx)
+    {
+        _rigidbody2D.gravityScale = 1.0f;
+        // _rigidbody2D.linearVelocityY = 0;
+    }
+    
     private void GetPlayerCellPosition() // 플레이어 좌표를 셀좌표로 변환
     {
         _currentPosition = _tilemap.WorldToCell(transform.position);
