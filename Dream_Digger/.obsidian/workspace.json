@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Docs/WorkLogs/261116_작업일지.md",
+                "file": "Docs/Temp/메모2.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "261116_작업일지"
+              "title": "메모2"
             }
           }
         ]
@@ -83,7 +83,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "f91fe41f01e45f1f",
@@ -188,23 +189,23 @@
   },
   "active": "87f1511aa0a1c98a",
   "lastOpenFiles": [
-    "Temp/UnityTempFile-dd555103fb23b54479cad7620e54b45f",
+    "Library/Search/propertyDatabase.db_c5188318d9e44c3aa433cfb6e2028284_temp",
+    "Library/UndoStack.bin",
+    "Library/UndoData.bin",
+    "Library/ProtocolInstance.json",
+    "Temp/UnityTempFile-bc67fd3a7cdff924ba0000c0e802261d",
+    "Temp/UnityTempFile-784321ba5f012c2438c737effde529b4",
+    "Temp/UnityTempFile-1f02cf0a7812b6442808a7719ba075c4",
+    "Temp/UnityTempFile-636b36d5fe098ac4dbbd95cbf9f29448",
+    "Temp/__Backupscenes/0.backup",
+    "Temp/UnityTempFile-7f330114dbeb80046a56d472e0a068b8",
+    "Temp/__Backupscenes",
+    "Docs/Temp/메모1.md",
+    "Docs/WorkLogs/261116_작업일지.md",
     "Docs/WorkLogs/261108_작업일지.md",
     "Docs/WorkLogs/261114_작업일지.md",
     "Docs/WorkLogs/261115_작업일지.md",
-    "Docs/WorkLogs/261116_작업일지.md",
     "Docs/Temp/메모2.md",
-    "Docs/Temp/메모1.md",
-    "Library/ProtocolInstance.json",
-    "Temp/Burst/burst-aot44qwgvpq.vk6",
-    "Temp/Burst/burst-aot5uwtk59i.sma",
-    "Temp/Burst/burst-aot7no788r4.9ws",
-    "Temp/Burst/burst-aotsgf2yzfx.swd",
-    "Temp/Burst/burst-aot2ept4urs.r12",
-    "Temp/Burst/burst-aotpk30t3w1.c2l",
-    "Temp/Burst/burst-aotaohj2dyz.bpc",
-    "Temp/Burst/burst-aots72keoxd.k6m",
-    "Temp/Burst/burst-aot6hzil4pf.9lg",
     "Assets/Sprites/temp_resource.png",
     "Docs/Templates/PullRequestTemplate.md",
     "Assets/Sprites/TempImage.png",
