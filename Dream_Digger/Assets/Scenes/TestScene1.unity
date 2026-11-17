@@ -2463,7 +2463,9 @@ GameObject:
   - component: {fileID: 1782301076}
   - component: {fileID: 1782301078}
   - component: {fileID: 1782301079}
+  - component: {fileID: 1782301081}
   - component: {fileID: 1782301080}
+  - component: {fileID: 1782301082}
   m_Layer: 6
   m_Name: Player
   m_TagString: Player
@@ -2638,8 +2640,52 @@ MonoBehaviour:
   _interactionInput: {fileID: -460839751609700425, guid: 75818351abe66d049b0b20556579033b, type: 3}
   _verticalInput: {fileID: -8131798622479155438, guid: 75818351abe66d049b0b20556579033b, type: 3}
   _horizontalInput: {fileID: -3681527363135241102, guid: 75818351abe66d049b0b20556579033b, type: 3}
+  _animator: {fileID: 0}
   _bitePoint: 1
   _memoryCount: 0
+--- !u!95 &1782301081
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1782301075}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: f924a312da7846a408e05ab0641da4bc, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1782301082
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1782301075}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c544d36c58c2b1b42986cea24b04b1ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerAnimController
+  AnimData:
+  - PlayerState: 0
+    AnimationClip: {fileID: 7400000, guid: f69d3558037efe34a9e9974547647ff2, type: 2}
+  - PlayerState: 1
+    AnimationClip: {fileID: 7400000, guid: 8245d1a747219bc45b222f8b589cddae, type: 2}
+  - PlayerState: 2
+    AnimationClip: {fileID: 7400000, guid: 44bf315d24775fb4cb14b2ae6a820145, type: 2}
+  - PlayerState: 3
+    AnimationClip: {fileID: 7400000, guid: 6389ad883caa2124c9e2dfd9c6dfc4a3, type: 2}
 --- !u!1 &1799211252
 GameObject:
   m_ObjectHideFlags: 0

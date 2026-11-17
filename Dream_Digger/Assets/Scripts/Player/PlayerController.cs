@@ -15,6 +15,8 @@ public class PlayerController : SingletonBase<PlayerController>
     [SerializeField] private InputActionReference _verticalInput; // 상하입력
     [SerializeField] private InputActionReference _horizontalInput; // 좌우입력
 
+    [SerializeField] private Animator _animator;
+    
     private Rigidbody2D _rigidbody2D;
     private Vector2 _moveDirection; // 움직이는 방향
     private Vector3Int _currentPosition; // 플레이어 현재 좌표
@@ -55,6 +57,7 @@ public class PlayerController : SingletonBase<PlayerController>
     private void CacheComponents()
     {
         _rigidbody2D = GetComponent<Rigidbody2D>();
+        _animator = GetComponent<Animator>();
     }
 
     private void BindInputEnable()
