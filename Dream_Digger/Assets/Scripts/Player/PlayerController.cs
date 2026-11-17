@@ -2,11 +2,13 @@ using System;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.InputSystem.Interactions;
 using UnityEngine.Tilemaps;
 
 public class PlayerController : SingletonBase<PlayerController>
 {
     [SerializeField] private float _moveSpeed; // 이동 속도
+    [SerializeField] private float _interactCoolTime;
     [SerializeField] private Tilemap _tilemap; // 타일맵
     
     [SerializeField] private InputActionReference _moveInput; // 이동 입력
@@ -17,6 +19,7 @@ public class PlayerController : SingletonBase<PlayerController>
 
     [SerializeField] private Animator _animator;
     
+    private float _interactCoolTimer;
     private Rigidbody2D _rigidbody2D;
     private Vector2 _moveDirection; // 움직이는 방향
     private Vector3Int _currentPosition; // 플레이어 현재 좌표
@@ -44,6 +47,23 @@ public class PlayerController : SingletonBase<PlayerController>
     private void FixedUpdate()
     {
         MovePlayer();
+    }
+
+    private void Update()
+    {
+        if (!_interactionInput.action.IsPressed())
+        {
+            return;
+        }
+        else
+        {
+            _interactCoolTimer += Time.deltaTime;
+            if (_interactCoolTimer >= _interactCoolTime)
+            {
+                BiteBlock();
+                _interactCoolTimer = 0;
+            }
+        }
     }
     
     private void OnDisable()
@@ -82,7 +102,7 @@ public class PlayerController : SingletonBase<PlayerController>
     {
         _moveInput.action.performed += OnMove;
         _flightInput.action.performed += OnFlight;
-        _interactionInput.action.performed += OnBiteBlock;
+        _interactionInput.action.performed += OnInteraction;
         _verticalInput.action.performed += OnVerticalDirection;
         _horizontalInput.action.performed += OnHorizontalDirection;
     }
@@ -91,7 +111,7 @@ public class PlayerController : SingletonBase<PlayerController>
     {
         _moveInput.action.performed -= OnMove;
         _flightInput.action.performed -= OnFlight;
-        _interactionInput.action.performed -= OnBiteBlock;
+        _interactionInput.action.performed -= OnInteraction;
         _verticalInput.action.performed -= OnVerticalDirection;
         _horizontalInput.action.performed -= OnHorizontalDirection;
     }
@@ -115,11 +135,13 @@ public class PlayerController : SingletonBase<PlayerController>
     private void OnMove(InputAction.CallbackContext ctx)
     {
         _moveDirection.x = ctx.ReadValue<Vector2>().x;
+        _animator.SetBool("isRunning", true);
     }
     
     private void OnStopMove(InputAction.CallbackContext ctx)
     {
         _moveDirection = Vector2.zero;
+        _animator.SetBool("isRunning", false);
     }
 
     private void MovePlayer()
@@ -134,12 +156,14 @@ public class PlayerController : SingletonBase<PlayerController>
     private void OnFlight(InputAction.CallbackContext ctx)
     {
         _rigidbody2D.gravityScale = - ctx.ReadValue<Vector2>().y;
+        _animator.SetBool("isFlying", true);
+        _animator.SetBool("isRunning", false);
     }
 
     private void OnStopFlight(InputAction.CallbackContext ctx)
     {
         _rigidbody2D.gravityScale = 1.0f;
-        // _rigidbody2D.linearVelocityY = 0;
+        _animator.SetBool("isFlying", false);
     }
     
     private void GetPlayerCellPosition() // 플레이어 좌표를 셀좌표로 변환
@@ -186,9 +210,14 @@ public class PlayerController : SingletonBase<PlayerController>
         return _tilemap.WorldToCell(worldPosition);
     }
 
-    private void OnBiteBlock(InputAction.CallbackContext ctx)
+    private void OnInteraction(InputAction.CallbackContext ctx)
+    {
+        
+    }
+
+    private void BiteBlock()
     {
         GetPlayerCellPosition();
-        MapController.Instance.TakeBite(_currentPosition + _interactDirection, _bitePoint);
+        MapController.Instance.TakeBite(_interactDirection + _currentPosition, _bitePoint);
     }
 }

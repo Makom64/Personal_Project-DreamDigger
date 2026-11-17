@@ -2465,7 +2465,6 @@ GameObject:
   - component: {fileID: 1782301079}
   - component: {fileID: 1782301081}
   - component: {fileID: 1782301080}
-  - component: {fileID: 1782301082}
   m_Layer: 6
   m_Name: Player
   m_TagString: Player
@@ -2634,6 +2633,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerController
   _destroyOnLoad: 0
   _moveSpeed: 3
+  _interactCoolTime: 0.25
   _tilemap: {fileID: 1767562913}
   _moveInput: {fileID: -5307730397291096347, guid: 75818351abe66d049b0b20556579033b, type: 3}
   _flightInput: {fileID: -5766087950618364845, guid: 75818351abe66d049b0b20556579033b, type: 3}
@@ -2665,27 +2665,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &1782301082
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1782301075}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c544d36c58c2b1b42986cea24b04b1ba, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PlayerAnimController
-  AnimData:
-  - PlayerState: 0
-    AnimationClip: {fileID: 7400000, guid: f69d3558037efe34a9e9974547647ff2, type: 2}
-  - PlayerState: 1
-    AnimationClip: {fileID: 7400000, guid: 8245d1a747219bc45b222f8b589cddae, type: 2}
-  - PlayerState: 2
-    AnimationClip: {fileID: 7400000, guid: 44bf315d24775fb4cb14b2ae6a820145, type: 2}
-  - PlayerState: 3
-    AnimationClip: {fileID: 7400000, guid: 6389ad883caa2124c9e2dfd9c6dfc4a3, type: 2}
 --- !u!1 &1799211252
 GameObject:
   m_ObjectHideFlags: 0

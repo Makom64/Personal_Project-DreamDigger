@@ -11,14 +11,17 @@
             "id": "3651ef5230d00f47",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "canvas",
               "state": {
-                "file": "Docs/WorkLogs/261117_작업일지.md",
-                "mode": "source",
-                "source": false
+                "file": "Docs/Temp/플레이어 상태 도식화.canvas",
+                "viewState": {
+                  "x": 0,
+                  "y": 0,
+                  "zoom": 0
+                }
               },
-              "icon": "lucide-file",
-              "title": "261117_작업일지"
+              "icon": "lucide-layout-dashboard",
+              "title": "플레이어 상태 도식화"
             }
           }
         ]
@@ -189,21 +192,22 @@
   "active": "3651ef5230d00f47",
   "lastOpenFiles": [
     "Library/ProtocolInstance.json",
-    "Temp/Burst/burst-aotikrlc1co.18i",
-    "Temp/Burst/burst-aot5sf4ywb9.cqs",
-    "Temp/Burst/burst-aothbjszbgg.xdk",
-    "Temp/Burst/burst-aot3aep1kus.jfg",
-    "Temp/Burst/burst-aotpozk9akj.92k",
-    "Temp/Burst/burst-aotz9qvehnk.lci",
-    "Temp/Burst/burst-aotr0rnctqs.xn4",
-    "Temp/Burst/burst-aotanhqre5a.lbe",
-    "Temp/Burst/burst-aot5lua0xar.4xl",
-    "Temp/Burst/burst-aott9mz8efz.0ai",
+    "Temp/UnityTempFile-e9bd0f38304286d4fb67de5297e9c58b",
+    "Temp/UnityTempFile-da15559c9d6f53f418f2f8775ac01dec",
+    "Temp/UnityTempFile-0ee12f7b8a7fe7d47821c5124880d177",
+    "Temp/Burst/burst-aota1r8uyqg.iv2",
+    "Temp/Burst/burst-aotv7b0u2mb.6r9",
+    "Temp/Burst/burst-aotrdmum0sv.50y",
+    "Temp/Burst/burst-aotaw6w4u1f.hgi",
+    "Temp/Burst/burst-aotaoc13ocx.4m1",
+    "Temp/Burst/burst-aotjjnv89cz.feg",
+    "Temp/Burst/burst-aotb8i3u9yj.7cx",
+    "Docs/WorkLogs/261117_작업일지.md",
+    "Docs/Temp/플레이어 상태 도식화.canvas",
     "Assets/Sprites/New Piskel (3).png",
     "Assets/Sprites/New Piskel (2).png",
     "Assets/Sprites/New Piskel (1).png",
     "Assets/Sprites/New Piskel.png",
-    "Docs/WorkLogs/261117_작업일지.md",
     "Docs/Temp/메모1.md",
     "Assets/Sprites/TempTile2.png",
     "Assets/Sprites/TempTile.png",
