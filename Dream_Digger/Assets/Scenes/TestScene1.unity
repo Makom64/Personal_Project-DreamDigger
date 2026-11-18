@@ -2450,6 +2450,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MapController
   _destroyOnLoad: 0
+  _xRangeSetter: 10
+  _yRangeSetter: 20
   CurrentTileMap: {fileID: 0}
 --- !u!1 &1782301075
 GameObject:
