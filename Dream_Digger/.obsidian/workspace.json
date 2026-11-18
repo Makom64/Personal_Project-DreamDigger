@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Docs/Temp/메모2.md",
+                "file": "Docs/WorkLogs/261118_작업일지.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "메모2"
+              "title": "261118_작업일지"
             }
           }
         ]
@@ -188,6 +188,8 @@
   },
   "active": "3651ef5230d00f47",
   "lastOpenFiles": [
+    "Docs/Temp/메모2.md",
+    "Temp/ADB-Refresh8c075132ede062344aca4cf7de642c4f",
     "Library/ProtocolInstance.json",
     "Temp/UnityTempFile-7ba432cedc062b148a4bdd6d0f6d68cb",
     "Temp/UnityTempFile-ac0d6b27b617c6e42a1866616c5d2810",
@@ -197,12 +199,9 @@
     "Temp/UnityTempFile-ebbb0d61d8f5cc344a5b8cc1b0fcc644",
     "Temp/UnityTempFile-b4bda95dd04244f4b944e3fca5915b31",
     "Temp/UnityTempFile-abeeafc7f0790224a8d8283f352a2bef",
-    "Library/Search/propertyDatabase.db_459548b0c2de4654a7b361297c2cf0fe_temp",
-    "Library/Artifacts/ad/ad9bbcaece09c39273c8506589773806",
     "Assets/Sprites/TempBiteUpDown 1.png",
     "Assets/Sprites/TempBiteUpDown.png",
     "Docs/Temp/메모1.md",
-    "Docs/Temp/메모2.md",
     "Docs/WorkLogs/261118_작업일지.md",
     "Assets/Sprites/TempBite.png",
     "Docs/WorkLogs/261117_작업일지.md",
