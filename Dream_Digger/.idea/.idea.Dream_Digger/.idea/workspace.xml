@@ -12,7 +12,13 @@
   <component name="ChangeListManager">
     <list default="true" id="fad6bd4a-aee0-41a5-a08f-7f07e7e5f780" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.obsidian/workspace.json" beforeDir="false" afterPath="$PROJECT_DIR$/.obsidian/workspace.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Map/MapController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Map/MapController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/TestScene1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/TestScene1.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Map/Block_A.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Map/Block_A.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Map/Block_B.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Map/Block_B.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Memory/HappyMemory.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Memory/HappyMemory.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Memory/Happy_Memory.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Memory/Happy_Memory.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerController.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -111,7 +117,7 @@
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
     "cidr.known.project.marker": "true",
     "codeWithMe.voiceChat.enabledByDefault": "false",
-    "git-widget-placeholder": "feature-makom64-auto__map__range__generator",
+    "git-widget-placeholder": "feature-makom64-tile__memory__spawn",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",

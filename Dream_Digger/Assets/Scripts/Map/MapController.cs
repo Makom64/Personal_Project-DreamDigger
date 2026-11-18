@@ -71,6 +71,6 @@ public class MapController : SingletonBase<MapController>
 
     private void GenerateMap() // 맵을 생성한다.
     {
-        CurrentTileMap.ClearAllTiles();
+        // CurrentTileMap.ClearAllTiles();
     }
 }
