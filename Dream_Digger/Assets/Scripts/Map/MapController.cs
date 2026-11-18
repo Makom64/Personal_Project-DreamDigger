@@ -11,6 +11,7 @@ public class MapController : SingletonBase<MapController>
     private Dictionary<Vector3Int, MemoryResource> _memoryPerCell;
     private Vector3Int[] _cellPositions; // 셀 좌표 배열
 
+    public bool HasBreakableTile;
     public Tilemap CurrentTileMap;
 
     protected override void Awake()
@@ -55,6 +56,7 @@ public class MapController : SingletonBase<MapController>
     {
         if (_bitePerCell.ContainsKey(position))
         {
+            HasBreakableTile = true;
             _bitePerCell[position] -= bite;
             Debug.Log($"남은 내구도 {_bitePerCell[position]}");
             if (_bitePerCell[position] <= 0)
@@ -65,6 +67,7 @@ public class MapController : SingletonBase<MapController>
         }
         else
         {
+            HasBreakableTile = false;
             Debug.Log($"캘 블록이 없습니다!");
         }
     }
