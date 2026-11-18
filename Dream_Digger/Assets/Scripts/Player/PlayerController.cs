@@ -2,11 +2,13 @@ using System;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.InputSystem.Interactions;
 using UnityEngine.Tilemaps;
 
 public class PlayerController : SingletonBase<PlayerController>
 {
     [SerializeField] private float _moveSpeed; // 이동 속도
+    [SerializeField] private float _interactCoolTime;
     [SerializeField] private Tilemap _tilemap; // 타일맵
     
     [SerializeField] private InputActionReference _moveInput; // 이동 입력
@@ -14,14 +16,18 @@ public class PlayerController : SingletonBase<PlayerController>
     [SerializeField] private InputActionReference _interactionInput; // 상호작용 입력
     [SerializeField] private InputActionReference _verticalInput; // 상하입력
     [SerializeField] private InputActionReference _horizontalInput; // 좌우입력
-
+    
+    private float _interactCoolTimer;
+    private SpriteRenderer _renderer;
     private Rigidbody2D _rigidbody2D;
     private Vector2 _moveDirection; // 움직이는 방향
     private Vector3Int _currentPosition; // 플레이어 현재 좌표
     private Vector3Int _interactDirection; // 상호작용 방향
     private Vector3Int _initialDirection;
+    private Animator _animator;
     
     public int _bitePoint; // 플레이어 블록 파괴력
+    public PlayerState CurrentState;
     public int _memoryCount; // 획득 자원 수
 
     // ------------------------- 생명주기
@@ -43,6 +49,23 @@ public class PlayerController : SingletonBase<PlayerController>
     {
         MovePlayer();
     }
+
+    private void Update()
+    {
+        if (!_interactionInput.action.IsPressed())
+        {
+            return;
+        }
+        else
+        {
+            _interactCoolTimer += Time.deltaTime;
+            if (_interactCoolTimer >= _interactCoolTime)
+            {
+                BiteBlock();
+                _interactCoolTimer = 0;
+            }
+        }
+    }
     
     private void OnDisable()
     {
@@ -54,6 +77,8 @@ public class PlayerController : SingletonBase<PlayerController>
     // ---------------------------------- private 메서드
     private void CacheComponents()
     {
+        _animator = GetComponent<Animator>();
+        _renderer = GetComponent<SpriteRenderer>();
         _rigidbody2D = GetComponent<Rigidbody2D>();
     }
 
@@ -79,7 +104,7 @@ public class PlayerController : SingletonBase<PlayerController>
     {
         _moveInput.action.performed += OnMove;
         _flightInput.action.performed += OnFlight;
-        _interactionInput.action.performed += OnBiteBlock;
+        _interactionInput.action.performed += OnInteraction;
         _verticalInput.action.performed += OnVerticalDirection;
         _horizontalInput.action.performed += OnHorizontalDirection;
     }
@@ -88,7 +113,7 @@ public class PlayerController : SingletonBase<PlayerController>
     {
         _moveInput.action.performed -= OnMove;
         _flightInput.action.performed -= OnFlight;
-        _interactionInput.action.performed -= OnBiteBlock;
+        _interactionInput.action.performed -= OnInteraction;
         _verticalInput.action.performed -= OnVerticalDirection;
         _horizontalInput.action.performed -= OnHorizontalDirection;
     }
@@ -97,6 +122,7 @@ public class PlayerController : SingletonBase<PlayerController>
     {
         _moveInput.action.canceled += OnStopMove;
         _flightInput.action.canceled += OnStopFlight;
+        _interactionInput.action.canceled += OnStopInteraction;
         _verticalInput.action.canceled += OnStopVerticalDirection;
         _horizontalInput.action.canceled += OnStopHorizontalDirection;
     }
@@ -105,6 +131,7 @@ public class PlayerController : SingletonBase<PlayerController>
     {
         _moveInput.action.canceled -= OnStopMove;
         _flightInput.action.canceled -= OnStopFlight;
+        _interactionInput.action.canceled -= OnStopInteraction;
         _verticalInput.action.canceled -= OnStopVerticalDirection;
         _horizontalInput.action.canceled -= OnStopHorizontalDirection;
     }
@@ -112,10 +139,21 @@ public class PlayerController : SingletonBase<PlayerController>
     private void OnMove(InputAction.CallbackContext ctx)
     {
         _moveDirection.x = ctx.ReadValue<Vector2>().x;
+        _animator.SetBool("isRunning", true);
+        if (_moveDirection.x > 0.0f)
+        {
+            _renderer.flipX = false;
+        }
+        else if (_moveDirection.x < -0.0f)
+        {
+            Debug.Log("뒤집어짐");
+            _renderer.flipX = true;
+        }
     }
     
     private void OnStopMove(InputAction.CallbackContext ctx)
     {
+        _animator.SetBool("isRunning", false);
         _moveDirection = Vector2.zero;
     }
 
@@ -131,12 +169,13 @@ public class PlayerController : SingletonBase<PlayerController>
     private void OnFlight(InputAction.CallbackContext ctx)
     {
         _rigidbody2D.gravityScale = - ctx.ReadValue<Vector2>().y;
+        _animator.SetBool("isFlying", true);
     }
 
     private void OnStopFlight(InputAction.CallbackContext ctx)
     {
         _rigidbody2D.gravityScale = 1.0f;
-        // _rigidbody2D.linearVelocityY = 0;
+        _animator.SetBool("isFlying", false);
     }
     
     private void GetPlayerCellPosition() // 플레이어 좌표를 셀좌표로 변환
@@ -167,6 +206,14 @@ public class PlayerController : SingletonBase<PlayerController>
     private void OnVerticalDirection(InputAction.CallbackContext ctx)
     {
         _interactDirection = ChangeToCellPosition(ctx.ReadValue<Vector3>());
+        if (ctx.ReadValue<Vector3>().y > 0)
+        {
+            _animator.SetBool("directionUp", true);
+        }
+        else if (ctx.ReadValue<Vector3>().y < 0)
+        {
+            _animator.SetBool("directionDown", true);
+        }
     }
 
     private void OnStopVerticalDirection(InputAction.CallbackContext ctx)
@@ -176,6 +223,15 @@ public class PlayerController : SingletonBase<PlayerController>
         {
             _interactDirection = ChangeToCellPosition(_horizontalInput.action.ReadValue<Vector3>());
         }
+
+        if (_animator.GetBool("directionUp"))
+        {
+            _animator.SetBool("directionUp", false);
+        }
+        else if (_animator.GetBool("directionDown"))
+        {
+            _animator.SetBool("directionDown", false);
+        }
     }
 
     private Vector3Int ChangeToCellPosition(Vector3 worldPosition)
@@ -183,9 +239,19 @@ public class PlayerController : SingletonBase<PlayerController>
         return _tilemap.WorldToCell(worldPosition);
     }
 
-    private void OnBiteBlock(InputAction.CallbackContext ctx)
+    private void OnInteraction(InputAction.CallbackContext ctx)
+    {
+        _animator.SetBool("isBiting", true);
+    }
+
+    private void OnStopInteraction(InputAction.CallbackContext ctx)
+    {
+        _animator.SetBool("isBiting", false);
+    }
+
+    private void BiteBlock()
     {
         GetPlayerCellPosition();
-        MapController.Instance.TakeBite(_currentPosition + _interactDirection, _bitePoint);
+        MapController.Instance.TakeBite(_interactDirection + _currentPosition, _bitePoint);
     }
 }
