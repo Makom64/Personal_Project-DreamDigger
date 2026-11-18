@@ -10,13 +10,7 @@
     <configurations />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fad6bd4a-aee0-41a5-a08f-7f07e7e5f780" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Dream_Digger/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Dream_Digger/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.obsidian/workspace.json" beforeDir="false" afterPath="$PROJECT_DIR$/.obsidian/workspace.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/PlayerAnim.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/PlayerAnim.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/TestScene1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/TestScene1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Map/MapController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Map/MapController.cs" afterDir="false" />
-    </list>
+    <list default="true" id="fad6bd4a-aee0-41a5-a08f-7f07e7e5f780" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
