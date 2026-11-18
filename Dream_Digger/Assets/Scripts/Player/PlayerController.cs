@@ -122,6 +122,7 @@ public class PlayerController : SingletonBase<PlayerController>
     {
         _moveInput.action.canceled += OnStopMove;
         _flightInput.action.canceled += OnStopFlight;
+        _interactionInput.action.canceled += OnStopInteraction;
         _verticalInput.action.canceled += OnStopVerticalDirection;
         _horizontalInput.action.canceled += OnStopHorizontalDirection;
     }
@@ -130,6 +131,7 @@ public class PlayerController : SingletonBase<PlayerController>
     {
         _moveInput.action.canceled -= OnStopMove;
         _flightInput.action.canceled -= OnStopFlight;
+        _interactionInput.action.canceled -= OnStopInteraction;
         _verticalInput.action.canceled -= OnStopVerticalDirection;
         _horizontalInput.action.canceled -= OnStopHorizontalDirection;
     }
@@ -221,7 +223,12 @@ public class PlayerController : SingletonBase<PlayerController>
 
     private void OnInteraction(InputAction.CallbackContext ctx)
     {
-        
+        _animator.SetBool("isBiting", true);
+    }
+
+    private void OnStopInteraction(InputAction.CallbackContext ctx)
+    {
+        _animator.SetBool("isBiting", false);
     }
 
     private void BiteBlock()

@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Docs/WorkLogs/261117_작업일지.md",
+                "file": "Docs/WorkLogs/261118_작업일지.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "261117_작업일지"
+              "title": "261118_작업일지"
             }
           }
         ]
@@ -83,8 +83,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "f91fe41f01e45f1f",
@@ -189,22 +188,24 @@
   },
   "active": "3651ef5230d00f47",
   "lastOpenFiles": [
+    "Temp/ADB-Refresh30bff1e572d758548aedcf002c79da3c",
+    "Library/Search/propertyDatabase.db_bd84868abec242c8b1e5c7771aaf0da5_temp",
+    "Temp/UnityTempFile-bc122fbe7289cd442a69fe660702c871",
+    "Temp/UnityTempFile-a11c3f38e5b9b2948b5a820c1bfe8324",
     "Library/ProtocolInstance.json",
-    "Temp/UnityTempFile-300da64765fb85748846f3f653dd7a55",
-    "Temp/UnityTempFile-0c06ba667e9c4584ea65d864cb76ab50",
-    "Temp/UnityTempFile-30eca07e559bd704896b09ceb4403ee1",
-    "Temp/UnityTempFile-eeafa53ceb3aac840b3b5057fcd6b504",
-    "Temp/ADB-Refresh1adda63a7a0f88d4b83d66919fbe1d13",
-    "Temp/UnityTempFile-32969621fc0366646a15547579792711",
-    "Temp/UnityTempFile-5d573a74f1d952f4d829a58247f6918a",
-    "Temp/UnityTempFile-eeb7b5afa4bc77b479b5c905d343490a",
-    "Library/Artifacts/47/479e9d82496ace436751177744db75b3",
-    "Library/TempArtifacts/Extra/6c053160a0922be4996c4e9a8c0c47d6.info",
+    "Temp/UnityTempFile-73c1ad3e30cf8c54096f7d05679effef",
+    "Temp/ADB-Refreshff328ec62d4ea1240a7fed5e4d53c9ee",
+    "Temp/UnityTempFile-4c07af04474ebe548af8efa606119704",
+    "Temp/UnityTempFile-a70a6153576fc7349bed38caae2251c7",
+    "Temp/UnityTempFile-3565d45a88106fe4fad01d99db1e35f8",
+    "Temp/UnityTempFile-8dd0b919643b40947a93421853d55a8b",
+    "Assets/Sprites/TempBite.png",
+    "Docs/WorkLogs/261117_작업일지.md",
+    "Docs/WorkLogs/261118_작업일지.md",
     "Assets/Sprites/TempRun.png",
     "Assets/Sprites/TempIdle.png",
     "Assets/Animations/TempPlayer.png",
     "Docs/Temp/플레이어 상태 도식화.canvas",
-    "Docs/WorkLogs/261117_작업일지.md",
     "Assets/Sprites/New Piskel (3).png",
     "Assets/Sprites/New Piskel (2).png",
     "Assets/Sprites/New Piskel (1).png",
@@ -212,7 +213,6 @@
     "Docs/Temp/메모1.md",
     "Assets/Sprites/TempTile2.png",
     "Assets/Sprites/TempTile.png",
-    "Assets/Tile/TempTile2.png",
     "Docs/Temp/메모2.md",
     "Docs/WorkLogs/261116_작업일지.md",
     "Docs/WorkLogs/261108_작업일지.md",
@@ -235,7 +235,6 @@
     "Docs/Rules/IssueRule.md",
     "Docs/Project_SetUp/프로젝트 기획.md",
     "Library/PackageCache/com.unity.shadergraph@f80b792d4861/Documentation~/snippets/sample-nodes/nodes-sample-errors.md",
-    "Library/PackageCache/com.unity.shadergraph@f80b792d4861/Documentation~/snippets/sample-nodes/nodes-sample-fragment-lod.md",
     "Docs/Project_Planning_Diag.canvas",
     "Docs/Project_Setup.canvas",
     "Docs/개발_프로세스_도식화.canvas"
