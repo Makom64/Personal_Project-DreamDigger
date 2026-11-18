@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Docs/Temp/메모2.md",
+                "file": "Docs/WorkLogs/261118_작업일지.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "메모2"
+              "title": "261118_작업일지"
             }
           }
         ]
@@ -188,6 +188,7 @@
   },
   "active": "3651ef5230d00f47",
   "lastOpenFiles": [
+    "Docs/Temp/메모2.md",
     "Library/Search/propertyDatabase.db_1a5a75af2e844e15b8ef6e9687aa55eb_temp",
     "Library/ProtocolInstance.json",
     "Temp/Burst/burst-aotw0axlqv7.e5c",
@@ -198,7 +199,6 @@
     "Temp/Burst/burst-aotkezs3vge.qvd",
     "Temp/Burst/burst-aotp3ua4ol0.02x",
     "Temp/Burst/burst-aotpmm8lb3h.s9t",
-    "Temp/Burst/burst-aotw3pxexkm.sbz",
     "Docs/WorkLogs/261118_작업일지.md",
     "Docs/Temp/플레이어 상태 도식화.canvas",
     "Assets/Sprites/TempRun.png",
@@ -211,7 +211,6 @@
     "Assets/Sprites/New Piskel (3).png",
     "Assets/Sprites/New Piskel (2).png",
     "Assets/Sprites/New Piskel (1).png",
-    "Docs/Temp/메모2.md",
     "Docs/Temp/메모1.md",
     "Docs/WorkLogs/261117_작업일지.md",
     "Docs/WorkLogs/261116_작업일지.md",
