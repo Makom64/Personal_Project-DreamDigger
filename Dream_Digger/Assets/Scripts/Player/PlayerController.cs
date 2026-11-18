@@ -146,6 +146,7 @@ public class PlayerController : SingletonBase<PlayerController>
         }
         else if (_moveDirection.x < -0.0f)
         {
+            Debug.Log("뒤집어짐");
             _renderer.flipX = true;
         }
     }
@@ -205,6 +206,14 @@ public class PlayerController : SingletonBase<PlayerController>
     private void OnVerticalDirection(InputAction.CallbackContext ctx)
     {
         _interactDirection = ChangeToCellPosition(ctx.ReadValue<Vector3>());
+        if (ctx.ReadValue<Vector3>().y > 0)
+        {
+            _animator.SetBool("directionUp", true);
+        }
+        else if (ctx.ReadValue<Vector3>().y < 0)
+        {
+            _animator.SetBool("directionDown", true);
+        }
     }
 
     private void OnStopVerticalDirection(InputAction.CallbackContext ctx)
@@ -213,6 +222,15 @@ public class PlayerController : SingletonBase<PlayerController>
         if (_horizontalInput.action.IsPressed())
         {
             _interactDirection = ChangeToCellPosition(_horizontalInput.action.ReadValue<Vector3>());
+        }
+
+        if (_animator.GetBool("directionUp"))
+        {
+            _animator.SetBool("directionUp", false);
+        }
+        else if (_animator.GetBool("directionDown"))
+        {
+            _animator.SetBool("directionDown", false);
         }
     }
 

@@ -2641,7 +2641,7 @@ MonoBehaviour:
   _interactionInput: {fileID: -460839751609700425, guid: 75818351abe66d049b0b20556579033b, type: 3}
   _verticalInput: {fileID: -8131798622479155438, guid: 75818351abe66d049b0b20556579033b, type: 3}
   _horizontalInput: {fileID: -3681527363135241102, guid: 75818351abe66d049b0b20556579033b, type: 3}
-  _bitePoint: 1
+  _bitePoint: 2
   CurrentState: 0
   _memoryCount: 0
 --- !u!95 &1782301081

@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Docs/WorkLogs/261118_작업일지.md",
+                "file": "Docs/Temp/메모2.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "261118_작업일지"
+              "title": "메모2"
             }
           }
         ]
@@ -188,20 +188,24 @@
   },
   "active": "3651ef5230d00f47",
   "lastOpenFiles": [
-    "Temp/ADB-Refresh30bff1e572d758548aedcf002c79da3c",
-    "Library/Search/propertyDatabase.db_bd84868abec242c8b1e5c7771aaf0da5_temp",
-    "Temp/UnityTempFile-bc122fbe7289cd442a69fe660702c871",
-    "Temp/UnityTempFile-a11c3f38e5b9b2948b5a820c1bfe8324",
     "Library/ProtocolInstance.json",
-    "Temp/UnityTempFile-73c1ad3e30cf8c54096f7d05679effef",
-    "Temp/ADB-Refreshff328ec62d4ea1240a7fed5e4d53c9ee",
-    "Temp/UnityTempFile-4c07af04474ebe548af8efa606119704",
-    "Temp/UnityTempFile-a70a6153576fc7349bed38caae2251c7",
-    "Temp/UnityTempFile-3565d45a88106fe4fad01d99db1e35f8",
-    "Temp/UnityTempFile-8dd0b919643b40947a93421853d55a8b",
+    "Temp/UnityTempFile-7ba432cedc062b148a4bdd6d0f6d68cb",
+    "Temp/UnityTempFile-ac0d6b27b617c6e42a1866616c5d2810",
+    "Temp/UnityTempFile-c3498d94adaac0645b0453a6d52edc67",
+    "Temp/ADB-Refreshd91aa1f72f2d2334ca9c653f89e0c1cd",
+    "Library/Search/propertyDatabase.db_ef64ffe21d3b424aab65c873a38a6139_temp",
+    "Temp/UnityTempFile-ebbb0d61d8f5cc344a5b8cc1b0fcc644",
+    "Temp/UnityTempFile-b4bda95dd04244f4b944e3fca5915b31",
+    "Temp/UnityTempFile-abeeafc7f0790224a8d8283f352a2bef",
+    "Library/Search/propertyDatabase.db_459548b0c2de4654a7b361297c2cf0fe_temp",
+    "Library/Artifacts/ad/ad9bbcaece09c39273c8506589773806",
+    "Assets/Sprites/TempBiteUpDown 1.png",
+    "Assets/Sprites/TempBiteUpDown.png",
+    "Docs/Temp/메모1.md",
+    "Docs/Temp/메모2.md",
+    "Docs/WorkLogs/261118_작업일지.md",
     "Assets/Sprites/TempBite.png",
     "Docs/WorkLogs/261117_작업일지.md",
-    "Docs/WorkLogs/261118_작업일지.md",
     "Assets/Sprites/TempRun.png",
     "Assets/Sprites/TempIdle.png",
     "Assets/Animations/TempPlayer.png",
@@ -210,10 +214,6 @@
     "Assets/Sprites/New Piskel (2).png",
     "Assets/Sprites/New Piskel (1).png",
     "Assets/Sprites/New Piskel.png",
-    "Docs/Temp/메모1.md",
-    "Assets/Sprites/TempTile2.png",
-    "Assets/Sprites/TempTile.png",
-    "Docs/Temp/메모2.md",
     "Docs/WorkLogs/261116_작업일지.md",
     "Docs/WorkLogs/261108_작업일지.md",
     "Docs/WorkLogs/261114_작업일지.md",
