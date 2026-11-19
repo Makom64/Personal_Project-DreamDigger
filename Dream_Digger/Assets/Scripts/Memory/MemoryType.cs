@@ -2,9 +2,9 @@ using UnityEngine;
 
 public enum MemoryType
 {
-    Happy,
     Enjoy,
-    Sad,
     Angry,
+    Happy,
+    Sad,
     Special,
 }

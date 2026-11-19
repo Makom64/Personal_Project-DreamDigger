@@ -1,6 +1,5 @@
 using System;
 using System.Collections.Generic;
-using NUnit.Framework.Constraints;
 using UnityEngine;
 
 public class MapGenerator : SingletonBase<MapGenerator>
@@ -19,16 +18,6 @@ public class MapGenerator : SingletonBase<MapGenerator>
         SetYRange();
     }
 
-    private void OnEnable()
-    {
-        
-    }
-
-    private void Start()
-    {
-        Debug.Log($"가로 / 세로 : {XRangeSetter} / {YRangeSetter}");
-    }
-
     private void SetYRange()
     {
         foreach (AreaData data in AreaSetter)
@@ -37,7 +26,7 @@ public class MapGenerator : SingletonBase<MapGenerator>
         }
     }
 
-    public void GenerateMap() // 타일맵 생성 함수
+    public void GenerateMap() // 타일맵 생성
     {
         MapController.Instance.CurrentTileMap.ClearAllTiles(); // 타일맵 소거
         Vector3Int temp = new();
@@ -60,6 +49,25 @@ public class MapGenerator : SingletonBase<MapGenerator>
 [Serializable]
 public struct AreaData
 {
+    [Header("구간 내 등장 광물 등급")]
+    public List<MemoryWeight> TypeList;
+
+    [Header("구간 별 광물 밀도")]
+    [Range(0, 100)] public int Density;
+    
+    [Header("타일 별 세로 길이")]
     public int Range;
+    
+    [Header("설치할 타일")]
     public BreakableTile Tile;
+}
+
+[Serializable]
+public struct MemoryWeight
+{
+    [Header("가중치")]
+    [Range(0.0f, 10.0f)] public float Weight;
+    
+    [Header("기억 종류")]
+    public MemoryType Type;
 }
