@@ -27,10 +27,6 @@ public class MapController : SingletonBase<MapController>
     private void Start()
     {
         
-        //InitFields();
-        // MapGenerator.Instance.CellPositionShuffle();
-        //InitCellBites();
-        
     }
 
     // position : 플레이어 상호작용 목표 지점 / bite : 플레이어 파괴력
