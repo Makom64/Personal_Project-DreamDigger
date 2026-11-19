@@ -26,7 +26,6 @@ public class PlayerController : SingletonBase<PlayerController>
     private Animator _animator;
     
     public int _bitePoint; // 플레이어 블록 파괴력
-    public PlayerState CurrentState;
     public int _memoryCount; // 획득 자원 수
 
     // ------------------------- 생명주기

@@ -4,40 +4,18 @@ using UnityEngine;
 
 public class MapGenerator : SingletonBase<MapGenerator>
 {
-    // 가로 길이
+    // 맵의 총 가로 길이
     public int XRangeSetter;
-    // 세로 길이
-    public int YRangeSetter { get; private set; }
+    
     // 생성할 타일들
     public List<AreaData> AreaSetter;
-    public List<Vector3Int[]> AreaLocationList;
-    public Dictionary<int, List<int>> AreaLengthDict;
-    public List<int> YLengthArray;
-
-    protected override void Awake()
-    {
-        base.Awake();
-        SetYRange();
-        YLengthArray = new();
-        AreaLengthDict = new();
-    }
-
-    private void SetYRange()
-    {
-        foreach (AreaData data in AreaSetter)
-        {
-            YRangeSetter += data.Range;
-        }
-    }
-
     
-
     public void GenerateMap() // 타일맵 생성
     {
         MapController.Instance.CurrentTileMap.ClearAllTiles(); // 타일맵 소거
-        Vector3Int temp = new();
-        MapController.Instance._cellPositions = new Vector3Int[XRangeSetter *  YRangeSetter];
-        int loopCount = 0;
+        Vector3Int tempVector3Int = new(); // 임시 Vector3Int
+        List<int> tempYValueArray = new(); // 임시 구역 별 좌표 Y값 배열
+        int loopCount = 0; // 반복문 루프 횟수 체크
         for (int a = 0; a < AreaSetter.Count; a++) // a = 구역 인덱스
         {
             for (int b = 0; b < AreaSetter[a].Range; b++) // b = 구역 세로길이 인덱스
@@ -45,25 +23,20 @@ public class MapGenerator : SingletonBase<MapGenerator>
                 
                 for (int c = 0; c < XRangeSetter; c++) // c = 구역 가로 길이 인덱스
                 {
-                    temp.x = c;
-                    MapController.Instance.CurrentTileMap.SetTile(temp, AreaSetter[a].Tile);
+                    tempVector3Int.x = c;
+                    MapController.Instance.CurrentTileMap.SetTile(tempVector3Int, AreaSetter[a].Tile);
                 }
                 
-                YLengthArray.Add(temp.y);
-                Debug.Log($"키 {a}에 담은 y좌표: {temp.y}");
-                temp.y --;
+                tempYValueArray.Add(tempVector3Int.y);
+                Debug.Log($"키 {a}에 담은 y좌표: {tempVector3Int.y}");
+                tempVector3Int.y --;
                 loopCount++;
             }
             Debug.Log($"{a} 구역 디버그합니다.");
-            AreaLengthDict.Add(a, YLengthArray);
-            Debug.Log($"{a} 구역 세로 배열 길이: {YLengthArray.Count}");
-            YLengthArray.Clear();
+            MapController.Instance.AreaLengthDict.Add(a, tempYValueArray);
+            Debug.Log($"{a} 구역 세로 배열 길이: {tempYValueArray.Count}");
+            tempYValueArray.Clear();
         }
-    }
-
-    public void CellPositionShuffle()
-    {
-        
     }
 }
 
