@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Docs/WorkLogs/261118_작업일지.md",
+                "file": "Docs/WorkLogs/261119_작업일지.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "261118_작업일지"
+              "title": "261119_작업일지"
             }
           }
         ]
@@ -188,17 +188,19 @@
   },
   "active": "3651ef5230d00f47",
   "lastOpenFiles": [
-    "Temp/UnityTempFile-f16d189f7b44338468de9951b640d903",
-    "Temp/UnityTempFile-a07f96859163e764eb1f5c742488654b",
-    "Temp/UnityTempFile-6407bf5974264b74ca70b0b26463d35a",
-    "Temp/UnityTempFile-e18116f0a14b75f42a7e0afcee984f66",
+    "Library/Search/propertyAliases.db_856f9e805f2b4e17bc19768b5e2def5b_temp",
+    "Temp/ADB-Refreshb1396d3f8e070094f88555b3e16f3e60",
+    "Temp/UnityTempFile-79be2b6bd29407e46be643eef190da54",
+    "Library/Search/propertyDatabase.db_e780f754378a466295281ac9811997a3_temp",
     "Library/ProtocolInstance.json",
-    "Temp/Burst/burst-aoti133124x.trl",
-    "Temp/Burst/burst-aot34o19sho.4hi",
-    "Temp/Burst/burst-aotxs24sx06.6a4",
-    "Temp/Burst/burst-aot6foxzxd4.lwi",
-    "Temp/Burst/burst-aotsnhio8xs.7d9",
-    "Temp/Burst/burst-aotbjap03ny.b6m",
+    "Temp/Burst/burst-aot8jna3b8k.dct",
+    "Temp/Burst/burst-aot5xahqu4p.odc",
+    "Temp/Burst/burst-aotpzfckq8j.kif",
+    "Temp/Burst/burst-aot4gfucc1b.s4g",
+    "Temp/Burst/burst-aot7vprbkys.lga",
+    "Temp/Burst/burst-aotzdjeaavt.t8g",
+    "Docs/WorkLogs/261118_작업일지.md",
+    "Docs/WorkLogs/261119_작업일지.md",
     "Temp/Burst/burst-aots2o53uiq.bmp",
     "Temp/Burst/burst-aotd87u4tob.png",
     "Assets/Sprites/tile_0003.png",
@@ -206,7 +208,6 @@
     "Assets/Sprites/tile_0001.png",
     "Assets/Sprites/tile_0000.png",
     "Docs/Temp/메모2.md",
-    "Docs/WorkLogs/261118_작업일지.md",
     "Docs/Temp/플레이어 상태 도식화.canvas",
     "Assets/Sprites/TempRun.png",
     "Assets/Sprites/TempIdle.png",
@@ -234,7 +235,6 @@
     "Docs/Templates/IssueTemplate.md",
     "Docs/Rules/IssueRule.md",
     "Docs/Project_SetUp/프로젝트 기획.md",
-    "Library/PackageCache/com.unity.shadergraph@f80b792d4861/Documentation~/snippets/sample-nodes/nodes-sample-errors.md",
     "Docs/Project_Planning_Diag.canvas",
     "Docs/Project_Setup.canvas",
     "Docs/개발_프로세스_도식화.canvas"
