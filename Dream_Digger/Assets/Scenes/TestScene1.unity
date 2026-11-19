@@ -681,14 +681,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8b62675be1756b4ea75e8a697a6c719, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MapGenerator
-  XRangeSetter: 10
-  YRangeSetter: 10
+  XRangeSetter: 50
   AreaSetter:
-  - Range: 2
+  - Range: 100
     Tile: {fileID: 11400000, guid: ef6e3788cc8f8914b90aec15ef6d97a4, type: 2}
-  - Range: 2
+  - Range: 150
     Tile: {fileID: 11400000, guid: 01bff9283011bfa4284ea9ed820b810c, type: 2}
-  - Range: 2
+  - Range: 250
     Tile: {fileID: 11400000, guid: ce840d9040d8bdf489083e35e6598c5b, type: 2}
 --- !u!1 &1050327728
 GameObject:

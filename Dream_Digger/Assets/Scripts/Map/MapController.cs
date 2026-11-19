@@ -15,25 +15,26 @@ public class MapController : SingletonBase<MapController>
     {
         base.Awake();
         CurrentTileMap = GetComponent<Tilemap>();
-        InitFields();
+        
     }
 
-    private void OnEnable()
+    private void Start()
     {
-        InitCellBites();
+        // InitFields();
+        // InitCellBites();
     }
 
-    private void InitFields()
+    public void InitFields()
     {
         _bitePerCell = new();
         CurrentTileMap.CompressBounds();
         _cellPositions = new Vector3Int[CurrentTileMap.cellBounds.size.x * CurrentTileMap.cellBounds.size.y];
     }
 
-    private void InitCellBites() // 모든 파괴 가능 타일에 내구도를 부여
+    public void InitCellBites() // 모든 파괴 가능 타일에 내구도를 부여
     {
         int temp = 0;
-        for (int y = CurrentTileMap.cellBounds.yMax - 1; y >= CurrentTileMap.cellBounds.yMin; --y)
+        for (int y = CurrentTileMap.cellBounds.yMax - 1; y >= CurrentTileMap.cellBounds.yMin; y--)
         {
             for (int x = CurrentTileMap.cellBounds.xMin; x < CurrentTileMap.cellBounds.xMax; x++)
             {
@@ -41,6 +42,8 @@ public class MapController : SingletonBase<MapController>
                 {
                     continue;
                 }
+                // Debug.Log($"_cellPositions[temp] : {_cellPositions[temp]}");
+                // Debug.Log($"x : {x}, y : {y}");
                 _cellPositions[temp] = new Vector3Int(x, y, 0);
                 _bitePerCell.Add(_cellPositions[temp], CurrentTileMap.GetTile<BreakableTile>(_cellPositions[temp]).MaxBites);
                 temp++;

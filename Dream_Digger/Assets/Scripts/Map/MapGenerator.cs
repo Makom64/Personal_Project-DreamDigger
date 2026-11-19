@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using NUnit.Framework.Constraints;
 using UnityEngine;
 
-public class MapGenerator : MonoBehaviour
+public class MapGenerator : SingletonBase<MapGenerator>
 {
     // 가로 길이
     public int XRangeSetter;
@@ -11,8 +11,28 @@ public class MapGenerator : MonoBehaviour
     public int YRangeSetter { get; private set; }
     // 생성할 타일들
     public List<AreaData> AreaSetter;
+    public Dictionary<int, AreaData> AreaDict;
 
-    private void Awake()
+    protected override void Awake()
+    {
+        base.Awake();
+        SetYRange();
+    }
+
+    private void OnEnable()
+    {
+        
+    }
+
+    private void Start()
+    {
+        Debug.Log($"가로 / 세로 : {XRangeSetter} / {YRangeSetter}");
+        GenerateMap();
+        MapController.Instance.InitFields();
+        MapController.Instance.InitCellBites();
+    }
+
+    private void SetYRange()
     {
         foreach (AreaData data in AreaSetter)
         {
@@ -20,19 +40,23 @@ public class MapGenerator : MonoBehaviour
         }
     }
 
-    private void Start()
+    public void GenerateMap() // 타일맵 생성 함수
     {
-        Debug.Log($"가로 / 세로 : {XRangeSetter} / {YRangeSetter}");
-    }
+        MapController.Instance.CurrentTileMap.ClearAllTiles(); // 타일맵 소거
+        Vector3Int temp = new();
+        for (int a = 0; a < AreaSetter.Count; a++)
+        {
+            for (int b = 0; b < AreaSetter[a].Range; b++)
+            {
+                for (int c = 0; c < XRangeSetter; c++)
+                {
+                    temp.x = c;
+                    MapController.Instance.CurrentTileMap.SetTile(temp, AreaSetter[a].Tile);
+                }
 
-    private void DivideArea()
-    {
-        
-    }
-
-    private void GenerateMap()
-    {
-        
+                temp.y --;
+            }
+        }
     }
 }
 
