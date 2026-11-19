@@ -21,7 +21,7 @@ public class MapController : SingletonBase<MapController>
     {
         MapGenerator.Instance.GenerateMap();
         InitFields();
-        MapGenerator.Instance.CellPositionShuffle();
+        // MapGenerator.Instance.CellPositionShuffle();
         //InitCellBites();
         
     }
