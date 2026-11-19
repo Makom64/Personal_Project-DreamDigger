@@ -329,15 +329,29 @@ MonoBehaviour:
   _destroyOnLoad: 0
   XRangeSetter: 50
   AreaSetter:
-  - TypeList: 0000000001000000
+  - TypeList:
+    - Weight: 2.86
+      Type: 0
+    - Weight: 1.69
+      Type: 1
     Density: 35
     Range: 2
     Tile: {fileID: 11400000, guid: ef6e3788cc8f8914b90aec15ef6d97a4, type: 2}
-  - TypeList: 0100000002000000
-    Density: 38
+  - TypeList:
+    - Weight: 4.87
+      Type: 1
+    - Weight: 2.86
+      Type: 2
+    Density: 40
     Range: 4
     Tile: {fileID: 11400000, guid: 01bff9283011bfa4284ea9ed820b810c, type: 2}
-  - TypeList: 020000000300000004000000
+  - TypeList:
+    - Weight: 2.47
+      Type: 2
+    - Weight: 3.18
+      Type: 3
+    - Weight: 0
+      Type: 4
     Density: 27
     Range: 8
     Tile: {fileID: 11400000, guid: ce840d9040d8bdf489083e35e6598c5b, type: 2}
@@ -386,15 +400,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MemorySpawner
   _destroyOnLoad: 0
-  MemoryList:
-  - Count: 10
-    Memory: {fileID: 8355943730596808017, guid: 037582d31bd21584389d9de2ebf90acf, type: 3}
-  - Count: 10
-    Memory: {fileID: 4869049456464704237, guid: b13d249d6738f1042a2c6fe368af06b9, type: 3}
-  - Count: 10
-    Memory: {fileID: 3057797340316100916, guid: a4c0df3c358499044b9ba6f1087a8ee1, type: 3}
-  - Count: 10
-    Memory: {fileID: 2340412803831076754, guid: a120d690133ee174c95b6afa687f0627, type: 3}
 --- !u!4 &1209916061 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8653675597315123374, guid: a4c0df3c358499044b9ba6f1087a8ee1, type: 3}

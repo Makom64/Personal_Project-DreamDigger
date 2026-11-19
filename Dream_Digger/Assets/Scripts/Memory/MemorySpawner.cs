@@ -4,34 +4,15 @@ using UnityEngine;
 
 public class MemorySpawner : SingletonBase<MemorySpawner>
 {
-    // 생성할 자원 종류 / 자원 당 개수
-    public List<MemoryData> MemoryList;
-    public Dictionary<MemoryType, MemoryResource> MemoryDict;
-    public MemoryType Type;
-
-    protected override void Awake()
-    {
-        base.Awake();
-        MemoryDict = new();
-    }
-
-    private void Start()
-    {
-        for (int a = 0; a < MapGenerator.Instance.AreaSetter.Count; a++)
-        {
-            for (int b = 0; b < MapGenerator.Instance.AreaSetter[a].TypeList.Count; b++)
-            {
-                Debug.Log($"{a}구간 등장 광물은 {MapGenerator.Instance.AreaSetter[a].TypeList[b].Type}");
-            }
-        }
-
-        int areaSize = MapGenerator.Instance.AreaSetter[0].Range * MapGenerator.Instance.XRangeSetter;
-        Debug.Log($"0번 구역 크기는 {areaSize}");
-        float spawnRate = MapGenerator.Instance.AreaSetter[0].Density / 100.0f;
-        Debug.Log($"광물 등장 밀도는 {spawnRate}");
-        int totalSpawnCount = (int)(areaSize * spawnRate);
-        Debug.Log($"0번 구역 등장 광물 갯수는 {totalSpawnCount}");
-    }
+    // 0번째 구역을 검사한다.
+    // 0번째 구역의 넓이를 검사한다. 넓이는 총 칸 수다.
+    // 0번째 구역의 밀도를 검사한다. 넓이 * (밀도 / 100)은 0번째 구역에 설치할 수 있는 최대 기억 개수이다.
+    // 0번째 구역의 설정된 등장 기억 리스트를 검사한다.
+    // 최대 기억 개수 / 가중치 합 = 평균 기억 생성 개수
+    // 각 기억별 가중치 * (평균 기억 생성 개수) = 각 기억별 생성 개수
+    // 최대 기억 개수 - (각 기억 별 생성 개수의 합) = 남은 개수
+    // 남은 개수는 가중치가 가장 높은 광물 생성 개수에 더한다.
+    // 
 }
 
 [Serializable]

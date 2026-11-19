@@ -4,11 +4,10 @@ using UnityEngine.Tilemaps;
 
 public class MapController : SingletonBase<MapController>
 {
-    private Dictionary<Vector3Int, int> _bitePerCell; // 좌표, 내구도
-    private Dictionary<Vector3Int, MemoryResource> _memoryPerCell;
+    private Dictionary<Vector3Int, int> _bitePerCell; // 좌표 당 내구도
+    private Dictionary<Vector3Int, MemoryResource> _memoryPerCell; // 좌표 당 기억
     private Vector3Int[] _cellPositions; // 셀 좌표 배열
 
-    public bool HasBreakableTile;
     public Tilemap CurrentTileMap;
 
     protected override void Awake()
@@ -25,7 +24,7 @@ public class MapController : SingletonBase<MapController>
         InitCellBites();
     }
 
-    public void InitFields()
+    public void InitFields() // 타일맵 넓이를 압축
     {
         _bitePerCell = new();
         CurrentTileMap.CompressBounds();
@@ -43,8 +42,6 @@ public class MapController : SingletonBase<MapController>
                 {
                     continue;
                 }
-                // Debug.Log($"_cellPositions[temp] : {_cellPositions[temp]}");
-                // Debug.Log($"x : {x}, y : {y}");
                 _cellPositions[temp] = new Vector3Int(x, y, 0);
                 _bitePerCell.Add(_cellPositions[temp], CurrentTileMap.GetTile<BreakableTile>(_cellPositions[temp]).MaxBites);
                 temp++;
@@ -56,7 +53,6 @@ public class MapController : SingletonBase<MapController>
     {
         if (_bitePerCell.ContainsKey(position))
         {
-            HasBreakableTile = true;
             _bitePerCell[position] -= bite;
             Debug.Log($"남은 내구도 {_bitePerCell[position]}");
             if (_bitePerCell[position] <= 0)
@@ -67,7 +63,6 @@ public class MapController : SingletonBase<MapController>
         }
         else
         {
-            HasBreakableTile = false;
             Debug.Log($"캘 블록이 없습니다!");
         }
     }

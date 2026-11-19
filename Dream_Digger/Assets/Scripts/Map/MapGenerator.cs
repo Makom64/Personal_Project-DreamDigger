@@ -49,10 +49,10 @@ public class MapGenerator : SingletonBase<MapGenerator>
 [Serializable]
 public struct AreaData
 {
-    [Header("구간 내 등장 광물 등급")]
+    [Header("구간 내 등장 기억 등급")]
     public List<MemoryWeight> TypeList;
 
-    [Header("구간 별 광물 밀도")]
+    [Header("구간 별 기억 밀도")]
     [Range(0, 100)] public int Density;
     
     [Header("타일 별 세로 길이")]
