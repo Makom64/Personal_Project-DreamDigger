@@ -191,6 +191,8 @@
   },
   "active": "3651ef5230d00f47",
   "lastOpenFiles": [
+    "Assets/Prefabs/Sad_Memory.prefab.meta",
+    "Assets/Prefabs/Angry_Memory.prefab.meta",
     "Library/ProtocolInstance.json",
     "Temp/Burst/burst-aot811lbyzd.rfo",
     "Temp/Burst/burst-aotlk0o2r8l.3f0",
@@ -200,8 +202,6 @@
     "Temp/Burst/burst-aotmwajvwk4.8lm",
     "Temp/Burst/burst-aotc33rtms2.jlw",
     "Temp/Burst/burst-aotdb8dveky.nam",
-    "Temp/Burst/burst-aotiu5sjbp0.rq7",
-    "Temp/Burst/burst-aotnkkj8voj.rv4",
     "Docs/Temp/메모1.md",
     "Docs/Temp/메모2.md",
     "Docs/Temp/플레이어 상태 도식화.canvas",
