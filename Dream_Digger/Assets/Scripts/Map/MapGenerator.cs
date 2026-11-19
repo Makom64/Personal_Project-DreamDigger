@@ -27,9 +27,6 @@ public class MapGenerator : SingletonBase<MapGenerator>
     private void Start()
     {
         Debug.Log($"가로 / 세로 : {XRangeSetter} / {YRangeSetter}");
-        GenerateMap();
-        MapController.Instance.InitFields();
-        MapController.Instance.InitCellBites();
     }
 
     private void SetYRange()

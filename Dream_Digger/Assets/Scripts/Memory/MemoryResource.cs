@@ -2,14 +2,12 @@ using UnityEngine;
 
 public class MemoryResource : MonoBehaviour
 {
-    private SpriteRenderer _spriteRenderer;
-    
-    public MemoryData memoryData;
+    public MemoryType Type;
+    public int Score;
 
     private void Awake()
     {
-        _spriteRenderer = GetComponent<SpriteRenderer>();
-        _spriteRenderer.sprite = memoryData.Sprite;
+        
     }
 
     private void OnCollisionEnter2D(Collision2D collision)

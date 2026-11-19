@@ -20,8 +20,9 @@ public class MapController : SingletonBase<MapController>
 
     private void Start()
     {
-        // InitFields();
-        // InitCellBites();
+        MapGenerator.Instance.GenerateMap();
+        InitFields();
+        InitCellBites();
     }
 
     public void InitFields()

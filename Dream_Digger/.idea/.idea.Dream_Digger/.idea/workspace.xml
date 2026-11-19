@@ -16,6 +16,17 @@
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/TestScene1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/TestScene1.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Map/MapController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Map/MapController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Map/MapGenerator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Map/MapGenerator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Memory/HappyMemory.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Memory/HappyMemory.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Memory/MemoryData.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Memory/MemoryData.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Memory/MemoryResource.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Memory/MemoryResource.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Memory/MemorySpawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Memory/MemorySpawner.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Memory/MemoryType.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Memory/MemoryType.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/tile_0000.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/tile_0000.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/tile_0001.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/tile_0001.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/tile_0002.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/tile_0002.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Docs/Temp/맵, 자원 자동 생성 도식화.canvas" beforeDir="false" afterPath="$PROJECT_DIR$/Docs/Temp/맵, 자원 자동 생성 도식화.canvas" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
