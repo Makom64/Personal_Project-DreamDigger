@@ -10,14 +10,9 @@ public class MemorySpawner : SingletonBase<MemorySpawner>
     // 0번째 구역의 설정된 등장 기억 리스트를 검사한다.
     // 최대 기억 개수 / 가중치 합 = 평균 기억 생성 개수
     // 각 기억별 가중치 * (평균 기억 생성 개수) = 각 기억별 생성 개수
+    // 단, 기억 종류가 Special이면 기억별 생성 개수는 1개로 고정된다.
     // 최대 기억 개수 - (각 기억 별 생성 개수의 합) = 남은 개수
     // 남은 개수는 가중치가 가장 높은 광물 생성 개수에 더한다.
-    // 
-}
-
-[Serializable]
-public struct MemoryData
-{
-    public int Count;
-    public MemoryResource Memory;
+    // 피셔 예이츠 셔플로 셔플된 구역 좌표 배열을 받는다.
+    // 앞에서부터 하나씩 기억 정보 묶음에 담아준다.
 }

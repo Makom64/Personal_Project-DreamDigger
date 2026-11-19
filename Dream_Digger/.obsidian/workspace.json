@@ -11,17 +11,14 @@
             "id": "3651ef5230d00f47",
             "type": "leaf",
             "state": {
-              "type": "canvas",
+              "type": "markdown",
               "state": {
-                "file": "Docs/Temp/맵, 자원 자동 생성 도식화.canvas",
-                "viewState": {
-                  "x": -7,
-                  "y": -201.5,
-                  "zoom": -0.2910487820033906
-                }
+                "file": "Docs/Project_SetUp/프로젝트 기획.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-layout-dashboard",
-              "title": "맵, 자원 자동 생성 도식화"
+              "icon": "lucide-file",
+              "title": "프로젝트 기획"
             }
           }
         ]
@@ -192,22 +189,22 @@
   "active": "3651ef5230d00f47",
   "lastOpenFiles": [
     "Library/ProtocolInstance.json",
-    "Temp/Burst/burst-aot4cl81yqb.84k",
-    "Temp/Burst/burst-aotdskgrumy.135",
-    "Temp/Burst/burst-aot1r6gzwrl.m8s",
-    "Temp/Burst/burst-aotz8svjig9.b1a",
-    "Temp/Burst/burst-aotrjbn3o7k.m58",
-    "Temp/Burst/burst-aotzq0ur9k3.hta",
-    "Temp/Burst/burst-aotyahela8k.r9c",
-    "Temp/Burst/burst-aotyu74yq1n.hee",
-    "Temp/Burst/burst-aotoialtsqs.nrk",
-    "Temp/Burst/burst-aota12yrn5p.1fd",
+    "Temp/UnityTempFile-042ef6c0d185be74093c6e30a4fa2a3b",
+    "Temp/UnityTempFile-a8f1d9974f8c7044187ed8ff567fa3cc",
+    "Library/Search/propertyAliases.db_18b105fa683245cebfcbbb96b1498ee2_temp",
+    "Temp/Burst/burst-aotx1wdsr7e.pxm",
+    "Temp/Burst/burst-aotvwatl72z.pbv",
+    "Temp/Burst/burst-aotl3s1m5x9.rti",
+    "Temp/Burst/burst-aotlzvtnxc3.gyp",
+    "Temp/Burst/burst-aotmqw7p1hw.pe2",
+    "Temp/Burst/burst-aot2jjnazsm.6is",
+    "Temp/Burst/burst-aotcmkxgfsk.ptu",
+    "Docs/Temp/맵, 자원 자동 생성 도식화.canvas",
     "Docs/Temp/메모1.md",
     "Docs/Temp/메모2.md",
     "Docs/Temp/플레이어 상태 도식화.canvas",
     "Docs/Temp/TempImageA.png",
     "Docs/WorkLogs/261119_작업일지.md",
-    "Docs/Temp/맵, 자원 자동 생성 도식화.canvas",
     "Assets/Sprites/key_yellow.png",
     "Docs/WorkLogs/261118_작업일지.md",
     "Temp/Burst/burst-aots2o53uiq.bmp",

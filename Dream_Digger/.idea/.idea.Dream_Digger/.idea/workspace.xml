@@ -13,10 +13,18 @@
     <list default="true" id="fad6bd4a-aee0-41a5-a08f-7f07e7e5f780" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Dream_Digger/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Dream_Digger/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.obsidian/workspace.json" beforeDir="false" afterPath="$PROJECT_DIR$/.obsidian/workspace.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Angry_Memory.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Angry_Memory.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Enjoy_Memory.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Enjoy_Memory.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Happy_Memory.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Happy_Memory.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Sad_Memory.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Sad_Memory.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Special_Memory.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Special_Memory.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/TestScene1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/TestScene1.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Map/MapController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Map/MapController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Map/MapGenerator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Map/MapGenerator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Memory/MemoryResource.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Memory/MemoryResource.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Memory/MemorySpawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Memory/MemorySpawner.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Memory/MemoryType.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Memory/MemoryType.cs.meta" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

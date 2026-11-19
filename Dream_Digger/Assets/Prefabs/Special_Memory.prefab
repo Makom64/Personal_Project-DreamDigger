@@ -179,6 +179,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac676783fec4b524a8671998c0206ae8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MemoryResource
-  Type: 4
+  MemoryData:
+    Sprite: {fileID: -6508212642764552397, guid: 7813c67dc74c9b54c96f3150e0415fa0, type: 3}
+    Name: "\uC18C\uC911\uD55C \uAE30\uC5B5"
+    Type: 4
   Score: 1
-  CanSell: 1
+  CanSell: 0
