@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Docs/Project_SetUp/프로젝트 기획.md",
+                "file": "Docs/WorkLogs/261119_작업일지.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "프로젝트 기획"
+              "title": "261119_작업일지"
             }
           }
         ]
@@ -188,17 +188,18 @@
   },
   "active": "3651ef5230d00f47",
   "lastOpenFiles": [
+    "Temp/UnityTempFile-e43a1086dcc881246a3d190be4952352",
+    "Temp/UnityTempFile-0e65156f0e49e5c4ab031893c0801445",
+    "Temp/UnityTempFile-296a1d9b6174c634aa454d107e83737d",
+    "Temp/UnityTempFile-0999d2bb3c90a7943881414000574b91",
+    "Temp/UnityTempFile-e720d6fca3ab3f34bb6a63ec6a1970a3",
+    "Temp/UnityTempFile-e747a318742a9084b8a4b9a57a2b8299",
+    "Temp/UnityTempFile-90aa8505dcfff4b46b03b0310947a5cc",
+    "Temp/UnityTempFile-4733d4cf2115fb9478807198f738c544",
+    "Temp/UnityTempFile-38a20c8079e09bf44b52f1ab7835b0d1",
+    "Temp/UnityTempFile-7c30afc3a4c8fba46af7c8dd05caa08b",
+    "Docs/Project_SetUp/프로젝트 기획.md",
     "Library/ProtocolInstance.json",
-    "Temp/UnityTempFile-042ef6c0d185be74093c6e30a4fa2a3b",
-    "Temp/UnityTempFile-a8f1d9974f8c7044187ed8ff567fa3cc",
-    "Library/Search/propertyAliases.db_18b105fa683245cebfcbbb96b1498ee2_temp",
-    "Temp/Burst/burst-aotx1wdsr7e.pxm",
-    "Temp/Burst/burst-aotvwatl72z.pbv",
-    "Temp/Burst/burst-aotl3s1m5x9.rti",
-    "Temp/Burst/burst-aotlzvtnxc3.gyp",
-    "Temp/Burst/burst-aotmqw7p1hw.pe2",
-    "Temp/Burst/burst-aot2jjnazsm.6is",
-    "Temp/Burst/burst-aotcmkxgfsk.ptu",
     "Docs/Temp/맵, 자원 자동 생성 도식화.canvas",
     "Docs/Temp/메모1.md",
     "Docs/Temp/메모2.md",
@@ -235,7 +236,6 @@
     "Docs/Project_DevelopCycle/단위_목표1.md",
     "Docs/Templates/IssueTemplate.md",
     "Docs/Rules/IssueRule.md",
-    "Docs/Project_SetUp/프로젝트 기획.md",
     "Docs/Project_Planning_Diag.canvas",
     "Docs/Project_Setup.canvas",
     "Docs/개발_프로세스_도식화.canvas"
