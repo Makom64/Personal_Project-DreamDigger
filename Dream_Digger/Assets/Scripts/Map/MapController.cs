@@ -4,9 +4,6 @@ using UnityEngine.Tilemaps;
 
 public class MapController : SingletonBase<MapController>
 {
-    [SerializeField] private int _xRangeSetter;
-    [SerializeField] private int _yRangeSetter;
-    
     private Dictionary<Vector3Int, int> _bitePerCell; // 좌표, 내구도
     private Dictionary<Vector3Int, MemoryResource> _memoryPerCell;
     private Vector3Int[] _cellPositions; // 셀 좌표 배열
@@ -23,7 +20,6 @@ public class MapController : SingletonBase<MapController>
 
     private void OnEnable()
     {
-        GenerateMap();
         InitCellBites();
     }
 
@@ -70,10 +66,5 @@ public class MapController : SingletonBase<MapController>
             HasBreakableTile = false;
             Debug.Log($"캘 블록이 없습니다!");
         }
-    }
-
-    private void GenerateMap() // 맵을 생성한다.
-    {
-        // CurrentTileMap.ClearAllTiles();
     }
 }
