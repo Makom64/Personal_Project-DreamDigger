@@ -21,12 +21,10 @@ public class MapController : SingletonBase<MapController>
     private void OnEnable()
     {
         MapGenerator.Instance.GenerateMap(); // 맵을 생성한다.
-        CurrentTileMap.CompressBounds(); // 타일맵의 넓이를 생성한 범위만큼 압축한다. 압축하지 않으면 최소/최대치를 구할 수 없다.
-    }
-
-    private void Start()
-    {
+        CurrentTileMap.CompressBounds(); // 타일맵의 넓이를 생성한 범위만큼 압축한다.
+                                        // 압축하지 않으면 최소/최대치를 구할 수 없다.
         
+
     }
 
     // position : 플레이어 상호작용 목표 지점 / bite : 플레이어 파괴력

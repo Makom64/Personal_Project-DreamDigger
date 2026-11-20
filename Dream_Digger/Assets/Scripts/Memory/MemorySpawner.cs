@@ -15,4 +15,13 @@ public class MemorySpawner : SingletonBase<MemorySpawner>
     // 남은 개수는 가중치가 가장 높은 광물 생성 개수에 더한다.
     // 피셔 예이츠 셔플로 셔플된 구역 좌표 배열을 받는다.
     // 앞에서부터 하나씩 기억 정보 묶음에 담아준다.
+
+    public void ShuffleAreaPositions()
+    {
+        for (int a = 0; a < MapGenerator.Instance.AreaSetter.Count; a++)
+        {
+            Debug.Log($"MemorySpawner 반복문 {a}번째 루프");
+            Debug.Log($"사전 {a}키값 길이 : {MapController.Instance.AreaLengthDict[a].Count}");
+        }
+    }
 }
