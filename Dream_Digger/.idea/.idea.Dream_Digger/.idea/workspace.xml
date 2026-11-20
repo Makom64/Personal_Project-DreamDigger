@@ -16,9 +16,9 @@
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/TestScene1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/TestScene1.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Map/MapController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Map/MapController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Map/MapGenerator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Map/MapGenerator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Memory/MemoryResource.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Memory/MemoryResource.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Memory/MemorySpawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Memory/MemorySpawner.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Docs/WorkLogs/261119_작업일지.md" beforeDir="false" afterPath="$PROJECT_DIR$/Docs/WorkLogs/261119_작업일지.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Docs/WorkLogs/261120_작업일지.md" beforeDir="false" afterPath="$PROJECT_DIR$/Docs/WorkLogs/261120_작업일지.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,6 +29,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/31f3cd5c2a074982a9d5664e7709cac1212400/a4/6f84b2fd/Object.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/ac986a0571c64890abc6290fd3560d2bda00/9c/a3d1dd20/Tilemap.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerAnimController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerState.cs" root0="FORCE_HIGHLIGHTING" />

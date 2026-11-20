@@ -5,17 +5,19 @@ using UnityEngine.Tilemaps;
 public class MapController : SingletonBase<MapController>
 {
     private Dictionary<Vector3Int, int> _bitePerCell; // 좌표 당 내구도
-    private Dictionary<Vector3Int, MemoryResource> _memoryPerCell; // 좌표 당 기억
-    public Dictionary<int, List<int>> AreaLengthDict; // 구역 번호(키) : 좌표 Y값 배열(값)
-
+    
     public Tilemap CurrentTileMap;
-
+    public Dictionary<int, List<Vector3Int>> PositionsPerAreaDict; // 구역 번호(키), 좌표 리스트(값)
+    public Dictionary<Vector3Int, MemoryType> SpawnedMemoryDict; // 좌표(키), 기억(값)
+    
     protected override void Awake()
     {
         base.Awake();
         CurrentTileMap = GetComponent<Tilemap>();
         _bitePerCell = new();
-        AreaLengthDict = new();
+        PositionsPerAreaDict = new();
+        SpawnedMemoryDict = new();
+        InitDictionary();
     }
 
     private void OnEnable()
@@ -23,8 +25,21 @@ public class MapController : SingletonBase<MapController>
         MapGenerator.Instance.GenerateMap(); // 맵을 생성한다.
         CurrentTileMap.CompressBounds(); // 타일맵의 넓이를 생성한 범위만큼 압축한다.
                                         // 압축하지 않으면 최소/최대치를 구할 수 없다.
-        
+        MemorySpawner.Instance.ShuffleAreaPositionList();
+        MemorySpawner.Instance.SetMemoryOnTile();
+    }
 
+    private void Start()
+    {
+        Debug.Log($"맵에 배치된 광물 갯수 {SpawnedMemoryDict.Count}");
+    }
+    
+    private void InitDictionary()
+    {
+        for (int a = 0; a < MapGenerator.Instance.AreaSetter.Count; a++)
+        {
+            PositionsPerAreaDict.Add(a, new List<Vector3Int>());
+        }
     }
 
     // position : 플레이어 상호작용 목표 지점 / bite : 플레이어 파괴력
@@ -47,11 +62,22 @@ public class MapController : SingletonBase<MapController>
             {
                 _bitePerCell[position] -= bite;
                 
-                // 해당 좌표 내구도가 0이하가 되면
-                if (_bitePerCell[position] <= 0)
+                
+            }
+            // 해당 좌표 내구도가 0이하가 되면
+            if (_bitePerCell[position] <= 0)
+            {
+                // 타일을 없앤다.
+                CurrentTileMap.SetTile(position, null);
+
+                if (SpawnedMemoryDict.ContainsKey(position))
                 {
-                    CurrentTileMap.SetTile(position, null);
+                    GameObject memory = Instantiate(MemorySpawner.Instance.MemoryDict[SpawnedMemoryDict[position]],
+                        CurrentTileMap.GetCellCenterWorld(position),
+                        Quaternion.identity);
+                    SpawnedMemoryDict.Remove(position);
                 }
+                _bitePerCell.Remove(position);
             }
         }
     }
