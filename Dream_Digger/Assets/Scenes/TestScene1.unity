@@ -258,7 +258,7 @@ TilemapRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_MaskInteraction: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
@@ -475,7 +475,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MapGenerator
   _destroyOnLoad: 0
-  XRangeSetter: 30
+  XRangeSetter: 50
   AreaSetter:
   - TypeList:
     - Weight: 2.86
@@ -483,7 +483,7 @@ MonoBehaviour:
     - Weight: 1.69
       Type: 1
     Density: 45
-    Range: 10
+    Range: 160
     Tile: {fileID: 11400000, guid: ef6e3788cc8f8914b90aec15ef6d97a4, type: 2}
   - TypeList:
     - Weight: 4.87
@@ -491,7 +491,7 @@ MonoBehaviour:
     - Weight: 2.86
       Type: 2
     Density: 40
-    Range: 10
+    Range: 170
     Tile: {fileID: 11400000, guid: 01bff9283011bfa4284ea9ed820b810c, type: 2}
   - TypeList:
     - Weight: 2.47
@@ -501,7 +501,7 @@ MonoBehaviour:
     - Weight: 0
       Type: 4
     Density: 40
-    Range: 30
+    Range: 170
     Tile: {fileID: 11400000, guid: ce840d9040d8bdf489083e35e6598c5b, type: 2}
 --- !u!4 &1209916061 stripped
 Transform:
@@ -2105,6 +2105,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7674249973643880593, guid: b13d249d6738f1042a2c6fe368af06b9, type: 3}
+      propertyPath: m_SpriteTilingProperty.drawMode
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7837672556661922178, guid: b13d249d6738f1042a2c6fe368af06b9, type: 3}
       propertyPath: m_Name
       value: Angry_Memory
@@ -2160,6 +2164,22 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3048544796867486251, guid: 037582d31bd21584389d9de2ebf90acf, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7496893777459134907, guid: 037582d31bd21584389d9de2ebf90acf, type: 3}
+      propertyPath: m_Size.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7496893777459134907, guid: 037582d31bd21584389d9de2ebf90acf, type: 3}
+      propertyPath: m_Size.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7496893777459134907, guid: 037582d31bd21584389d9de2ebf90acf, type: 3}
+      propertyPath: m_AutoTiling
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7496893777459134907, guid: 037582d31bd21584389d9de2ebf90acf, type: 3}
+      propertyPath: m_CompositeOperation
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8355943730596808017, guid: 037582d31bd21584389d9de2ebf90acf, type: 3}

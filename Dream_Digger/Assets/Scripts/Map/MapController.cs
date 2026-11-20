@@ -25,8 +25,8 @@ public class MapController : SingletonBase<MapController>
         MapGenerator.Instance.GenerateMap(); // 맵을 생성한다.
         CurrentTileMap.CompressBounds(); // 타일맵의 넓이를 생성한 범위만큼 압축한다.
                                         // 압축하지 않으면 최소/최대치를 구할 수 없다.
-        MemorySpawner.Instance.ShuffleAreaPositionList();
-        MemorySpawner.Instance.SetMemoryOnTile();
+        MemorySpawner.Instance.ShuffleAreaPositionList(); // 좌표 리스트를 셔플한다
+        MemorySpawner.Instance.SetMemoryOnTile(); // MemoryLayer 타일맵에 기억을 배치
     }
 
     private void Start()
@@ -69,6 +69,10 @@ public class MapController : SingletonBase<MapController>
             {
                 // 타일을 없앤다.
                 CurrentTileMap.SetTile(position, null);
+                if (MemorySpawner.Instance.MemoryLayer.GetTile(position) != null)
+                {
+                    MemorySpawner.Instance.MemoryLayer.SetTile(position, null);
+                }
 
                 if (SpawnedMemoryDict.ContainsKey(position))
                 {

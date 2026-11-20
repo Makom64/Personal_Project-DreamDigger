@@ -54,4 +54,7 @@ public struct MemoryData
     
     [Header("기억 종류")]
     public MemoryType Type;
+
+    [Header("타일 표시")]
+    public MemoryTile Tile;
 }

@@ -9,14 +9,17 @@ public class MemorySpawner : SingletonBase<MemorySpawner>
     public Tilemap MemoryLayer;
     public List<MemoryResource> MemoryResources;
     public Dictionary<MemoryType, GameObject> MemoryDict;
+    public Dictionary<MemoryType, MemoryTile> TileDict;
 
     protected override void Awake()
     {
         base.Awake();
         MemoryDict = new();
+        TileDict = new();
         for (int i = 0; i < MemoryResources.Count; i++)
         {
             MemoryDict.Add(MemoryResources[i].MemoryData.Type, MemoryResources[i].gameObject);
+            TileDict.Add(MemoryResources[i].MemoryData.Type, MemoryResources[i].MemoryData.Tile);
         }
         MemoryLayer = GetComponent<Tilemap>();
     }
@@ -68,6 +71,14 @@ public class MemorySpawner : SingletonBase<MemorySpawner>
                     MapController.Instance.SpawnedMemoryDict.Add(
                         MapController.Instance.PositionsPerAreaDict[a][positionIndex],
                         MapGenerator.Instance.AreaSetter[a].TypeList[b].Type);
+                    // 스프라이트 배치
+                    if (MapGenerator.Instance.AreaSetter[a].TypeList[b].Type != MemoryType.Special)
+                    {
+                        MemoryLayer.SetTile(
+                            MapController.Instance.PositionsPerAreaDict[a][positionIndex],
+                            TileDict[MapGenerator.Instance.AreaSetter[a].TypeList[b].Type]
+                        );
+                    }
                     positionIndex++;
                 }
                 // b번 끝나면 b+1번 기억 차례
