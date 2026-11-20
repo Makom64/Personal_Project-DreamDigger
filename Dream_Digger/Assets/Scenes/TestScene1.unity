@@ -475,15 +475,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MapGenerator
   _destroyOnLoad: 0
-  XRangeSetter: 20
+  XRangeSetter: 30
   AreaSetter:
   - TypeList:
     - Weight: 2.86
       Type: 0
     - Weight: 1.69
       Type: 1
-    Density: 35
-    Range: 4
+    Density: 45
+    Range: 10
     Tile: {fileID: 11400000, guid: ef6e3788cc8f8914b90aec15ef6d97a4, type: 2}
   - TypeList:
     - Weight: 4.87
@@ -491,7 +491,7 @@ MonoBehaviour:
     - Weight: 2.86
       Type: 2
     Density: 40
-    Range: 4
+    Range: 10
     Tile: {fileID: 11400000, guid: 01bff9283011bfa4284ea9ed820b810c, type: 2}
   - TypeList:
     - Weight: 2.47
@@ -500,8 +500,8 @@ MonoBehaviour:
       Type: 3
     - Weight: 0
       Type: 4
-    Density: 27
-    Range: 4
+    Density: 40
+    Range: 30
     Tile: {fileID: 11400000, guid: ce840d9040d8bdf489083e35e6598c5b, type: 2}
 --- !u!4 &1209916061 stripped
 Transform:
@@ -1778,7 +1778,7 @@ MonoBehaviour:
   _interactionInput: {fileID: -460839751609700425, guid: 75818351abe66d049b0b20556579033b, type: 3}
   _verticalInput: {fileID: -8131798622479155438, guid: 75818351abe66d049b0b20556579033b, type: 3}
   _horizontalInput: {fileID: -3681527363135241102, guid: 75818351abe66d049b0b20556579033b, type: 3}
-  _bitePoint: 2
+  _bitePoint: 500
   _memoryCount: 0
 --- !u!95 &1782301081
 Animator:
