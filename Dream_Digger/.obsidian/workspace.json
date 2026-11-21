@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Docs/WorkLogs/261120_작업일지.md",
+                "file": "Docs/WorkLogs/261121_작업일지.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "261120_작업일지"
+              "title": "261121_작업일지"
             }
           }
         ]
@@ -188,19 +188,20 @@
   },
   "active": "3651ef5230d00f47",
   "lastOpenFiles": [
-    "Temp/ADB-Refresh3e94d3878f6a87b4cbcaa04e459fab22",
-    "Library/Search/propertyAliases.db_da92f5ebd06c426d86e019cecdda139b_temp",
-    "Temp/UnityTempFile-fb2a66a76510db944b6604986ef15e3e",
+    "Temp/ADB-Refreshd2133aaedd48eeb4788061bcd0f8be83",
+    "Temp/UnityTempFile-71c887d8c5ce3154b8b67cb029c2cbbb",
+    "Temp/UnityTempFile-643a3dd63110a29489f381d7245ad848",
     "Library/ProtocolInstance.json",
-    "Temp/UnityTempFile-2531cb08af6ac3240b1cec68058ffe6d",
-    "Temp/UnityTempFile-c2db774fdcf2e8f4c8ad9e9e857df82d",
-    "Temp/UnityTempFile-d0317a9edfd24b84893cc05bb623e05f",
-    "Temp/UnityTempFile-715c4e759ba105742a3f505f1c5da140",
-    "Temp/UnityTempFile-fffa84ff27e2d574895f68d7d510a714",
-    "Temp/UnityTempFile-3a696595e23886242bad84fe5659a833",
-    "Temp/UnityTempFile-8d25e93ec7a09bd4ab2a2cc874ab6400",
-    "Docs/WorkLogs/261119_작업일지.md",
+    "Temp/UnityTempFile-63868c75e4e230849849b4da98142f95",
+    "Temp/UnityTempFile-88f9b7c339118b640ba59da2f2388849",
+    "Temp/UnityTempFile-da3eb24a1b4061748be5f6f83e50bab8",
+    "Temp/UnityTempFile-19241c59202065e47bcd3feec86f4b20",
+    "Temp/UnityTempFile-9af0bdb319c48d74d8d6748b2caae4ba",
+    "Temp/__Backupscenes/0.backup",
+    "Temp/UnityTempFile-97b28c1ae15947f4991877905b8c5095",
     "Docs/WorkLogs/261120_작업일지.md",
+    "Docs/WorkLogs/261121_작업일지.md",
+    "Docs/WorkLogs/261119_작업일지.md",
     "Docs/Project_SetUp/프로젝트 기획.md",
     "Docs/Temp/맵, 자원 자동 생성 도식화.canvas",
     "Docs/Temp/메모1.md",
@@ -235,7 +236,6 @@
     ".github/ISSUE_TEMPLATE/FeatureTemplate.md",
     ".github/PULL_REQUEST_TEMPLATE.md",
     "Docs/Project_DevelopCycle/단위_목표1.md",
-    "Docs/Templates/IssueTemplate.md",
     "Docs/Project_Planning_Diag.canvas",
     "Docs/Project_Setup.canvas",
     "Docs/개발_프로세스_도식화.canvas"

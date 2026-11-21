@@ -490,7 +490,7 @@ MonoBehaviour:
       Type: 1
     - Weight: 2.86
       Type: 2
-    Density: 40
+    Density: 39
     Range: 170
     Tile: {fileID: 11400000, guid: 01bff9283011bfa4284ea9ed820b810c, type: 2}
   - TypeList:
