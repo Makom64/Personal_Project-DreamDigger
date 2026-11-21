@@ -12,7 +12,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Flows/Stage_A.unity
     guid: fca7cc5c91a9c7046857457acbbc9007
   - enabled: 1
-    path: Assets/Scenes/Flows/End.unity
+    path: Assets/Scenes/Flows/Ending.unity
     guid: d3f202a495ddddf49b2d25a2faa3239c
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}

@@ -24,7 +24,8 @@ public class PlayerController : SingletonBase<PlayerController>
     private Vector3Int _interactDirection; // 상호작용 방향
     private Vector3Int _initialDirection;
     private Animator _animator;
-    
+
+    public bool HasSpecialMemory;
     public int _bitePoint; // 플레이어 블록 파괴력
     public int _memoryCount; // 획득 자원 수
 
@@ -34,6 +35,7 @@ public class PlayerController : SingletonBase<PlayerController>
         base.Awake();
         CacheComponents();
         InitDirection();
+        HasSpecialMemory = false;
     }
 
     private void OnEnable()
