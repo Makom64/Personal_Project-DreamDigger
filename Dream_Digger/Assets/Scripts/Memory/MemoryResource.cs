@@ -1,24 +1,60 @@
 using UnityEngine;
+using System;
 
 public class MemoryResource : MonoBehaviour
 {
+    public MemoryData MemoryData;
+    public int Score;
+    public bool CanSell;
+
     private SpriteRenderer _spriteRenderer;
     
-    public MemoryData memoryData;
-
     private void Awake()
     {
         _spriteRenderer = GetComponent<SpriteRenderer>();
-        _spriteRenderer.sprite = memoryData.Sprite;
+        _spriteRenderer.sprite = MemoryData.Sprite;
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.tag == "Player")
         { 
-            Debug.Log($"플레이어와 부딪힘");
-            PlayerController.Instance._memoryCount++;
+            PlayerController.Instance._memoryCount += Score;
+            Debug.Log($"플레이어와 접촉함");
+            if (MemoryData.Type == MemoryType.Special)
+            {
+                Debug.Log($"{MemoryData.Name}을 획득했습니다!");
+            }
+            else
+            {
+                Debug.Log($"{MemoryData.Name} 획득!");
+            }
             Destroy(gameObject);
         }
     }
+}
+
+public enum MemoryType
+{
+    Enjoy,
+    Angry,
+    Happy,
+    Sad,
+    Special,
+}
+
+[Serializable]
+public struct MemoryData
+{
+    [Header("이미지")]
+    public Sprite Sprite;
+    
+    [Header("기억 이름")]
+    public string Name;
+    
+    [Header("기억 종류")]
+    public MemoryType Type;
+
+    [Header("타일 표시")]
+    public MemoryTile Tile;
 }

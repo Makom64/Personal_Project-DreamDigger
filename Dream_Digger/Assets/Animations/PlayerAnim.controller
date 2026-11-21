@@ -36,13 +36,10 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 1
-    m_ConditionEvent: isBiting
-    m_EventTreshold: 0
-  - m_ConditionMode: 1
     m_ConditionEvent: directionDown
     m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: directionUp
+  - m_ConditionMode: 1
+    m_ConditionEvent: isBiting
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -1762977639529830790}
@@ -68,9 +65,6 @@ AnimatorStateTransition:
   m_Conditions:
   - m_ConditionMode: 2
     m_ConditionEvent: isBiting
-    m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: directionUp
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 1389994554276088776}
@@ -151,11 +145,8 @@ AnimatorStateTransition:
   - m_ConditionMode: 1
     m_ConditionEvent: isBiting
     m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: directionDown
-    m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: directionUp
+  - m_ConditionMode: 1
+    m_ConditionEvent: directionLeftRight
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -5291321881022953334}
@@ -210,6 +201,12 @@ AnimatorController:
     m_DefaultInt: 0
     m_DefaultBool: 0
     m_Controller: {fileID: 9100000}
+  - m_Name: directionLeftRight
+    m_Type: 4
+    m_DefaultFloat: 0
+    m_DefaultInt: 0
+    m_DefaultBool: 0
+    m_Controller: {fileID: 9100000}
   m_AnimatorLayers:
   - serializedVersion: 5
     m_Name: Base Layer
@@ -259,13 +256,10 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 1
-    m_ConditionEvent: isBiting
-    m_EventTreshold: 0
-  - m_ConditionMode: 1
     m_ConditionEvent: directionUp
     m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: directionDown
+  - m_ConditionMode: 1
+    m_ConditionEvent: isBiting
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 7991267853999722554}
@@ -378,13 +372,13 @@ AnimatorStateMachine:
     m_Position: {x: -250, y: 210, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -5291321881022953334}
-    m_Position: {x: 250, y: 220, z: 0}
+    m_Position: {x: 240, y: 240, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -1762977639529830790}
     m_Position: {x: -20, y: 70, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 7991267853999722554}
-    m_Position: {x: 180, y: 160, z: 0}
+    m_Position: {x: 230, y: 100, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions:
   - {fileID: 7560420074356718271}
@@ -489,9 +483,6 @@ AnimatorStateTransition:
   m_Conditions:
   - m_ConditionMode: 2
     m_ConditionEvent: isBiting
-    m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: directionDown
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 1389994554276088776}

@@ -9,7 +9,6 @@ public class PlayerController : SingletonBase<PlayerController>
 {
     [SerializeField] private float _moveSpeed; // 이동 속도
     [SerializeField] private float _interactCoolTime;
-    [SerializeField] private Tilemap _tilemap; // 타일맵
     
     [SerializeField] private InputActionReference _moveInput; // 이동 입력
     [SerializeField] private InputActionReference _flightInput; // 비행 입력
@@ -27,7 +26,6 @@ public class PlayerController : SingletonBase<PlayerController>
     private Animator _animator;
     
     public int _bitePoint; // 플레이어 블록 파괴력
-    public PlayerState CurrentState;
     public int _memoryCount; // 획득 자원 수
 
     // ------------------------- 생명주기
@@ -63,6 +61,28 @@ public class PlayerController : SingletonBase<PlayerController>
             {
                 BiteBlock();
                 _interactCoolTimer = 0;
+            }
+        }
+
+        if (_interactionInput.action.IsPressed())
+        {
+            if (_interactDirection.y > 0)
+            {
+                _animator.SetBool("directionUp", true);
+                _animator.SetBool("directionDown", false);
+                _animator.SetBool("directionLeftRight", false);
+            }
+            else if (_interactDirection.y < 0)
+            {
+                _animator.SetBool("directionDown", true);
+                _animator.SetBool("directionUp", false);
+                _animator.SetBool("directionLeftRight", false);
+            }
+            else if (_interactDirection.x != 0)
+            {
+                _animator.SetBool("directionUp", false);
+                _animator.SetBool("directionDown", false);
+                _animator.SetBool("directionLeftRight", true);
             }
         }
     }
@@ -180,7 +200,7 @@ public class PlayerController : SingletonBase<PlayerController>
     
     private void GetPlayerCellPosition() // 플레이어 좌표를 셀좌표로 변환
     {
-        _currentPosition = _tilemap.WorldToCell(transform.position);
+        _currentPosition = MapController.Instance.CurrentTileMap.WorldToCell(transform.position);
     }
 
     private void InitDirection()
@@ -206,14 +226,6 @@ public class PlayerController : SingletonBase<PlayerController>
     private void OnVerticalDirection(InputAction.CallbackContext ctx)
     {
         _interactDirection = ChangeToCellPosition(ctx.ReadValue<Vector3>());
-        if (ctx.ReadValue<Vector3>().y > 0)
-        {
-            _animator.SetBool("directionUp", true);
-        }
-        else if (ctx.ReadValue<Vector3>().y < 0)
-        {
-            _animator.SetBool("directionDown", true);
-        }
     }
 
     private void OnStopVerticalDirection(InputAction.CallbackContext ctx)
@@ -223,20 +235,11 @@ public class PlayerController : SingletonBase<PlayerController>
         {
             _interactDirection = ChangeToCellPosition(_horizontalInput.action.ReadValue<Vector3>());
         }
-
-        if (_animator.GetBool("directionUp"))
-        {
-            _animator.SetBool("directionUp", false);
-        }
-        else if (_animator.GetBool("directionDown"))
-        {
-            _animator.SetBool("directionDown", false);
-        }
     }
 
     private Vector3Int ChangeToCellPosition(Vector3 worldPosition)
     {
-        return _tilemap.WorldToCell(worldPosition);
+        return MapController.Instance.CurrentTileMap.WorldToCell(worldPosition);
     }
 
     private void OnInteraction(InputAction.CallbackContext ctx)
