@@ -11,14 +11,10 @@
             "id": "3651ef5230d00f47",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Docs/WorkLogs/261121_작업일지.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "261121_작업일지"
+              "title": "새 탭"
             }
           }
         ]
@@ -188,19 +184,19 @@
   },
   "active": "3651ef5230d00f47",
   "lastOpenFiles": [
-    "Temp/ADB-Refreshd2133aaedd48eeb4788061bcd0f8be83",
-    "Temp/UnityTempFile-71c887d8c5ce3154b8b67cb029c2cbbb",
-    "Temp/UnityTempFile-643a3dd63110a29489f381d7245ad848",
-    "Library/ProtocolInstance.json",
-    "Temp/UnityTempFile-63868c75e4e230849849b4da98142f95",
-    "Temp/UnityTempFile-88f9b7c339118b640ba59da2f2388849",
-    "Temp/UnityTempFile-da3eb24a1b4061748be5f6f83e50bab8",
-    "Temp/UnityTempFile-19241c59202065e47bcd3feec86f4b20",
-    "Temp/UnityTempFile-9af0bdb319c48d74d8d6748b2caae4ba",
-    "Temp/__Backupscenes/0.backup",
-    "Temp/UnityTempFile-97b28c1ae15947f4991877905b8c5095",
-    "Docs/WorkLogs/261120_작업일지.md",
+    "Temp/PlayerBuildAnalyticsEvents.json",
+    "Library/LastBuild.buildreport",
+    "Temp/compute-shader-stripping.json",
+    "Temp/shader-stripping.json",
+    "Library/Bee/buildreport.json_2.traceevents",
+    "Library/Bee/backend4.traceevents",
+    "Library/Bee/buildprogram2.traceevents",
+    "Library/Bee/backend3.traceevents",
+    "Library/Bee/TundraBuildState.state",
+    "Library/Bee/artifacts/WinPlayerBuildProgram/AsyncPluginsFromLinkerSymbols/no_symbols_were_generated.txt",
+    "Library/Bee/artifacts/WinPlayerBuildProgram/AsyncPluginsFromLinker/x86_64/lib_burst_generated.dll",
     "Docs/WorkLogs/261121_작업일지.md",
+    "Docs/WorkLogs/261120_작업일지.md",
     "Docs/WorkLogs/261119_작업일지.md",
     "Docs/Project_SetUp/프로젝트 기획.md",
     "Docs/Temp/맵, 자원 자동 생성 도식화.canvas",
