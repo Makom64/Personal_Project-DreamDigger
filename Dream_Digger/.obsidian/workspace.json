@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Docs/WorkLogs/261121_작업일지.md",
+                "file": "Docs/Asset_Lisence.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "261121_작업일지"
+              "title": "Asset_Lisence"
             }
           }
         ]
@@ -188,17 +188,19 @@
   },
   "active": "3651ef5230d00f47",
   "lastOpenFiles": [
-    "Library/Artifacts/6c/6ce8d2fb2be2c615776a8ab07ed3b6b9",
-    "Library/TempArtifacts/Extra/1c54ddf7aca258d49a40bf1fb4549ddc.b.index",
-    "Library/Artifacts/70/70b3da92bb933f2cf1e8c52a43503b15",
-    "Library/TempArtifacts/Extra/d7979e5e223ccba43b59c2fa694aa4f6.info",
-    "Temp/ADB-Refresh16773a32f544d9b4a82a952561a9d768",
-    "Temp/UnityTempFile-f785c200b809c30478955b3ddba1265e",
-    "Library/ShaderCache/shader/TMP_SDF68e6/00/0e4f63070eae154d69dae3550878122c.bin",
-    "Library/ShaderCache/shader/TMP_SDF68e6/00/43034d5d006e6d8c01e14ec6812d4c02.bin",
-    "Library/ShaderCache/temp/43034d5d006e6d8c01e14ec6812d4c02.tmp-58bfeec43cedefb4bb6eec4067052eb3",
-    "Library/Artifacts/1d/1de2914eb141d937aeb641d7a3394005",
-    "Library/TempArtifacts/Extra/6ea5fcdb3d60b9c419affb3c7a474949.b.index",
+    "Temp/UnityTempFile-3bef0696c11481549b1e271fd3158e3c",
+    "Library/ProtocolInstance.json",
+    "Temp/UnityTempFile-5f7328db3982dea44ae5c426836d5bfb",
+    "Temp/UnityTempFile-02c8a69c3a1a1c14d9e6f2b78dd87e88",
+    "Library/Bee/TundraBuildState.state.tmp",
+    "Library/Bee/artifacts/1900b0aE.dag/post-processed/Assembly-CSharp.pdb",
+    "Library/Bee/artifacts/1900b0aE.dag/post-processed/Assembly-CSharp.dll",
+    "Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp.ref.dll",
+    "Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp.pdb",
+    "Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp.dll",
+    "Temp/ADB-Refresh2d1e95985b9c1a34d822fe39571980c1",
+    "Docs/WorkLogs/261121_작업일지.md",
+    "Docs/Asset_Lisence.md",
     "Assets/Sprites/1000008282.png",
     "Assets/Sprites/1000008278.png",
     "Assets/Imports/Font/TextMesh Pro/Sprites/EmojiOne.png",
@@ -206,7 +208,6 @@
     "Assets/TextMesh Pro/Sprites/EmojiOne.png",
     "Temp/Export Package/92db31db1a23c914f8c552cd0857d605/e73a58f6e2794ae7b1b7e50b7fb811b0/preview.png",
     "Temp/Export Package/3c1febd57b74b87499e7853423899589/e73a58f6e2794ae7b1b7e50b7fb811b0/preview.png",
-    "Docs/WorkLogs/261121_작업일지.md",
     "Docs/WorkLogs/261120_작업일지.md",
     "Docs/WorkLogs/261119_작업일지.md",
     "Docs/Project_SetUp/프로젝트 기획.md",
@@ -235,7 +236,6 @@
     "Docs/WorkLogs/261105_작업일지.md",
     ".github/ISSUE_TEMPLATE/FeatureTemplate.md",
     ".github/PULL_REQUEST_TEMPLATE.md",
-    "Docs/Project_DevelopCycle/단위_목표1.md",
     "Docs/Project_Planning_Diag.canvas",
     "Docs/Project_Setup.canvas",
     "Docs/개발_프로세스_도식화.canvas"
