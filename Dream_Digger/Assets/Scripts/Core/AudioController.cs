@@ -38,12 +38,14 @@ public class AudioController : SingletonBase<AudioController>
 
     public void RequestBGM(BGMType bgmType)
     {
+        Debug.Log("브금 재생합니다");
         _bgmPlayer.clip = _bgmDict[bgmType];
         _bgmPlayer.Play();
     }
 
     public void RequestSFX(SFXType sfxType)
     {
+        Debug.Log($"효과음 재생합니다");
         _sfxPlayer.PlayOneShot(_sfxDict[sfxType]);
     }
     

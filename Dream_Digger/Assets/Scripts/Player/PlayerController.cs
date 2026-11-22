@@ -259,4 +259,10 @@ public class PlayerController : SingletonBase<PlayerController>
         GetPlayerCellPosition();
         MapController.Instance.TakeBite(_interactDirection + _currentPosition, _bitePoint);
     }
+
+    private void OnBiteAnim()
+    {
+        
+        AudioController.Instance.RequestSFX(SFXType.Bite);
+    }
 }

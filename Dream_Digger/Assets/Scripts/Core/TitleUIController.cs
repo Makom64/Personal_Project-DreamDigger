@@ -4,12 +4,14 @@ using UnityEngine.UI;
 
 public class TitleUIController : MonoBehaviour
 {
-    [SerializeField] private Button StartButton;
-    [SerializeField] private Button QuitButton;
+    [SerializeField] private Button _startButton;
+    [SerializeField] private Button _quitButton;
+    [SerializeField] private Slider _bgmVolume;
 
     private void OnEnable()
     {
         BindButtonEvents();
+        BindSliderEvents();
     }
 
     private void Start()
@@ -25,13 +27,20 @@ public class TitleUIController : MonoBehaviour
     
     private void BindButtonEvents()
     {
-        StartButton.onClick.AddListener(SceneController.Instance.LoadStageA);
-        QuitButton.onClick.AddListener(Application.Quit);
+        _startButton.onClick.AddListener(SceneController.Instance.LoadStageA);
+        _quitButton.onClick.AddListener(Application.Quit);
+    }
+
+    private void BindSliderEvents()
+    {
+        _bgmVolume.minValue = 0;
+        _bgmVolume.maxValue = 100;
+        _bgmVolume.wholeNumbers = true;
     }
     
     private void UnbindButtonEvents()
     {
-        StartButton.onClick.RemoveAllListeners();
-        QuitButton.onClick.RemoveAllListeners();
+        _startButton.onClick.RemoveAllListeners();
+        _quitButton.onClick.RemoveAllListeners();
     }
 }
