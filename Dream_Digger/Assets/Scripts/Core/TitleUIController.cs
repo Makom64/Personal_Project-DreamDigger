@@ -10,6 +10,11 @@ public class TitleUIController : MonoBehaviour
     private void OnEnable()
     {
         BindButtonEvents();
+    }
+
+    private void Start()
+    {
+        Debug.Log($"타이틀 브금 요청합니다.");
         AudioController.Instance.RequestBGM(BGMType.Title);
     }
 

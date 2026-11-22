@@ -6,7 +6,7 @@ public class AudioController : SingletonBase<AudioController>
 {
     [SerializeField] private AudioSource _bgmPlayer;
     [SerializeField] private AudioSource _sfxPlayer;
-    
+
     public List<BGMData> BGMList;
     public List<SFXData> SFXList;
     private Dictionary<BGMType, AudioClip> _bgmDict;
@@ -17,8 +17,6 @@ public class AudioController : SingletonBase<AudioController>
         base.Awake();
         _bgmDict = new ();
         _sfxDict = new();
-        _bgmPlayer = _bgmPlayer.GetComponent<AudioSource>();
-        _sfxPlayer = _sfxPlayer.GetComponent<AudioSource>();
 
         for (int a = 0; a < BGMList.Count; a++)
         {
@@ -29,6 +27,13 @@ public class AudioController : SingletonBase<AudioController>
         {
             _sfxDict.Add(SFXList[a].Type, SFXList[a].Clip);
         }
+    }
+
+    private void OnEnable()
+    {
+        _bgmPlayer = GetComponent<AudioSource>();
+        _sfxPlayer = GetComponent<AudioSource>();
+        Debug.Log($"재생할 준비 끝났습니다.");
     }
 
     public void RequestBGM(BGMType bgmType)
