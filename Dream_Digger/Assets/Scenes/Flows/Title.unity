@@ -1755,9 +1755,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ab3a9dbe06ea5145a6eef764a7e9a70, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UIController
-  _startButton: {fileID: 0}
-  _quitButton: {fileID: 0}
-  _bgmVolume: {fileID: 0}
+  _startButton: {fileID: 2069303536}
+  _quitButton: {fileID: 1197176005}
+  _bgmVolume: {fileID: 824380868}
 --- !u!1 &2069303534
 GameObject:
   m_ObjectHideFlags: 0
