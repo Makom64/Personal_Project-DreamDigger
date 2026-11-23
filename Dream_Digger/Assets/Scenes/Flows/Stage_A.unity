@@ -133,11 +133,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5828544771068422813, guid: dee03f3cd066dcb4581c26f414e55683, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 5.59
+      value: 5.2
       objectReference: {fileID: 0}
     - target: {fileID: 5828544771068422813, guid: dee03f3cd066dcb4581c26f414e55683, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.76
+      value: 0.95
       objectReference: {fileID: 0}
     - target: {fileID: 5828544771068422813, guid: dee03f3cd066dcb4581c26f414e55683, type: 3}
       propertyPath: m_LocalPosition.z
@@ -179,6 +179,10 @@ PrefabInstance:
       propertyPath: _destroyOnLoad
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7840148985059354238, guid: dee03f3cd066dcb4581c26f414e55683, type: 3}
+      propertyPath: m_CullingMask.m_Bits
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -210,19 +214,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3075956182283887982, guid: 20689df9c2270c54385add7c7f44c545, type: 3}
       propertyPath: AreaSetter.Array.data[0].Range
-      value: 3
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 3075956182283887982, guid: 20689df9c2270c54385add7c7f44c545, type: 3}
       propertyPath: AreaSetter.Array.data[1].Range
-      value: 4
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 3075956182283887982, guid: 20689df9c2270c54385add7c7f44c545, type: 3}
       propertyPath: AreaSetter.Array.data[2].Range
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 3075956182283887982, guid: 20689df9c2270c54385add7c7f44c545, type: 3}
       propertyPath: AreaSetter.Array.data[0].Density
       value: 29
+      objectReference: {fileID: 0}
+    - target: {fileID: 3075956182283887982, guid: 20689df9c2270c54385add7c7f44c545, type: 3}
+      propertyPath: AreaSetter.Array.data[0].TypeList.Array.data[0].Weight
+      value: 2.27
       objectReference: {fileID: 0}
     - target: {fileID: 4051600698360285780, guid: 20689df9c2270c54385add7c7f44c545, type: 3}
       propertyPath: m_LocalPosition.x
