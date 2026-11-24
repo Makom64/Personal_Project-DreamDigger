@@ -11,7 +11,7 @@ public class MapGenerator : SingletonBase<MapGenerator>
     
     public void GenerateMap() // 타일맵 생성과 구역 별 Y값을 딕셔너리에 담아준다.
     {
-        MapController.Instance.CurrentTileMap.ClearAllTiles(); // 타일맵 소거
+        /*MapController.Instance.CurrentTileMap.ClearAllTiles();*/ // 타일맵 소거
         Vector3Int tempVector3Int = new(); // 임시 Vector3Int
         int loopCount = 0; // 반복문 루프 횟수 체크
         for (int a = 0; a < AreaSetter.Count; a++) // a = 구역 인덱스
