@@ -11,36 +11,6 @@ public class MemorySpawner : SingletonBase<MemorySpawner>
     public Dictionary<MemoryType, GameObject> MemoryDict;
     public Dictionary<MemoryType, MemoryTile> TileDict;
 
-    public int[] DiceArray = new int [6];
-
-    private void temp()
-    {
-        DiceArray[0] = 1;
-        DiceArray[1] = 2;
-        DiceArray[2] = 3;
-        DiceArray[3] = 4;
-        DiceArray[4] = 5;
-        DiceArray[5] = 6;
-    }
-
-    public void temptemp(AreaData areaData)
-    {
-        areaData = MapGenerator.Instance.AreaSetter[0];
-    }
-
-    public void ShuffleDice()
-    {
-        Random random = new Random();
-        for (int a = 0; a < DiceArray.Length; a++)
-        {
-            int b = random.Next(a + 1, DiceArray.Length);
-
-            int temp = DiceArray[a];
-            DiceArray[a] = DiceArray[b];
-            DiceArray[b] = temp;
-        }
-    }
-
     protected override void Awake()
     {
         base.Awake();
