@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Docs/Asset_Lisence.md",
+                "file": "Docs/WorkLogs/26년_11월/261126_작업일지.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Asset_Lisence"
+              "title": "261126_작업일지"
             }
           }
         ]
@@ -186,19 +186,23 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "a4016c9ef20e742f",
+  "active": "9a56b1a28589d2f5",
   "lastOpenFiles": [
-    "Library/Search/propertyAliases.db_84a0b8a36e8041f4bbea8f39c4820fb4_temp",
     "Library/ProtocolInstance.json",
-    "Temp/UnityTempFile-81af3c7dd5d446047a5e3856bdf08b96",
+    "Temp/UnityTempFile-8064cd7ea58d32544b40b4189c55a0b4",
+    "Temp/UnityTempFile-b30d9cccc37009344b84b0aeab00466f",
     "Library/Bee/TundraBuildState.state",
     "Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp.ref.dll",
     "Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp.pdb",
     "Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp.dll",
-    "Temp/ADB-Refresh1d4892ca335e7db49b708f27f81addf8",
-    "Temp/Bin/Debug/Assembly-CSharp",
-    "Temp/Bin/Debug",
-    "Temp/Bin",
+    "Temp/ADB-Refresha9b3efdd9da90b943ac6a63517c89193",
+    "Temp/UnityTempFile-bd635a0ae6c375f4ebb9cb7e745fa527",
+    "Temp/UnityTempFile-4e9542326cd97334f9bf635b40e84207",
+    "Temp/ADB-Refresh302aff158ae1b4347b90cb7ff6a15555",
+    "Docs/Temp/우리의_마음.png",
+    "Docs/WorkLogs/26년_11월/261105_작업일지.md",
+    "Docs/WorkLogs/26년_11월/261126_작업일지.md",
+    "Docs/Asset_Lisence.md",
     "Docs/Rules/GroundRule.md",
     "Docs/Canvas/개발_프로세스_도식화.canvas",
     "Docs/Canvas/Project_Setup.canvas",
@@ -212,35 +216,31 @@
     "Assets/Sprites/PlayerAnim/TempRun.png",
     "Assets/Sprites/PlayerAnim/TempIdle.png",
     "Assets/Sprites/PlayerAnim/TempFly.png",
-    "Assets/Sprites/PlayerAnim/TempBiteUpDown.png",
     "Docs/개발_프로세스_도식화.canvas",
     "Docs/Project_Setup.canvas",
     "Docs/Project_Planning_Diag.canvas",
     "Docs/GroundRule.md",
-    "Docs/Asset_Lisence.md",
     "Docs/Project_Presentation/발표_초안.md",
     "Docs/Project_SetUp/프로젝트 기획.md",
     "CLAUDE.md",
     "Docs/Temp/맵, 자원 자동 생성 도식화.canvas",
     "Docs/Temp/메모1.md",
     "Docs/Temp/메모2.md",
-    "Docs/WorkLogs/261122_작업일지.md",
-    "Docs/WorkLogs/261121_작업일지.md",
-    "Docs/WorkLogs/261120_작업일지.md",
-    "Docs/WorkLogs/261119_작업일지.md",
+    "Docs/WorkLogs/26년_11월/261122_작업일지.md",
+    "Docs/WorkLogs/26년_11월/261121_작업일지.md",
+    "Docs/WorkLogs/26년_11월/261120_작업일지.md",
+    "Docs/WorkLogs/26년_11월/261119_작업일지.md",
     "Docs/Temp/플레이어 상태 도식화.canvas",
-    "Docs/WorkLogs/261118_작업일지.md",
-    "Docs/WorkLogs/261117_작업일지.md",
-    "Docs/WorkLogs/261116_작업일지.md",
-    "Docs/WorkLogs/261108_작업일지.md",
-    "Docs/WorkLogs/261114_작업일지.md",
-    "Docs/WorkLogs/261115_작업일지.md",
+    "Docs/WorkLogs/26년_11월/261118_작업일지.md",
+    "Docs/WorkLogs/26년_11월/261117_작업일지.md",
+    "Docs/WorkLogs/26년_11월/261116_작업일지.md",
+    "Docs/WorkLogs/26년_11월/261108_작업일지.md",
+    "Docs/WorkLogs/26년_11월/261114_작업일지.md",
+    "Docs/WorkLogs/26년_11월/261115_작업일지.md",
     "Docs/Templates/PullRequestTemplate.md",
     "Docs/Templates/WorkLogTemplate.md",
-    "Docs/WorkLogs/261113_작업일지.md",
+    "Docs/WorkLogs/26년_11월/261113_작업일지.md",
     "Docs/Project_Planning/Plans/타일맵 기획서.md",
-    "Docs/WorkLogs/261112_작업일지.md",
-    "Docs/WorkLogs/261111_작업일지.md",
-    "Docs/WorkLogs/261110_작업일지.md"
+    "Docs/WorkLogs/26년_11월/261112_작업일지.md"
   ]
 }
