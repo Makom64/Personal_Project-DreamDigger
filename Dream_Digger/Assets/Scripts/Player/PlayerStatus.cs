@@ -12,13 +12,10 @@ public class PlayerStatus : MonoBehaviour
     public ObservableProperty<int> CurrentAltitude;
     [Header("잠식까지 남은 수치")] public ObservableProperty<int> CurrentSinked;
 
-    private void BindObServeEvents()
+    private void OnEnable()
     {
-        CurrentHealth.AddListener(TakeDamage);
+        
     }
     
-    public void TakeDamage(int damage)
-    {
-        CurrentHealth.Value -= damage;
-    }
+    
 }
