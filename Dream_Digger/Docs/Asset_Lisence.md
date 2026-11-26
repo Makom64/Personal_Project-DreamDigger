@@ -1,1 +1,9 @@
-엔딩곡 : 7. A Quiet Moment LOOP, Season Cycle: Casual Gaming Music Pack / # Steve Base Music
+# Graphics
+
+Player 스프라이트 이미지 : 자체 제작
+
+# Audios
+
+### - BGM
+
+- Title : 
