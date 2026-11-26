@@ -8,7 +8,7 @@
 		{"id":"0e64f86c011344ac","type":"text","text":"## 작업 환경 적응\n- 협업 툴 설정 후 시범\n- 저장소 준비\n- 필요 문서들 개선\n- 그라운드 룰 개선과 숙지","x":2196,"y":660,"width":358,"height":200},
 		{"id":"cde7ada6c198f017","type":"text","text":"## 필요 문서\n- 공통\n\t-  GroundRule\n\t- CodeConvention\n\t- CodeStyleRule\n\t- BranchRule\n\t- PullRequestTemplete\n\t- PullRequestRule\n\t- WorkLogTemplete\n\t- IssueTemplete\n\t- TroubleShooting\n- 팀 프로젝트\n\t- MinutesTemplete","x":2716,"y":560,"width":340,"height":400,"color":"4"},
 		{"id":"6ca2aed48c401db2","type":"text","text":"## 프로젝트 기획서","x":2518,"y":-301,"width":221,"height":50,"color":"4"},
-		{"id":"642f48ebc0045b05","type":"file","file":"Docs/Project_Planning_Diag.canvas","x":2160,"y":1360,"width":1033,"height":1120}
+		{"id":"642f48ebc0045b05","type":"file","file":"Docs/Canvas/Project_Planning_Diag.canvas","x":2160,"y":1360,"width":1033,"height":1120}
 	],
 	"edges":[
 		{"id":"78236df1d865cd82","fromNode":"81949729cca82e3f","fromSide":"bottom","toNode":"0e64f86c011344ac","toSide":"top","color":"4","label":"의논 및 검토"},

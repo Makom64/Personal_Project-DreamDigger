@@ -8,34 +8,17 @@
         "type": "tabs",
         "children": [
           {
-            "id": "ac5493ec2c76e4a1",
-            "type": "leaf",
-            "state": {
-              "type": "canvas",
-              "state": {
-                "file": "Docs/Temp/맵, 자원 자동 생성 도식화.canvas",
-                "viewState": {
-                  "x": -7,
-                  "y": -201.5,
-                  "zoom": -1.0135148064744817
-                }
-              },
-              "icon": "lucide-layout-dashboard",
-              "title": "맵, 자원 자동 생성 도식화"
-            }
-          },
-          {
-            "id": "3651ef5230d00f47",
+            "id": "9a56b1a28589d2f5",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Docs/Project_Presentation/발표_초안.md",
+                "file": "Docs/Asset_Lisence.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "발표_초안"
+              "title": "Asset_Lisence"
             }
           }
         ]
@@ -203,39 +186,43 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "ac5493ec2c76e4a1",
+  "active": "9a56b1a28589d2f5",
   "lastOpenFiles": [
-    "Docs/Temp/첨부파일/Pasted image 20261110132125.png",
-    "Docs/Temp/메모1.md",
-    "Docs/Temp/메모2.md",
+    "Docs/Canvas/Project_Setup.canvas",
+    "Docs/Canvas/개발_프로세스_도식화.canvas",
+    "Docs/Asset_Lisence.md",
+    "Library/Search/propertyDatabase.db_500caa2b00f347068a3c4700faa95083_temp",
+    "Library/Artifacts/68/68394787b378db578158103e4846595f",
+    "Temp/ADB-Refresh5133b71ab4f375e49aa9c225cf6f5385",
+    "Temp/UnityTempFile-0ab72beace6d1d742bb94eabc56f7321",
+    "Library/Artifacts/07/07119f20e7348d34e1d6bdaf36e6c2ff",
+    "Assets/Imports/TempAudios/Casual SoundFX Pack/Sounds/Pickup Soft.wav.meta",
+    "Assets/Imports/TempAudios/Casual SoundFX Pack/Sounds/Pickup Soft.wav",
+    "Library/Artifacts/72/725ab32a83f5050992f889fd5a237fff",
+    "Library/Artifacts/3d/3d0954da3def804971ce85a32d07c9e6",
+    "Library/Artifacts/59/59f60f9a33b2d47d39a1b2fe4db66f53",
+    "Temp/Export Package/54f5fcfbd9355ba4285dbec1d70e1185/3c8e1b51a59b6da42b0823020f826bf1/preview.png",
+    "Temp/Export Package/54f5fcfbd9355ba4285dbec1d70e1185/3a0789bed28639149a94da7d499e6606/preview.png",
+    "Temp/Export Package/54f5fcfbd9355ba4285dbec1d70e1185/3830029b89ea7a04992156c6adbc327c/preview.png",
+    "Temp/Export Package/1b11af90a687f4a458cc31f2f983f620/13b481262ca11bc4cbfa819b6dfe28cc/preview.png",
+    "Temp/Export Package/1b11af90a687f4a458cc31f2f983f620/06a0420f8524f54458b313c29fbfd2b1/preview.png",
+    "Temp/Export Package/66d7f3c50dfc2394aafb689bd02c1dd2/c87d5de36866a4e52807a649a18f2064/preview.png",
+    "Temp/Export Package/66d7f3c50dfc2394aafb689bd02c1dd2/aac7cef1916c347b8849593e8473e54f/preview.png",
+    "Temp/Export Package/66d7f3c50dfc2394aafb689bd02c1dd2/7260829b8135b472e817c648b7ea4aa8/preview.png",
+    "Temp/Export Package/66d7f3c50dfc2394aafb689bd02c1dd2/679c6b027fd25470286fe5f199c0d44b/preview.png",
+    "Temp/Export Package/66d7f3c50dfc2394aafb689bd02c1dd2/206a7d5cbaa9641959060de4e3fe02f2/preview.png",
+    "Docs/Rules/GroundRule.md",
+    "Docs/Canvas/Project_Planning_Diag.canvas",
     "Docs/Project_Presentation/발표_초안.md",
     "Docs/Project_SetUp/프로젝트 기획.md",
-    "Assets/TakeDream_v0.2.unitypackage",
-    "Temp/tempExportPackage.unitypackage",
-    "Temp/archtemp.tar",
-    "Temp/Export Package/e3265ab4bf004d28a9537516768c1c75/pathname",
-    "Temp/Export Package/e3265ab4bf004d28a9537516768c1c75/asset.meta",
-    "Temp/Export Package/e3265ab4bf004d28a9537516768c1c75/asset",
-    "Temp/Export Package/e3265ab4bf004d28a9537516768c1c75",
-    "Temp/Export Package/f63d574838ccfb44f84acc05fed0af48/pathname",
-    "Temp/Export Package/f63d574838ccfb44f84acc05fed0af48/asset.meta",
-    "Temp/Export Package/f63d574838ccfb44f84acc05fed0af48/asset",
-    "Temp/Export Package/079b16d65b3b04fe8aee9e756c46e985/preview.png",
-    "Temp/Export Package/da2364bcebf1bf049af59cdc0d67b902/preview.png",
-    "Temp/Export Package/79459efec17a4d00a321bdcc27bbc385/preview.png",
-    "Temp/Export Package/7d60b1de9e6474fc3ae5cdc46963aaac/preview.png",
-    "Temp/Export Package/e73a58f6e2794ae7b1b7e50b7fb811b0/preview.png",
-    "Assets/Sprites/1000008294.png",
-    "Assets/Sprites/1000008293.png",
-    "Assets/Sprites/1000008292.png",
-    "Assets/Sprites/1000008291.png",
-    "Assets/Sprites/1000008290 1.png",
+    "CLAUDE.md",
+    "Docs/Temp/맵, 자원 자동 생성 도식화.canvas",
+    "Docs/Temp/메모1.md",
+    "Docs/Temp/메모2.md",
     "Docs/WorkLogs/261122_작업일지.md",
     "Docs/WorkLogs/261121_작업일지.md",
-    "Docs/Asset_Lisence.md",
     "Docs/WorkLogs/261120_작업일지.md",
     "Docs/WorkLogs/261119_작업일지.md",
-    "Docs/Temp/맵, 자원 자동 생성 도식화.canvas",
     "Docs/Temp/플레이어 상태 도식화.canvas",
     "Docs/WorkLogs/261118_작업일지.md",
     "Docs/WorkLogs/261117_작업일지.md",
@@ -250,11 +237,6 @@
     "Docs/WorkLogs/261112_작업일지.md",
     "Docs/WorkLogs/261111_작업일지.md",
     "Docs/WorkLogs/261110_작업일지.md",
-    "Docs/Project_Planning/Plans/기초 기획서.md",
-    "Docs/Project_Planning/Implement_Detail/플레이어 세부 구현 방안.md",
-    "Docs/WorkLogs/261105_작업일지.md",
-    "Docs/Project_Planning_Diag.canvas",
-    "Docs/Project_Setup.canvas",
-    "Docs/개발_프로세스_도식화.canvas"
+    "Docs/Project_Planning/Plans/기초 기획서.md"
   ]
 }
