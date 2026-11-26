@@ -24,6 +24,11 @@ public class MemoryResource : MonoBehaviour
             if (MemoryData.Type == MemoryType.Special)
             {
                 Debug.Log($"{MemoryData.Name}을 획득했습니다!");
+                PlayerController.Instance.HasSpecialMemory = true;
+                if (PlayerController.Instance.HasSpecialMemory)
+                {
+                    SceneController.Instance.LoadEnding();
+                }
             }
             else
             {

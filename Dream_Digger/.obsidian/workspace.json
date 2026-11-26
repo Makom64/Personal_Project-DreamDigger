@@ -4,21 +4,38 @@
     "type": "split",
     "children": [
       {
-        "id": "de88237c916a6b90",
+        "id": "eafc36b315d54742",
         "type": "tabs",
         "children": [
+          {
+            "id": "ac5493ec2c76e4a1",
+            "type": "leaf",
+            "state": {
+              "type": "canvas",
+              "state": {
+                "file": "Docs/Temp/맵, 자원 자동 생성 도식화.canvas",
+                "viewState": {
+                  "x": -7,
+                  "y": -201.5,
+                  "zoom": -1.0135148064744817
+                }
+              },
+              "icon": "lucide-layout-dashboard",
+              "title": "맵, 자원 자동 생성 도식화"
+            }
+          },
           {
             "id": "3651ef5230d00f47",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Docs/WorkLogs/261121_작업일지.md",
+                "file": "Docs/Project_Presentation/발표_초안.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "261121_작업일지"
+              "title": "발표_초안"
             }
           }
         ]
@@ -186,38 +203,41 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "3651ef5230d00f47",
+  "active": "ac5493ec2c76e4a1",
   "lastOpenFiles": [
-    "Temp/PlayerBuildAnalyticsEvents.json",
-    "Library/LastBuild.buildreport",
-    "Temp/compute-shader-stripping.json",
-    "Temp/shader-stripping.json",
-    "Library/Bee/buildreport.json_2.traceevents",
-    "Library/Bee/backend4.traceevents",
-    "Library/Bee/buildprogram2.traceevents",
-    "Library/Bee/backend3.traceevents",
-    "Library/Bee/TundraBuildState.state",
-    "Library/Bee/artifacts/WinPlayerBuildProgram/AsyncPluginsFromLinkerSymbols/no_symbols_were_generated.txt",
-    "Library/Bee/artifacts/WinPlayerBuildProgram/AsyncPluginsFromLinker/x86_64/lib_burst_generated.dll",
-    "Docs/WorkLogs/261121_작업일지.md",
-    "Docs/WorkLogs/261120_작업일지.md",
-    "Docs/WorkLogs/261119_작업일지.md",
-    "Docs/Project_SetUp/프로젝트 기획.md",
-    "Docs/Temp/맵, 자원 자동 생성 도식화.canvas",
+    "Docs/Temp/첨부파일/Pasted image 20261110132125.png",
     "Docs/Temp/메모1.md",
     "Docs/Temp/메모2.md",
+    "Docs/Project_Presentation/발표_초안.md",
+    "Docs/Project_SetUp/프로젝트 기획.md",
+    "Assets/TakeDream_v0.2.unitypackage",
+    "Temp/tempExportPackage.unitypackage",
+    "Temp/archtemp.tar",
+    "Temp/Export Package/e3265ab4bf004d28a9537516768c1c75/pathname",
+    "Temp/Export Package/e3265ab4bf004d28a9537516768c1c75/asset.meta",
+    "Temp/Export Package/e3265ab4bf004d28a9537516768c1c75/asset",
+    "Temp/Export Package/e3265ab4bf004d28a9537516768c1c75",
+    "Temp/Export Package/f63d574838ccfb44f84acc05fed0af48/pathname",
+    "Temp/Export Package/f63d574838ccfb44f84acc05fed0af48/asset.meta",
+    "Temp/Export Package/f63d574838ccfb44f84acc05fed0af48/asset",
+    "Temp/Export Package/079b16d65b3b04fe8aee9e756c46e985/preview.png",
+    "Temp/Export Package/da2364bcebf1bf049af59cdc0d67b902/preview.png",
+    "Temp/Export Package/79459efec17a4d00a321bdcc27bbc385/preview.png",
+    "Temp/Export Package/7d60b1de9e6474fc3ae5cdc46963aaac/preview.png",
+    "Temp/Export Package/e73a58f6e2794ae7b1b7e50b7fb811b0/preview.png",
+    "Assets/Sprites/1000008294.png",
+    "Assets/Sprites/1000008293.png",
+    "Assets/Sprites/1000008292.png",
+    "Assets/Sprites/1000008291.png",
+    "Assets/Sprites/1000008290 1.png",
+    "Docs/WorkLogs/261122_작업일지.md",
+    "Docs/WorkLogs/261121_작업일지.md",
+    "Docs/Asset_Lisence.md",
+    "Docs/WorkLogs/261120_작업일지.md",
+    "Docs/WorkLogs/261119_작업일지.md",
+    "Docs/Temp/맵, 자원 자동 생성 도식화.canvas",
     "Docs/Temp/플레이어 상태 도식화.canvas",
-    "Docs/Temp/TempImageA.png",
-    "Assets/Sprites/key_yellow.png",
     "Docs/WorkLogs/261118_작업일지.md",
-    "Temp/Burst/burst-aots2o53uiq.bmp",
-    "Temp/Burst/burst-aotd87u4tob.png",
-    "Assets/Sprites/tile_0003.png",
-    "Assets/Sprites/tile_0002.png",
-    "Assets/Sprites/tile_0001.png",
-    "Assets/Sprites/tile_0000.png",
-    "Assets/Sprites/TempRun.png",
-    "Assets/Sprites/TempIdle.png",
     "Docs/WorkLogs/261117_작업일지.md",
     "Docs/WorkLogs/261116_작업일지.md",
     "Docs/WorkLogs/261108_작업일지.md",
@@ -233,9 +253,6 @@
     "Docs/Project_Planning/Plans/기초 기획서.md",
     "Docs/Project_Planning/Implement_Detail/플레이어 세부 구현 방안.md",
     "Docs/WorkLogs/261105_작업일지.md",
-    ".github/ISSUE_TEMPLATE/FeatureTemplate.md",
-    ".github/PULL_REQUEST_TEMPLATE.md",
-    "Docs/Project_DevelopCycle/단위_목표1.md",
     "Docs/Project_Planning_Diag.canvas",
     "Docs/Project_Setup.canvas",
     "Docs/개발_프로세스_도식화.canvas"

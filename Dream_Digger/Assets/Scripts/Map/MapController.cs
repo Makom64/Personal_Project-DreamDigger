@@ -42,6 +42,8 @@ public class MapController : SingletonBase<MapController>
         }
     }
 
+    
+
     // position : 플레이어 상호작용 목표 지점 / bite : 플레이어 파괴력
     public void TakeBite(Vector3Int position, int bite) // 타일 파괴 식
     {
@@ -69,6 +71,7 @@ public class MapController : SingletonBase<MapController>
             {
                 // 타일을 없앤다.
                 CurrentTileMap.SetTile(position, null);
+                AudioController.Instance.RequestSFX(SFXType.TileBreak);
                 if (MemorySpawner.Instance.MemoryLayer.GetTile(position) != null)
                 {
                     MemorySpawner.Instance.MemoryLayer.SetTile(position, null);
