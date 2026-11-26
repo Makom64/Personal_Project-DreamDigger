@@ -1364,11 +1364,11 @@ MonoBehaviour:
   _sfxPlayer: {fileID: 683261360}
   BGMList:
   - Type: 0
-    Clip: {fileID: 8300000, guid: 079b16d65b3b04fe8aee9e756c46e985, type: 3}
+    Clip: {fileID: 8300000, guid: 7d60b1de9e6474fc3ae5cdc46963aaac, type: 3}
   - Type: 1
     Clip: {fileID: 8300000, guid: da2364bcebf1bf049af59cdc0d67b902, type: 3}
   - Type: 2
-    Clip: {fileID: 8300000, guid: 7d60b1de9e6474fc3ae5cdc46963aaac, type: 3}
+    Clip: {fileID: 8300000, guid: 079b16d65b3b04fe8aee9e756c46e985, type: 3}
   SFXList:
   - Type: 1
     Clip: {fileID: 8300000, guid: 9f2c7bf60aa09524e9778c61b2358ab7, type: 3}
