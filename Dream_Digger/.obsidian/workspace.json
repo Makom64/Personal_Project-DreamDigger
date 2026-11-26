@@ -11,17 +11,14 @@
             "id": "ac5493ec2c76e4a1",
             "type": "leaf",
             "state": {
-              "type": "canvas",
+              "type": "markdown",
               "state": {
-                "file": "Docs/Temp/맵, 자원 자동 생성 도식화.canvas",
-                "viewState": {
-                  "x": -7,
-                  "y": -201.5,
-                  "zoom": -1.0135148064744817
-                }
+                "file": "CLAUDE.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-layout-dashboard",
-              "title": "맵, 자원 자동 생성 도식화"
+              "icon": "lucide-file",
+              "title": "CLAUDE"
             }
           },
           {
@@ -205,21 +202,23 @@
   },
   "active": "ac5493ec2c76e4a1",
   "lastOpenFiles": [
+    "Library/ProtocolInstance.json",
+    "Temp/UnityTempFile-d6d7f2e230907244f9d8d93e8c405292",
+    "Temp/UnityTempFile-5719e19dd2d7fe14f9207e4d44aac909",
+    "Library/Bee/TundraBuildState.state",
+    "Library/Bee/artifacts/1900b0aE.dag/post-processed/Assembly-CSharp.pdb",
+    "Library/Bee/artifacts/1900b0aE.dag/post-processed/Assembly-CSharp.dll",
+    "Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp.ref.dll",
+    "Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp.pdb",
+    "Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp.dll",
+    "Library/Bee/buildprogram0.traceevents",
+    "Temp/ADB-Refresh2a8b7f8d6d7f12546ba0890b52f4a9ec",
+    "Docs/Temp/맵, 자원 자동 생성 도식화.canvas",
     "Docs/Temp/첨부파일/Pasted image 20261110132125.png",
     "Docs/Temp/메모1.md",
     "Docs/Temp/메모2.md",
     "Docs/Project_Presentation/발표_초안.md",
     "Docs/Project_SetUp/프로젝트 기획.md",
-    "Assets/TakeDream_v0.2.unitypackage",
-    "Temp/tempExportPackage.unitypackage",
-    "Temp/archtemp.tar",
-    "Temp/Export Package/e3265ab4bf004d28a9537516768c1c75/pathname",
-    "Temp/Export Package/e3265ab4bf004d28a9537516768c1c75/asset.meta",
-    "Temp/Export Package/e3265ab4bf004d28a9537516768c1c75/asset",
-    "Temp/Export Package/e3265ab4bf004d28a9537516768c1c75",
-    "Temp/Export Package/f63d574838ccfb44f84acc05fed0af48/pathname",
-    "Temp/Export Package/f63d574838ccfb44f84acc05fed0af48/asset.meta",
-    "Temp/Export Package/f63d574838ccfb44f84acc05fed0af48/asset",
     "Temp/Export Package/079b16d65b3b04fe8aee9e756c46e985/preview.png",
     "Temp/Export Package/da2364bcebf1bf049af59cdc0d67b902/preview.png",
     "Temp/Export Package/79459efec17a4d00a321bdcc27bbc385/preview.png",
@@ -229,13 +228,11 @@
     "Assets/Sprites/1000008293.png",
     "Assets/Sprites/1000008292.png",
     "Assets/Sprites/1000008291.png",
-    "Assets/Sprites/1000008290 1.png",
     "Docs/WorkLogs/261122_작업일지.md",
     "Docs/WorkLogs/261121_작업일지.md",
     "Docs/Asset_Lisence.md",
     "Docs/WorkLogs/261120_작업일지.md",
     "Docs/WorkLogs/261119_작업일지.md",
-    "Docs/Temp/맵, 자원 자동 생성 도식화.canvas",
     "Docs/Temp/플레이어 상태 도식화.canvas",
     "Docs/WorkLogs/261118_작업일지.md",
     "Docs/WorkLogs/261117_작업일지.md",
