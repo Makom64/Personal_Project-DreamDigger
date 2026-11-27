@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerStatus : MonoBehaviour
@@ -11,11 +12,5 @@ public class PlayerStatus : MonoBehaviour
     public ObservableProperty<int> CurrentHealth;
     public ObservableProperty<int> CurrentAltitude;
     [Header("잠식까지 남은 수치")] public ObservableProperty<int> CurrentSinked;
-
-    private void OnEnable()
-    {
-        
-    }
-    
     
 }

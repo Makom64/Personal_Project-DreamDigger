@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 4943052987442040465}
   - component: {fileID: 9171518337943028755}
   - component: {fileID: 7350020627683905670}
+  - component: {fileID: 8795682754531488258}
   m_Layer: 6
   m_Name: Player
   m_TagString: Player
@@ -211,8 +212,29 @@ MonoBehaviour:
   _interactionInput: {fileID: -460839751609700425, guid: 75818351abe66d049b0b20556579033b, type: 3}
   _verticalInput: {fileID: -8131798622479155438, guid: 75818351abe66d049b0b20556579033b, type: 3}
   _horizontalInput: {fileID: -3681527363135241102, guid: 75818351abe66d049b0b20556579033b, type: 3}
+  HasSpecialMemory: 0
   _bitePoint: 1
   _memoryCount: 0
+--- !u!114 &8795682754531488258
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1301146017322193439}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 435df0c661fee3f44913a41db519bd92, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerStatus
+  MaxHealth: 100
+  MaxSinked: 100
+  CurrentHealth:
+    _value: 100
+  CurrentAltitude:
+    _value: 0
+  CurrentSinked:
+    _value: 0
 --- !u!1 &6726285610893014340
 GameObject:
   m_ObjectHideFlags: 0

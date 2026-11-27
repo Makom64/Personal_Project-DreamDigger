@@ -1,16 +1,27 @@
+using TMPro;
 using UnityEngine;
 
 public class PlayUIController : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    [SerializeField] private TextMeshProUGUI _healthText;
+    [SerializeField] private TextMeshProUGUI _altitudeText;
+
+    private PlayerStatus _status;
+
+    private void OnEnable()
     {
-        
+        _status = GetComponent<PlayerStatus>();
+        _status.CurrentHealth.AddListener(RefreshHealthText);
+        _status.CurrentAltitude.AddListener(RefreshAltitudeText);
+    }
+    
+    private void RefreshHealthText(int health)
+    {
+        _healthText.text = $"{_status.CurrentHealth}";
     }
 
-    // Update is called once per frame
-    void Update()
+    private void RefreshAltitudeText(int altitude)
     {
-        
+        _altitudeText.text = $"{_status.CurrentAltitude}";
     }
 }

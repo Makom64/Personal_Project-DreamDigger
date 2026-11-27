@@ -9,6 +9,18 @@ public class MapController : SingletonBase<MapController>
     public Tilemap CurrentTileMap;
     public Dictionary<int, List<Vector3Int>> PositionsPerAreaDict; // 구역 번호(키), 좌표 리스트(값)
     public Dictionary<Vector3Int, MemoryType> SpawnedMemoryDict; // 좌표(키), 기억(값)
+
+    public MemoryType this[Vector3Int position]
+    {
+        get
+        {
+            return SpawnedMemoryDict[position];
+        }
+        set
+        {
+            SpawnedMemoryDict[position] = value;
+        }
+    }
     
     protected override void Awake()
     {
